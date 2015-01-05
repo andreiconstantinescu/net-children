@@ -1,0 +1,22 @@
+include /addons/lfa-exercises/mixins/main
+include /addons/lfa-backstage/mixins/main
+
+mixin vocabular()
+  .vocabular Vocabular
+  block
+
+mixin definitie(cuvant, index)
+  div(data-cuvant=cuvant, data-index=index || 0).definitie-pair
+    video.video(controls='true').hidden
+      source(type="video/mp4")
+      source(type="video/webm")
+      source(type="video/ogg")
+    span.cuvant
+    span.voc-separator &nbsp;–&nbsp;
+    span.definitie
+
+mixin vocword(displayed_word, word, index)
+  - var dict_word = typeof(word) === "string" ? word : displayed_word;
+  - var index = typeof(word) === "number" ? word : (index || 0);
+  span(data-cuvant=dict_word, data-index=index).vocword
+    | #{displayed_word}
