@@ -1,45 +1,65 @@
-// @import '../addons/lfa-exercises/css/main'
-// @import '../addons/lfa-backstage/css/main'
+@import '../addons/lfa-exercises/css/main'
+@import '../addons/lfa-backstage/css/main'
+
 lfa-framework()
 
-// @import _avatar
+@import _avatar
 
-// //
-// // Text flow
-// //
+//
+// Text flow
+//
 
-// .no-strech
-//   width: auto
+.no-strech
+  width: auto
 
-// .percent-50
-//   max-width: 50%
+.percent-50
+  max-width: 50%
 
-// .center
-//   margin: 0 auto
+.center
+  margin: 0 auto
 
-// .margin-for-right
-//   margin: 0 0 1em 1em
+.margin-for-right
+  margin: 0 0 1em 1em
 
-// .bordered
-//   img
-//     border-radius: 0.4em
+.bordered
+  img
+    border-radius: 0.4em
 
 
-// //
-// // General
-// //
-// article
-//   section
-//     p
-//       text-align: justify
+//
+// General
+//
+article
+  section
+    p, ol, li 
+      text-align: justify
 
-//     h1
-//       color: #39b8bb
-//       font-family: "Calibri", sans
-//       text-transform: uppercase
-//       margin-bottom: 0.8em
+    h1
+      color: #39b8bb
+      font-family: "Calibri", sans
+      text-transform: uppercase
+      margin-bottom: 0.8em
 
-//     h2
-//       color: #f38800
-//       font-family: "Calibri", sans
-//       margin: 0.5em 0
+    h2
+      color: #f38800
+      font-family: "Calibri", sans
+      margin: 0.5em 0
+    .left
+      text-align: left
+      padding: 0.2em
+    p.table
+      color: #39b8bb
+    .text-small, .small-text
+      font-size: 0.7em
+    table
+      text-align: center
+      tr.blue 
+        padding: 0.2em
+        font-size: 0.8em
+        background-color: #39b8bb
+        color: white
+      tr.white 
+        padding: 0.2em
+        font-size: 0.8em
+        background-color: white
+        color: #39b8bb
