@@ -28,7 +28,14 @@ article
   section
     p, ol, li 
       text-align: justify
-
+    ul
+      li
+        list-style: none
+      li:before
+        content: '\2022'
+        color: orange
+        margin-left: 0.2em
+        margin-right: 0.2em
     h1
       color: #39b8bb
       font-family: "Calibri", sans
