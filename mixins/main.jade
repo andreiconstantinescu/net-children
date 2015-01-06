@@ -17,3 +17,9 @@ mixin vocword(displayed_word, word, index)
   - var index = typeof(word) === "number" ? word : (index || 0);
   span(data-cuvant=dict_word, data-index=index).vocword
     | #{displayed_word}
+
+mixin footnote(number)
+  small [footnote #{number}:
+  small
+    block
+  small ]
