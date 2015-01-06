@@ -40,7 +40,7 @@ define([
 
     // Definitii aici
     // addDef("nume cuvant", "definitie", { video: "url video optional" });
-    addDef("test", "acesta este un exemplu");
+    addDef("5", "Facem această precizare dată fiind rapida dezvoltare a internetului mobil la care asistăm. Astfel spre exemplu, de la culegerea datelor pentru ancheta cantitativă (mai-iunie 2013) la culegerea datelor în ancheta calitativă (decembrie 2013 - februarie 2014), situația se schimbase dramatic datorită cadourilor de sărbători, o învățătoare de grupă pregătitoare afirmând: „Deci dacă eu vă spun că le-am spus (părinților-nAV) să restricționeze și accesul și să înceteze cu astfel de recompense și de Crăciun au primit 3 sferturi tablete…” (învățătoare, București).");
     // Glossary
     var glossary = $(".glossary");
     if (glossary.length) {
