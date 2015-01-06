@@ -5,34 +5,13 @@ lfa-framework()
 
 @import _avatar
 
-//
-// Text flow
-//
-
-.no-strech
-  width: auto
-
-.percent-50
-  max-width: 50%
-
-.center
-  margin: 0 auto
-
-.margin-for-right
-  margin: 0 0 1em 1em
-
-.bordered
-  img
-    border-radius: 0.4em
-
-
-//
 // General
 //
 article
   section
     p, ol, li 
       text-align: justify
+      margin: 0.7em
 
     h1
       color: #39b8bb
@@ -46,21 +25,25 @@ article
       margin: 0.5em 0
     .left
       text-align: left
-      padding: 0.2em
-    p.table
+      padding: 0.3em
+    p.blue
       color: #39b8bb
     .text-small, .small-text
       font-size: 0.7em
+      border-top: 2px solid #39b8bb
     table
+      padding: 0.5em
+      font-size: 0.8em
       text-align: center
-      tr.blue 
-        padding: 0.2em
-        font-size: 0.8em
+      th
         background-color: #39b8bb
         color: white
-      tr.white 
-        padding: 0.2em
         font-size: 0.8em
+        text-align: center
+      tr:nth-child(even)
         background-color: white
-        color: #39b8bb
+        color: black
+      tr:nth-child(odd)
+        background-color: #a9dddf
+        color: black
       
