@@ -9,11 +9,91 @@
       |Continuând metodologia proiectului EU Kids Online, întrebările despre pornografie au fost introduse după cum urmează: ‘
       em
         |În ultimul an este posibil să fi văzut o mulţime de imagini diferite: poze, video. Este posibil ca unele din acestea să aibă un conţinut sexual evident – de exemplu, imagini cu persoane făcând sex sau persoane dezbrăcate aflate în ipostaze sexuale 
-        sup 11
+        span 
+          +footnote(11) 
+            span Textul exact care introducea întrebările respective în proiectul EU Kids Online era următorul: ‘În ultimul an ai văzut o mulțime de imagini sub formă de fotografii sau filmulețe, dintre care unele au fost poate cu caracter sexual – cum ar fi persoane dezbrăcate sau persoane făcând sex’. În Net Children Go Mobile formularea a fost schimbată în ‘persoane dezbrăcate aflate în ipostaze sexuale’ deoarece în urma testării cognitive s-a constat că în unele culturi imagini reprezentând persoane dezbrăcate nu sunt neapărat asociate pornografiei. 
         |. Se poate ca tu să nu fi văzut nimic din toate acestea sau poate ai văzut aşa ceva pe un telefon mobil, într-o revistă, la TV, pe un DVD sau pe internet, pe orice dispozitiv pe care îl foloseşti pentru a intra online
       |’.
     p Figura 26 arată procentul copiilor care au fost expuși la imagini sexuale online sau offline și urmările acestei experiențe. 31% dintre copiii din România au văzut imagini sexuale, o treime dintre ei declarând că au fost ‘foarte supărați’ în urma experienței (dublu față de cei din eșantionul celor 7 țări), o treime că au fost ‘puțin supărați’ și o treime că nu au fost deloc supărați (mai puțini decât la nivelul eșantionului general).
     p.table Figura 26: Copiii care au văzut în ultimele 12 luni  imagini sexuale online și offline și urmările acestei experiențe (în funcție de gen, vârstă și status socio-economic)
+    +hchart({
+      bars: [
+        {
+          name: 'Total EU(7)',
+          data: [5, '#3ab8bd', 8, '#7fd0d3', 15, '#c2e7ea', 72, '#e8e8e8'],
+          stacked: true
+        },
+        {
+          name: 'Băieți',
+          data: [7, '#1d8bc3', 7, '#6eb1d6', 17, '#b9d9ec', 69, '#e8e8e8'],
+          stacked: true
+        },
+        {
+          name: 'Fete',
+          data: [12, '#1d8bc3', 15, '#6eb1d6', 4, '#b9d9ec', 69, '#e8e8e8'],
+          stacked: true
+        },
+        {
+          name: '9-10 ani',
+          data: [9, '#b6c800', 7, '#ced95b', 3, '#e7ecb1', 81, '#e8e8e8'],
+          stacked: true
+        },
+        {
+          name: '11-12 ani',
+          data: [4, '#b6c800', 10, '#ced95b', 7, '#e7ecb1', 79, '#e8e8e8'],
+          stacked: true
+        },
+        {
+          name: '13-14 ani',
+          data: [14, '#b6c800', 16, '#ced95b', 6, '#e7ecb1', 64, '#e8e8e8'],
+          stacked: true
+        },
+        {
+          name: '15-16 ani',
+          data: [12, '#b6c800', 10, '#ced95b', 24, '#e7ecb1', 53, '#e8e8e8'],
+          stacked: true
+        },
+        {
+          name: 'SSE scăzut',
+          data: [11, '#88ae80', 14, '#b0c8a0', 9, '#d9e4d6', 66, '#e8e8e8'],
+          stacked: true
+        },
+        {
+          name: 'SSE mediu',
+          data: [11, '#88ae80', 9, '#b0c8a0', 12, '#d9e4d6', 68, '#e8e8e8'],
+          stacked: true
+        },
+        {
+          name: 'SSE ridicat',
+          data: [6, '#88ae80', 10, '#b0c8a0', 9, '#d9e4d6', 75, '#e8e8e8'],
+          stacked: true
+        },
+        {
+          name: 'Total RO',
+          data: [10, '#3ab8bd', 11, '#7fd0d3', 10, '#c2e7ea', 69, '#e8e8e8'],
+          stacked: true
+        }
+      ],
+      legend: [
+        {
+          name: "% Da, am fost foarte supărat",
+          color: "#3ab8bd"
+        },
+        {
+          name: "% Da, am fost puțin supărat",
+          color: "#7fd0d3"
+        },
+        {
+          name: "% Da, dar nu am fost supărat deloc",
+          color: "#c2e7ea"
+        },
+        {
+          name: "% Nu, nu mi s-a întâmplat",
+          color: "#e8e8e8"
+        }
+      ],
+      step: 20 
+    })
     p.small-text Q35: În ULTIMELE 12 luni, ai văzut ceva de felul acesta? Dacă da, cât de supărat ai fost de ceea ce ai văzut?
     p.small-text Baza: Toți copiii care folosesc internetul. 
     ul
