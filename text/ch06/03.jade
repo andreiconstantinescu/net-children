@@ -18,11 +18,90 @@
       |., 2012).
     p
       |În chestionar, copiii au fost întrebați ‘
-      em În ultimele 12 LUNI, ai primit mesaje cu conţinut sexual de acest fel (acestea ar putea fi sub formă de cuvinte, imagini sau video)? Dacă da, cât de supărat ai fost de ceea ce s-a întâmplat? Gândeşte-te la toate modurile în care poţi folosi internetul și telefonul mobil / smartphone-ul
-      |’
-      sup 10 
+      em În ultimele 12 LUNI, ai primit mesaje cu conţinut sexual de acest fel (acestea ar putea fi sub formă de cuvinte, imagini sau video)? Dacă da, cât de supărat ai fost de ceea ce s-a întâmplat? Gândeşte-te la toate modurile în care poţi folosi internetul și telefonul mobil / smartphone-ul’ 
+      span 
+        +footnote(10) 
+          span În ancheta EU Kids Online copiii au fost întrebați dacă “au văzut sau au primit mesaje sexuale”. În Net Children Go Mobile am exclus cuvântul “văzut” date fiind posibilele confuzii create între sexting-mesaje sexuale si pornografie- a viziona imagini cu caracter sexual.
       |.  Din rațiuni etice, această întrebare nu a fost pusă copiilor de 9-10 ani.
     p.table Figura 22: Copiii care au primit în ultimele 12 luni mesaje sexuale online (+11 ani)
+    +hchart({
+      bars: [
+        {
+          name: 'Total EU(7)',
+          data: [2, '#3ab8bd', 3, '#7fd0d3', 6, '#c2e7ea', 89, '#e8e8e8'],
+          stacked: true
+        },
+        {
+          name: 'Băieți',
+          data: [3, '#1d8bc3', 7, '#6eb1d6', 10, '#b9d9ec', 80, '#e8e8e8'],
+          stacked: true
+        },
+        {
+          name: 'Fete',
+          data: [8, '#1d8bc3', 10, '#6eb1d6', 4, '#b9d9ec', 78, '#e8e8e8'],
+          stacked: true
+        },
+        {
+          name: '9-10 ani',
+          data: [],
+          stacked: true
+        },
+        {
+          name: '11-12 ani',
+          data: [2, '#b6c800', 4, '#ced95b', 5, '#e7ecb1', 89, '#e8e8e8'],
+          stacked: true
+        },
+        {
+          name: '13-14 ani',
+          data: [6, '#b6c800', 8, '#ced95b', 3, '#e7ecb1', 82, '#e8e8e8'],
+          stacked: true
+        },
+        {
+          name: '15-16 ani',
+          data: [9, '#b6c800', 13, '#ced95b', 13, '#e7ecb1', 65, '#e8e8e8'],
+          stacked: true
+        },
+        {
+          name: 'SSE scăzut',
+          data: [7, '#88ae80', 10, '#b0c8a0', 10, '#d9e4d6', 73, '#e8e8e8'],
+          stacked: true
+        },
+        {
+          name: 'SSE mediu',
+          data: [5, '#88ae80', 8, '#b0c8a0', 3, '#d9e4d6', 84, '#e8e8e8'],
+          stacked: true
+        },
+        {
+          name: 'SSE ridicat',
+          data: [5, '#88ae80', 7, '#b0c8a0', 9, '#d9e4d6', 79, '#e8e8e8'],
+          stacked: true
+        },
+        {
+          name: 'Total RO',
+          data: [6, '#3ab8bd', 8, '#7fd0d3', 7, '#c2e7ea', 79, '#e8e8e8'],
+          stacked: true
+        }
+      ],
+      legend: [
+        {
+          name: "% Da, am fost foarte supărat",
+          color: "#3ab8bd"
+        },
+        {
+          name: "% Da, am fost puțin supărat",
+          color: "#7fd0d3"
+        },
+        {
+          name: "% Da, dar nu am fost supărat deloc",
+          color: "#c2e7ea"
+        },
+        {
+          name: "% Nu, nu mi s-a întâmplat",
+          color: "#e8e8e8"
+        }
+      ],
+      step: 20 
+    })
     p.small-text Q42: În ultimele 12 LUNI, ai primit mesaje cu conţinut sexual de acest fel (acestea ar putea fi sub formă de cuvinte, imagini sau video)? Dacă da, cât de supărat ai fost de ceea ce s-a întâmplat?
     p.small-text Baza: Toți copiii de 11-16 ani care folosesc internetul
     p Figura 22 arată procentul celor care au primit în ultimul an mesaje cu caracter sexual, precum și urmările pe care aceste mesaje le-au avut pentru ei. Astfel, 21% dintre copii, la nivelul eșantionului românesc, au primit astfel de mesaje, dar doar 6% au fost ‘foarte supărați’ de incident, 8% au fost ‘puțin supărați’ și 7% nu au fost deloc supărați.
