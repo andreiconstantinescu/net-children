@@ -3,8 +3,83 @@
     h1 4.2. Setările de securitate ale profilelor de pe SNS 
     p Un al indicator al expunerii la risc al copiilor este cel legat de gradul de publicizare pe care profilul său îl are, altfel spus cum sunt stabilite setările de securitate ale contului. Figura 9 ilustrează cum variază pe cele trei dimensiuni avute în vedere (gen, vârstă și SSE) setările de la cel mai folosit dintre conturile pe care copilul le are pe platformele de socializare.
     p.table Figura 9: Setarea profilului (public sau privat) de pe rețeaua de socializare online folosită, în funcție de gen, vârstă și status socio-economic
+    +hchart({
+      bars: [
+        {
+          name: 'Total EU(7)',
+          data: [29, '#1d8bc3', 27, '#6eb1d6', 44, '#b9d9ec'],
+          stacked: true
+        },
+        {
+          name: 'Băieți',
+          data: [64, '#1d8bc3', 21, '#6eb1d6', 15, '#b9d9ec'],
+          stacked: true
+        },
+        {
+          name: 'Fete',
+          data: [50, '#1d8bc3', 19, '#6eb1d6', 31, '#b9d9ec'],
+          stacked: true
+        },
+        {
+          name: '9-10 ani',
+          data: [35, '#b6c800', 9, '#ced95b', 56, '#e7ecb1'],
+          stacked: true
+        },
+        {
+          name: '11-12 ani',
+          data: [61, '#b6c800', 16, '#ced95b', 22, '#e7ecb1'],
+          stacked: true
+        },
+        {
+          name: '13-14 ani',
+          data: [66, '#b6c800', 19, '#ced95b', 15, '#e7ecb1'],
+          stacked: true
+        },
+        {
+          name: '15-16 ani',
+          data: [54, '#b6c800', 28, '#ced95b', 18, '#e7ecb1'],
+          stacked: true
+        },
+        {
+          name: 'SSE scăzut',
+          data: [64, '#88ae80', 16, '#b0c8a0', 20, '#d9e4d6'],
+          stacked: true
+        },
+        {
+          name: 'SSE mediu',
+          data: [51, '#88ae80', 23, '#b0c8a0', 26, '#d9e4d6'],
+          stacked: true
+        },
+        {
+          name: 'SSE ridicat',
+          data: [47, '#88ae80', 24, '#b0c8a0', 29, '#d9e4d6'],
+          stacked: true
+        },
+        {
+          name: 'Total RO',
+          data: [57, '#3ab8bd', 20, '#7fd0d3', 23, '#c2e7ea'],
+          stacked: true
+        }
+      ],
+      legend: [
+        {
+          name: "% Public, oricine poate să îl vadă",
+          color: "#3ab8bd"
+        },
+        {
+          name: "% Parțial privat",
+          color: "#7fd0d3"
+        },
+        {
+          name: "% Privat, poate fi văzut doar de prieteni",
+          color: "#c2e7ea"
+        }
+      ],
+      step: 20 
+    })
     p.small-text Q20: Profilul tău este setat ca…?
-    p.small-text Baza: Toți copiii care au un profil pe o platformă de socializare online.
+      br
+      | Baza: Toți copiii care au un profil pe o platformă de socializare online.
     ul
       li
         strong Majoritatea copiilor din România (57%) au contul de pe platforma de socializare setat ca public
@@ -81,7 +156,8 @@
           td 20
           td 38
     p.small-text Q21: Care dintre informaţiile de pe cartonaş sunt incluse în profilul/contul tău?
-    p.small-text Baza: Toți copiii care au un cont pe o platformă de socializare online.
+      br
+      | Baza: Toți copiii care au un cont pe o platformă de socializare online.
     ul
       li
         strong Majoritatea copiilor (85%) expun o poză în care li se poate vedea clar fața
