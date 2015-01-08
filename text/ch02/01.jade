@@ -169,6 +169,28 @@
       p Figura 1  prezintă comparativ datele despre folosirea zilnică a internetului la școală și acasă:
       p.blue Figura 1: Accesarea zilnică a internetului de acasă și de la școală în funcție de gen, vârstă și status socio-economic
       h1 TODO: Graphic
+      +hchart({
+        bars: [
+          {
+            name: 'Total EU(7)',
+            data: [21, '#ddd', 79, '#000']
+          },
+          {
+            name: 'Băieți',
+            data: [7, '#000', 75, '#ccc']
+          }
+        ],
+        legend: [
+          {
+            name: "% utilizarea zilnică de la școală",
+            color: "#000"
+          },
+          {
+          name: "% utilizarea zilnică de acasă",
+          color: "#ddd"
+          }
+        ]
+      })
       p.text-small Q1 a, Q1 b si Q1 c: Uitându-te la aceast cartonaş, te rog să îmi spui cât de des intri online sau foloseşti internetul (pe un computer, un telefon mobil, un smartphone sau orice alt obiect de pe care poţi intra online) în locurile urmatoare…
         br
         | Baza: Toți copiii care folosesc internetul.
