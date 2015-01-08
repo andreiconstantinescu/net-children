@@ -11,17 +11,15 @@
     p.blue Tabelul 6: Detinerea unor dispozitive în functie de varsta si gen
     table.table-responsive
       tr
-        th %
+        th(rowspan="2") %
         th(colspan="2") 9-12 ani 
         th(colspan="2") 13-16 ani
-        th Total 
+        th(rowspan="2") Total 
       tr
-        th
         th Băieți 
         th Fete 
         th Băieți 
         th Fete 
-        th
       tr 
         td Un computer de birou (PC)
         td 74
@@ -85,7 +83,60 @@
       strong Deținerea unei tablete variază cu genul, fetele fiind mai probabil să dețină astfel de dispozitive.
     p Figura 3 arată cum variază deținerea unei tablete în funcție de gen, vârstă și status socio-economic. Astfel, dacă așa cum spuneam, tableta este mai degrabă deținută de fete, smartphone-urile sunt mai degrabă deținute de băieți. Probabilitatea de deținere a unui smartphone variază constant cu vârsta copiilor, crescând odată cu aceasta. Grupul în care cei mai mulți copii declară că dețin o tabletă este cel de 11-12 ani, urmat de cel al adolescenților de 15-16 ani. De asemenea, probabilitatea de deținere a unui smartphone crește constant cu SSE, deținerea unei tablete neurmând același traseu. 
     p.blue Figura 3: Detinerea unui smartphone sau a unei tablete în functie de vârstă, gen si status socio-economic
-    h1 TODO: ADD GRAPHIC
+    +hchart({
+      bars: [
+        {
+          name: 'Băieți',
+          data: [5, '#6eb1d6', 30, '#568bc3']
+        },
+        {
+          name: 'Fete',
+          data: [13, '#6eb1d6', 23, '#568bc3']
+        },
+        {
+          name: '9-10 ani',
+          data: [5, '#ced95a', 15, '#b6c800']
+        },
+        {
+          name: '11-12 ani',
+          data: [14, '#ced95a', 25, '#b6c800']
+        },
+        {
+          name: '13-14 ani',
+          data: [7, '#ced95a', 28, '#b6c800']
+        },
+        {
+          name: '15-16 ani',
+          data: [12, '#ced95a', 35, '#b6c800']
+        },
+        {
+          name: 'SSE scăzut',
+          data: [12, '#b0c8a0', 23, '#88ae80']
+        },
+        {
+          name: 'SSE mediu',
+          data: [3, '#b0c8a0', 26, '#88ae80']
+        },
+        {
+          name: 'SSE ridicat',
+          data: [20, '#b0c8a0', 41, '#88ae80']
+        },
+        {
+          name: 'Total RO',
+          data: [10, '#7fd0d3', 26, '#3ab8bd']
+        }
+      ],
+      legend: [
+        {
+          name: "% Deține o tabletă",
+          color: "#7fd0d3"
+        },
+        {
+        name: "% Deține un smartphone",
+        color: "#3ab8bd"
+        }
+      ]
+    })
     p.text-small Q3 a-h: Pe care dintre următoarele obiecte le ai tu personal sau le foloseşti tu? (Prin utilizare privata intelegem un dispozitiv pe care doar tu poti sa il folosesti).
       br
       | Baza: Toti copiii care folosesc internetul.
@@ -93,11 +144,10 @@
     p.blue Tabelul 7: Comparatia copiilor care detin si a celor care utilizează zilnic dispozitivele mobile, în functie de vârstă
     table.table-responsive
       tr
-        th %
+        th(rowspan="2") %
         th(colspan="2") 9-12 ani 
         th(colspan="2") 13-16 ani
       tr
-        th
         th Dețin
         th Utilizează zilnic  
         th Dețin

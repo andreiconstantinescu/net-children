@@ -111,17 +111,15 @@
     p Tabelul 4 arată cum variază utilizarea zilnică a diferitelor dispozitive, în funcție de vârstă și gen.
     p.blue Tabelul 4: Accesarea zilnică a internetului de pe diferite dispozitive în functie de vârstă si gen
     table.table-responsive
-      th % 
+      th(rowspan="2") % 
       th(colspan="2") 9-12 ani 
       th(colspan="2") 13-16 ani 
-      th Total 
+      th(rowspan="2") Total 
       tr 
-        th 
         th Băieți 
         th Fete 
         th Băieți 
         th Fete 
-        th
       tr
         td  Un computer de birou (PC)
         td 57,1
@@ -199,7 +197,64 @@
       p F: Pe laptop dacă îmi trebuie ceva pentru școală (...) dacă, nu știu, dacă vreau să mă uit la un film, nu știu, și pe tableta pot, dar nu mă ține tableta atâta și am priza în partea cealaltă a camerei.” (fată, 15, I01)
     p În afară de telefoanele mobile care nu sunt smartphone-uri, alte dispozitive folosite mai mult de fete decât de băieți, mai ales în perioada adolescenței, sunt, așa cum arată și citatul de mai sus, tabletele.
     p.blue Figura 2: Utilizarea zilnică a smartphone-ului si a laptop-ului în functie de gen, vârstă si status socio-economic
-    h1 TODO: ADD GRAPHIC
+    +hchart({
+      bars: [
+        {
+          name: 'Total EU',
+          data: [41, '#7fd0d3', 46, '#3ab8bd']
+        },
+        {
+          name: 'Băieți',
+          data: [24, '#6eb1d6', 28, '#568bc3']
+        },
+        {
+          name: 'Fete',
+          data: [18, '#6eb1d6', 28, '#568bc3']
+        },
+        {
+          name: '9-10 ani',
+          data: [8, '#ced95a', 21, '#b6c800']
+        },
+        {
+          name: '11-12 ani',
+          data: [21, '#ced95a', 24, '#b6c800']
+        },
+        {
+          name: '13-14 ani',
+          data: [21, '#ced95a', 27, '#b6c800']
+        },
+        {
+          name: '15-16 ani',
+          data: [31, '#ced95a', 38, '#b6c800']
+        },
+        {
+          name: 'SSE scăzut',
+          data: [19, '#b0c8a0', 32, '#88ae80']
+        },
+        {
+          name: 'SSE mediu',
+          data: [19, '#b0c8a0', 24, '#88ae80']
+        },
+        {
+          name: 'SSE ridicat',
+          data: [33, '#b0c8a0', 30, '#88ae80']
+        },
+        {
+          name: 'Total RO',
+          data: [21, '#7fd0d3', 28, '#3ab8bd']
+        }
+      ],
+      legend: [
+        {
+          name: "% Utilizează smartphone-ul zilnic",
+          color: "#7fd0d3"
+        },
+        {
+        name: "% Utilizează laptopul zilnic",
+        color: "#3ab8bd"
+        }
+      ]
+    })
     p.text-small Q2 b si Q2 d: Când foloseşti internetul în aceste zile in […nume locaţie], cât de des foloseşti următoarele obiecte pentru a intra online?
       br 
       | Baza: Toți copiii care utilizează internetul din Romania (pentru segmentarile pe varsta si gen) si din toate tarile pentru restul.
