@@ -10,6 +10,43 @@
       li 19% spun că deseori timpul petrecut pe internet a fost folosit în detrimentul celui petrecut cu familia, prietenii sau într-un mod mai productiv. Același procent (19%) mărturisesc că nu s-au simțit în largul lor atunci când nu au putut fi online.
     p.blue Figura 28: Folosirea excesivă a internetului de către copii
     h1 TODO: ADD GRAPHIC
+    
+    +vchart({
+    bars: [
+      {
+        name: 'Nu am mâncat sau nu am dormit pentru a sta pe internet',
+        data: [12, '#ddd', 27, '#ccc', 60, '#afa']
+      },
+      {
+        name: 'Nu m-am simtit în largul meu atunci când nu puteam sta pe internet.',
+        data: [19, '#ddd', 31, '#ccc', 50, '#afa']
+      },
+      {
+        name: 'M-am surprins că navighez și atunci când nu eram interesat în mod deosebit',
+        data: [21, '#ddd', 27, '#ccc', 52, '#afa']
+      },
+      {
+      name: 'Nu m-am simtit în largul meu atunci când nu puteam sta pe internet.',
+      data: [19, '#ddd', 31, '#ccc', 50, '#afa']
+      },
+      {
+      name: 'M-am surprins că navighez și atunci când nu eram interesat în mod deosebit',
+      data: [21, '#ddd', 27, '#ccc', 52, '#afa']
+      }
+    ],
+    legend: [
+    {
+    name: 'legenda 1',
+    color: '#ddd'
+    },
+    {
+    name: 'legenda 2',
+    color: '#ddd'
+    },
+    ], 
+    step: 20
+    })
+    
     p.text-small Q46: În ULTIMELE 12 LUNI, cât de des ţi s-au întâmplat următoarele lucruri?
       br
       | Baza: Toți copiii care folosesc internetul.
@@ -53,4 +90,3 @@
     p.text-small Q49: În ULTIMELE 12 LUNI, cât de des ţi s-au întâmplat următoarele lucruri? Graficul prezintă procentul celor care au răspuns ‘Destul de des’ sau ‘Foarte des’ la cel puțin două dintre cele șase afirmații cuprinse în Figura 30.
       br
       | Baza: Toți copiii care dețin sau au spre folosință un smartphone.
-
