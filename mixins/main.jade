@@ -23,3 +23,41 @@ mixin footnote(number)
   small
     block
   small ]
+  
+mixin hchart(options)
+  .hchart
+    each bar in options.bars
+      .row
+        .col-sm-3= bar.name
+        .col-sm-9
+          if (bar.stacked) 
+            
+            .hchart-row
+              .progress
+                - for (var i = 0; i < bar.data.length; i+=2) {
+                  .progress-bar(style="width: #{bar.data[i]}%; background: #{bar.data[i+1]}")= bar.data[i]
+                - }
+          else
+            
+            .hchart-row
+              - for (var i = 0; i < bar.data.length; i+=2) {
+                .progress(style="margin-bottom: 0.1em")
+                  .progress-bar(style="width: #{bar.data[i]}%; background: #{bar.data[i+1]}")= bar.data[i]
+              - }
+    if (options.step || options.legend)
+      if (options.step)
+        .row: .col-sm-9.col-sm-offset-3
+          .hchart-step(style="position:relative; height: 3em")
+            - var steps = options.step
+            - for (var i = 0; i <= 100/steps; i++) {
+              .step(style="position: absolute; left: #{i * (steps-1)}%; text-align: right"): .small
+                div
+                  span |
+                span #{i * steps}
+            - }
+      else
+        .hchart-legend 
+          .text-center
+            each item in options.legend
+              .legend(style="width: 10px; height: 10px; background: #{item.color}; display: inline-block")
+              span(style="margin-left: 0.2em; margin-right: 1em")= item.name
