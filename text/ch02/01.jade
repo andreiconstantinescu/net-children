@@ -168,26 +168,61 @@
       li România se situează la coada clasamentului în ceea ce privește folosirea la școală (11% zilnic față de Danemarca, 61% zilnic) sau în mișcare (8% zilnic față de 32% în Marea Britanie).
       p Figura 1  prezintă comparativ datele despre folosirea zilnică a internetului la școală și acasă:
       p.blue Figura 1: Accesarea zilnică a internetului de acasă și de la școală în funcție de gen, vârstă și status socio-economic
-      h1 TODO: Graphic
       +hchart({
         bars: [
           {
             name: 'Total EU(7)',
-            data: [21, '#ddd', 79, '#000']
+            data: [21, '#7fd0d3', 79, '#3ab8bd']
           },
           {
             name: 'Băieți',
-            data: [7, '#000', 75, '#ccc']
+            data: [7, '#6eb1d6', 75, '#568bc3']
+          },
+          {
+            name: 'Fete',
+            data: [15, '#6eb1d6', 73, '#568bc3']
+          },
+          {
+            name: '9-10 ani',
+            data: [2, '#ced95a', 65, '#b6c800']
+          },
+          {
+            name: '11-12 ani',
+            data: [9, '#ced95a', 69, '#b6c800']
+          },
+          {
+            name: '13-14 ani',
+            data: [7, '#ced95a', 74, '#b6c800']
+          },
+          {
+            name: '15-16 ani',
+            data: [24, '#ced95a', 87, '#b6c800']
+          },
+          {
+            name: 'SSE scăzut',
+            data: [10, '#b0c8a0', 68, '#88ae80']
+          },
+          {
+            name: 'SSE mediu',
+            data: [7, '#b0c8a0', 81, '#88ae80']
+          },
+          {
+            name: 'SSE ridicat',
+            data: [25, '#b0c8a0', 83, '#88ae80']
+          },
+          {
+            name: 'Total RO',
+            data: [11, '#7fd0d3', 74, '#3ab8bd']
           }
         ],
         legend: [
           {
             name: "% utilizarea zilnică de la școală",
-            color: "#000"
+            color: "#7fd0d3"
           },
           {
           name: "% utilizarea zilnică de acasă",
-          color: "#ddd"
+          color: "#3ab8bd"
           }
         ]
       })
