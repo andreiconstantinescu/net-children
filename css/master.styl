@@ -20,19 +20,24 @@ article
         margin-right: 0.2em
     table.table-responsive
       text-align: center
+      border-style: solid
+      border-color: white
+      border-bottom: 4px solid #39b8bb
       font-size: 0.8em
-      color: white
-      border: 1px solid white
-      border-collapse: collapse
-      td, th
-        padding .2em 
-        border: 1px solid white
-        border-collapse: collapse
       thead
-        background-color: #39b8bb
+        td, th
+          color: white
+          background-color: #39b8bb
+          padding .2em 
+          border: 1px solid white
+          border-collapse: collapse
       tbody
-        color: black
         tr:nth-child(odd)
           background-color: white
         tr:nth-child(even)
           background-color: rgb(178,225,227)
+        td, th
+          color: black
+          padding .2em 
+          border: 1px solid white
+          border-collapse: collapse
