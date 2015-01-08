@@ -56,6 +56,79 @@
         |pentru ei.
     p Figura 14 și Figura 15 arată cum variază, în funcție de gen, vârstă și status socio-economic, aprecierea propriilor competențe raportate la competențele părinților, în ceea ce privește folosirea internetului și a smartphone-ului:
     p.table Figura 14: "Știu mai multe lucruri legate de internet decât părinții mei" (variația pe gen, vârstă și status socio-economic)
+    +hchart({
+      legend: [
+        {
+          name: "% Deloc adevărat",
+          color: "rgb(34,149,202)"
+        },
+        {
+          name: "% Oarecum adevărat",
+          color: "rgb(121,186,220)"
+        },
+        {
+          name: "% Foarte adevărat",
+          color: "rgb(193,222,239)"
+        }
+      ],
+      bars: [
+        {
+          name: 'Total EU',
+          data: [30, 'rgb(34,149,202)',32,"rgb(121,186,220)",38, "rgb(193,222,239)"],
+          stacked: true
+        },
+        {
+          name: 'Băieți',
+          data: [12, 'rgb(34,149,202)',34,"rgb(121,186,220)",54, "rgb(193,222,239)"],
+          stacked: true
+        },
+        {
+          name: 'Fete',
+          data: [17, 'rgb(34,149,202)',38,"rgb(121,186,220)",45, "rgb(193,222,239)"],
+          stacked: true
+        },
+        {
+          name: '9-10 ani',
+          data: [44, 'rgb(190,207,0)',36,"rgb(213,223,102)",20,"rgb(234,239,185)"],
+          stacked: true
+        },
+        {
+          name: '11-12 ani',
+          data: [11, 'rgb(190,207,0)',49,"rgb(213,223,102)",40,"rgb(234,239,185)"],
+          stacked: true
+        },
+        {
+          name: '13-14 ani',
+          data: [3, 'rgb(190,207,0)',36,"rgb(213,223,102)",61,"rgb(234,239,185)"],
+          stacked: true
+        },
+        {
+          name: '15-16 ani',
+          data: [6,"rgb(190,207,0)",24,"rgb(213,223,102)",70,"rgb(234,239,185)"],
+          stacked: true
+        },
+        {
+          name: 'SSE scăzut',
+          data: [16,"rgb(147,183,139)",40,"rgb(185,207,170)",44,"rgb(222,232,220)"],
+          stacked: true
+        },
+        {
+          name: 'SSE mediu',
+          data: [14,"rgb(147,183,139)",30,"rgb(185,207,170)",56,"rgb(222,232,220)"],
+          stacked: true
+        },
+        {
+          name: 'SSE ridicat',
+          data: [17,"rgb(147,183,139)",42,"rgb(185,207,170)",41,"rgb(222,232,220)"],
+          stacked: true
+        },
+        {
+          name: 'Total RO',
+          data: [15,"rgb(67,192,197)",36,"rgb(138,214,217)",49,"rgb(201,235,237)"],
+          stacked: true
+        }
+      ]
+    })
     p.small-text Q25: Cât de adevărate sunt următoarele afirmații în ceea ce te privește?
     p.small-text Baza: Toți copiii care utilizează internetul.
     ul
