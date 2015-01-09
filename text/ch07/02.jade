@@ -125,8 +125,53 @@
       | , aceasta datorită caracteristicilor acestor dispozitive. Astfel, copiii și, mai ales, adolescenții percep smartphone-ul ca pe o 
       strong ‘extensie’ a propriului corp
       | , putând fi cu ușurință purtat cu sine pe parcursul întregii zile și chiar noaptea (Vincent & Fortunati, 2009); de asemenea smartphone-ul permite un nou mod de comunicare, numită ‘prezență conectată’ un fel de permanentă co-prezență prin intermediul internetului (Licoppe, 2004). Astfel, poate fi de înțeles sentimentul de neplăcere pe care copiii îl încearcă atunci când nu pot să-și verifice telefonul sau veșnicile verificări de neînțeles pentru unii dintre părinți (ne-utilizatori de smartphone). 
-    h1 TODO: ADD GRAPHIC
     p.blue Figura 30: Folosirea excesivă a smartphone-ului de către copii
+    h1 should be vchart
+    +hchart({
+      bars:[
+        {
+          name: 'M-am simțit deranjat când nu am putut verifica smartphone-ul meu',
+          data: [31, 'rgb(34,149,202)',48,"rgb(147,183,139)",21, "rgb(190,207,0)"]
+        },
+        {
+          name: 'M-am surprins făcând anumite lucruri pe smartphone și atunci când nu eram cu adevărat interesat',
+          data: [23, 'rgb(34,149,202)',35,"rgb(147,183,139)",42, "rgb(190,207,0)"]
+        },
+        {
+          name: 'Am simțit o nevoie puternică de a-mi verifica smartphone-ul ca să văd dacă s-a mai întâmplat ceva nou',
+          data: [40, 'rgb(34,149,202)',35,"rgb(147,183,139)",25, "rgb(190,207,0)"]
+        },
+        {
+          name: 'Am petrecut mai puțin timp decât ar fi trebuit cu familia, prietenii, sau făcându-mi temele',
+          data: [27, 'rgb(34,149,202)',24,"rgb(147,183,139)",48, "rgb(190,207,0)"]
+        },
+        {
+          name: 'M-am surprins folosind telefonul și în locuri/situații unde nu era adecvat (în timpul cinei cu părinții mei, în clasă, la cinema)',
+          data: [26, 'rgb(34,149,202)',42,"rgb(147,183,139)",31, "rgb(190,207,0)"]
+        },
+        {
+          name: 'Am încercat fără să reușesc să folosesc mai puțin telefonul',
+          data: [13, 'rgb(34,149,202)',33,"rgb(147,183,139)",54, "rgb(190,207,0)"]
+        }
+        ],
+      legend:[
+        {
+          name: "% Foarte des sau destul de des",
+          color: "rgb(34,149,202)"
+        },
+        {
+          name: "% Rareori",
+          color: "rgb(147,183,139)"
+        },
+        {
+          name: "% Niciodată sau aproape niciodată",
+          color: "rgb(190,207,0)"
+        }
+      ],
+      step: 20
+    })
+    p.small-text Q49: În ULTIMELE 12 LUNI, cât de des ţi s-au întâmplat următoarele lucruri?
+    p.small-text Baza: Toți copiii care dețin sau au spre folosință un smartphone
     p Ca și în cazul internetului, am considerat că un singur indicator nu este suficient pentru a vorbi de folosire excesivă, astfel încât Figura 31 arată care sunt copiii care au răspuns ‘foarte sau destul de des’ la  2 sau mai multe dintre cele 6 afirmații testate:
     ul 
       li Copiii din România sunt sub media tuturor țărilor în a raporta folosirea excesivă a smartphone-ului (38% față de 48%).
@@ -136,7 +181,55 @@
         | . Astfel, la 9-10 ani majoritatea copiilor declară o folosire excesivă (56%), pentru că la segmentul de vârstă imediat următor procentul să scadă brusc la 27% și apoi să crească constant până la 40% la cei de 15-16 ani. Această dinamică diferă de cea pe care o regăsim la nivelul eșantionului european, unde asistăm la cel mai mic procent la grupa de vârstă 9-10 și, într-adevăr, la creșterea constantă spre adolescență. Explicația ar putea fi găsită în strategiile de mediere folosite de părinții români care, spre deosebire de cei occidentali, sunt mai permisivi (uneori excesiv de permisivi).
       li SSE este din nou important în variația acestui indicator, care nu urmează însă o pantă lineară. Astfel, cei cu SSE scăzut raportează în 56% dintre cazuri folosire excesivă a smartphone-ului, în timp ce la polul opus se află cei cu SSE mediu cu doar 20%. 
     p.blue Figura 31: Copiii (%) care folosesc în exces smartphone-ul, în functie de gen, vârstă si status socio-economic
-    h1 TODO: ADD GRAPHIC
+    +hchart({
+      bars: [
+        {
+          name: 'Total EU (7)',
+          data: [48, '#ee7401']
+        },
+        {
+          name: 'Băieți',
+          data: [33, 'rgb(34,149,202)']
+        },
+        {
+          name: 'Fete',
+          data: [42, 'rgb(34,149,202)']
+        },
+        {
+          name: '9-10 ani',
+          data: [56, 'rgb(190,207,0)']
+        },
+        {
+          name: '11-12 ani',
+          data: [27, 'rgb(190,207,0)']
+        },
+        {
+          name: '13-14 ani',
+          data: [36, 'rgb(190,207,0)']
+        },
+        {
+          name: '15-16 ani',
+          data: [40,"rgb(190,207,0)"]
+        },
+        {
+          name: 'SSE scăzut',
+          data: [57,"rgb(147,183,139)"]
+        },
+        {
+          name: 'SSE mediu',
+          data: [20,"rgb(147,183,139)"]
+        },
+        {
+          name: 'SSE ridicat',
+          data: [35,"rgb(147,183,139)"]
+        },
+        {
+          name: 'Total RO',
+          data: [38,"rgb(67,192,197)"]
+        }
+      ],
+      step: 20
+    })
     p.text-small Q49: În ULTIMELE 12 LUNI, cât de des ţi s-au întâmplat următoarele lucruri? Graficul prezintă procentul celor care au răspuns ‘Destul de des’ sau ‘Foarte des’ la cel puțin două dintre cele șase afirmații cuprinse în Figura 30.
       br
       | Baza: Toți copiii care dețin sau au spre folosință un smartphone.
