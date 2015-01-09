@@ -51,6 +51,84 @@
       strong fiind ‘foarte supărați’ de experiență, 22% fiind ‘puțin supărați’ și 8% nefiind deloc deranjați de experiență
       |:
     p.table Figura 21: Copiii care au fost victime ale unui act de bullying, online sau offline, în ultimele 12 luni
+    +hchart({
+      bars: [
+        {
+          name: 'Total EU(7)',
+          data: [5, '#3ab8bd', 12, '#7fd0d3', 6, '#c2e7ea', 77, '#e8e8e8'],
+          stacked: true
+        },
+        {
+          name: 'Băieți',
+          data: [10, '#1d8bc3', 23, '#6eb1d6', 9, '#b9d9ec', 58, '#e8e8e8'],
+          stacked: true
+        },
+        {
+          name: 'Fete',
+          data: [12, '#1d8bc3', 21, '#6eb1d6', 7, '#b9d9ec', 59, '#e8e8e8'],
+          stacked: true
+        },
+        {
+          name: '9-10 ani',
+          data: [14, '#b6c800', 17, '#ced95b', 6, '#e7ecb1', 63, '#e8e8e8'],
+          stacked: true
+        },
+        {
+          name: '11-12 ani',
+          data: [8, '#b6c800', 25, '#ced95b', 3, '#e7ecb1', 64, '#e8e8e8'],
+          stacked: true
+        },
+        {
+          name: '13-14 ani',
+          data: [12, '#b6c800', 24, '#ced95b', 9, '#e7ecb1', 55, '#e8e8e8'],
+          stacked: true
+        },
+        {
+          name: '15-16 ani',
+          data: [12, '#b6c800', 21, '#ced95b', 13, '#e7ecb1', 54, '#e8e8e8'],
+          stacked: true
+        },
+        {
+          name: 'SSE scăzut',
+          data: [12, '#88ae80', 21, '#b0c8a0', 6, '#d9e4d6', 61, '#e8e8e8'],
+          stacked: true
+        },
+        {
+          name: 'SSE mediu',
+          data: [8, '#88ae80', 21, '#b0c8a0', 11, '#d9e4d6', 60, '#e8e8e8'],
+          stacked: true
+        },
+        {
+          name: 'SSE ridicat',
+          data: [9, '#88ae80', 32, '#b0c8a0', 8, '#d9e4d6', 51, '#e8e8e8'],
+          stacked: true
+        },
+        {
+          name: 'Total RO',
+          data: [11, '#3ab8bd', 22, '#7fd0d3', 8, '#c2e7ea', 59, '#e8e8e8'],
+          stacked: true
+        }
+      ],
+      legend: [
+        {
+          name: "% Da, am fost foarte supărat",
+          color: "#3ab8bd"
+        },
+        {
+          name: "% Da, am fost puțin supărat",
+          color: "#7fd0d3"
+        },
+        {
+          name: "% Da, dar nu am fost supărat deloc",
+          color: "#c2e7ea"
+        },
+        {
+          name: "% Nu, nu mi s-a întâmplat",
+          color: "#e8e8e8"
+        }
+      ],
+      step: 20 
+    })
     p.small-text Q32: În ULTIMELE 12 LUNI, s-a purtat cineva cu tine în acest fel?  Iar dacă s-a întâmplat, cât de supărat ai fost pentru ce s-a întâmplat?
     p.small-text Baza: Toți copiii care utilizează internetul.
     ul
