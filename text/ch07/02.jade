@@ -13,34 +13,38 @@
     bars: [
       {
         name: 'Nu am mâncat sau nu am dormit pentru a sta pe internet',
-        data: [12, '#ddd', 27, '#ccc', 60, '#afa']
+        data: [12, 'rgb(34,149,202)', 27, 'rgb(147,183,139)', 60, 'rgb(190,207,0)']
       },
       {
         name: 'Nu m-am simtit în largul meu atunci când nu puteam sta pe internet.',
-        data: [19, '#ddd', 31, '#ccc', 50, '#afa']
+        data: [19, 'rgb(34,149,202)', 31, 'rgb(147,183,139)', 50, 'rgb(190,207,0)']
       },
       {
         name: 'M-am surprins că navighez și atunci când nu eram interesat în mod deosebit',
-        data: [21, '#ddd', 27, '#ccc', 52, '#afa']
+        data: [21, 'rgb(34,149,202)', 27, 'rgb(147,183,139)', 52, 'rgb(190,207,0)']
       },
       {
       name: 'Nu m-am simtit în largul meu atunci când nu puteam sta pe internet.',
-      data: [19, '#ddd', 31, '#ccc', 50, '#afa']
+      data: [19, 'rgb(34,149,202)', 31, 'rgb(147,183,139)', 50, 'rgb(190,207,0)']
       },
       {
       name: 'M-am surprins că navighez și atunci când nu eram interesat în mod deosebit',
-      data: [21, '#ddd', 27, '#ccc', 52, '#afa']
+      data: [21, 'rgb(34,149,202)', 27, 'rgb(147,183,139)', 52, 'rgb(190,207,0)']
       }
     ],
     legend: [
     {
-    name: 'legenda 1',
-    color: '#ddd'
+    name: 'Foarte des sau destul de des',
+    color: 'rgb(34,149,202)'
     },
     {
-    name: 'legenda 2',
-    color: '#ddd'
+    name: 'Rareori',
+    color: 'rgb(147,183,139)'
     },
+    {
+    name: 'Niciodată sau aproape niciodată',
+    color: 'rgb(190,207,0)'
+    }
     ], 
     step: 20
     })
@@ -121,8 +125,7 @@
       strong ‘extensie’ a propriului corp
       | , putând fi cu ușurință purtat cu sine pe parcursul întregii zile și chiar noaptea (Vincent & Fortunati, 2009); de asemenea smartphone-ul permite un nou mod de comunicare, numită ‘prezență conectată’ un fel de permanentă co-prezență prin intermediul internetului (Licoppe, 2004). Astfel, poate fi de înțeles sentimentul de neplăcere pe care copiii îl încearcă atunci când nu pot să-și verifice telefonul sau veșnicile verificări de neînțeles pentru unii dintre părinți (ne-utilizatori de smartphone). 
     p.blue Figura 30: Folosirea excesivă a smartphone-ului de către copii
-    h1 should be vchart
-    +hchart({
+    +vchart({
       bars:[
         {
           name: 'M-am simțit deranjat când nu am putut verifica smartphone-ul meu',
@@ -175,7 +178,7 @@
         strong O dinamică interesantă este cea în funcție de vârstă
         | . Astfel, la 9-10 ani majoritatea copiilor declară o folosire excesivă (56%), pentru că la segmentul de vârstă imediat următor procentul să scadă brusc la 27% și apoi să crească constant până la 40% la cei de 15-16 ani. Această dinamică diferă de cea pe care o regăsim la nivelul eșantionului european, unde asistăm la cel mai mic procent la grupa de vârstă 9-10 și, într-adevăr, la creșterea constantă spre adolescență. Explicația ar putea fi găsită în strategiile de mediere folosite de părinții români care, spre deosebire de cei occidentali, sunt mai permisivi (uneori excesiv de permisivi).
       li SSE este din nou important în variația acestui indicator, care nu urmează însă o pantă lineară. Astfel, cei cu SSE scăzut raportează în 56% dintre cazuri folosire excesivă a smartphone-ului, în timp ce la polul opus se află cei cu SSE mediu cu doar 20%. 
-    p.blue Figura 31: Copiii (%) care folosesc în exces smartphone-ul, în functie de gen, vârstă si status socio-economic
+    p.blue Figura 31: Copiii (%) care folosesc în exces smartphone-ul, în funcție de gen, vârstă și status socio-economic
     +hchart({
       bars: [
         {
