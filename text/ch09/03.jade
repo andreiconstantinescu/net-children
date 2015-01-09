@@ -87,7 +87,55 @@
       |Figura 43 arată cum variază medierea din partea profesorilor, măsurată ca angajarea în cel puțin două activități de mediere. La nivel general, aceasta apare în  
       strong 62% dintre cazuri, față de 69% la nivelul eșantionului tuturor țărilor
       |. Medierea profesorală este cel mai mult raportată de copiii din Irlanda (89%) și cel mai puțin în Italia, cu 44%.
-    p.table Figura 43: Medierea activă din partea profesorilor (%)  pentru utilizarea internetului de către copii, în funcție de gen, vârstă și status socio-economic
+    p.table Figura 43: Medierea activă din partea profesorilor (%)  pentru utilizarea internetului de către copii, în funcție de gen, vârstă și status socio-economic 
+    +hchart({
+      bars: [
+        {
+          name: 'Total EU (7)',
+          data: [69, '#ee7401']
+        },
+        {
+          name: 'Băieți',
+          data: [59, 'rgb(34,149,202)']
+        },
+        {
+          name: 'Fete',
+          data: [64, 'rgb(34,149,202)']
+        },
+        {
+          name: '9-10 ani',
+          data: [49, 'rgb(190,207,0)']
+        },
+        {
+          name: '11-12 ani',
+          data: [70, 'rgb(190,207,0)']
+        },
+        {
+          name: '13-14 ani',
+          data: [51, 'rgb(190,207,0)']
+        },
+        {
+          name: '15-16 ani',
+          data: [74,"rgb(190,207,0)"]
+        },
+        {
+          name: 'SSE scăzut',
+          data: [60,"rgb(147,183,139)"]
+        },
+        {
+          name: 'SSE mediu',
+          data: [67,"rgb(147,183,139)"]
+        },
+        {
+          name: 'SSE ridicat',
+          data: [47,"rgb(147,183,139)"]
+        },
+        {
+          name: 'Total RO',
+          data: [62,"rgb(67,192,197)"]
+        }
+      ]
+    })
     p.small-text Q59: Vreun profesor de la şcoală a făcut vreodată vreunul dintre lucrurile următoare? Graficul prezintă procentul copiilor care au răspuns ‘Da’ la cel puțin două dintre afirmațiile din Tabelul 53. 
     p.small-text Baza: Toți copiii care folosesc internetul.
     ul
@@ -138,7 +186,69 @@
         strong trei sferturi spun că nu li se cere niciodată sau aproape niciodată să folosească smartphone-ul pentru diferite activități sau sarcini în clasă
         |.
     p Figura 44 arată care sunt copiii cărora profesorii le cer să folosească zilnic internetul sau smartphone-ul în diverse activități legate de școală:
-    p.table Figura 44: Copiii cărora profesorii le solicită să folosească internetul sau smartphone-ul la școală sau pentru școală (%), în funcție de gen, vârstă și status socio-economic
+    p.table Figura 44: Copiii cărora profesorii le solicită să folosească internetul sau smartphone-ul la școală sau pentru școală (%), în funcție de gen, vârstă și status socio-economic 
+    +hchart({
+      bars: [
+        {
+          name: 'Total EU',
+          data: [6, "rgb(201,235,237)",13,"rgb(138,214,217)",26, 'rgb(67,192,197)']
+        },
+        {
+          name: 'Băieți',
+          data: [12, "rgb(193,222,239)",21,"rgb(121,186,220)",28, 'rgb(34,149,202)']
+        },
+        {
+          name: 'Fete',
+          data: [7, "rgb(193,222,239)",19,"rgb(121,186,220)",26, 'rgb(34,149,202)']
+        },
+        {
+          name: '9-10 ani',
+          data: [7, "rgb(234,239,185)",14,"rgb(213,223,102)",13,"rgb(190,207,0)"]
+        },
+        {
+          name: '11-12 ani',
+          data: [3, "rgb(234,239,185)",14,"rgb(213,223,102)",26,'rgb(190,207,0)']
+        },
+        {
+          name: '13-14 ani',
+          data: [6, "rgb(234,239,185)",12,"rgb(213,223,102)",22,'rgb(190,207,0)']
+        },
+        {
+          name: '15-16 ani',
+          data: [20,"rgb(234,239,185)",36,"rgb(213,223,102)",41,'rgb(190,207,0)']
+        },
+        {
+          name: 'SSE scăzut',
+          data: [9,"rgb(222,232,220)",24,"rgb(185,207,170)",29,"rgb(147,183,139)"]
+        },
+        {
+          name: 'SSE mediu',
+          data: [10,"rgb(222,232,220)",14,"rgb(185,207,170)",23,"rgb(147,183,139)"]
+        },
+        {
+          name: 'SSE ridicat',
+          data: [11,"rgb(222,232,220)",22,"rgb(185,207,170)",31,"rgb(147,183,139)"]
+        },
+        {
+          name: 'Total RO',
+          data: [9,"rgb(201,235,237)",20,"rgb(138,214,217)",27,"rgb(67,192,197)"]
+        }
+      ],
+      legend: [
+      {
+        name: "% Utilizează smartphone-ul pentru diferite sarcini în clasă",
+        color: "rgb(201,235,237)"
+      },
+      {
+        name: "% Colaborează cu alți elevi pe internet",
+        color: "rgb(138,214,217)"
+      },
+      {
+        name: "% Folosește internetul pentru informare pentru școală",
+        color: "rgb(67,192,197)"
+      }
+      ]
+    })
     p.small-text Q62: Gândindu-ne la şcoala ta, cât de des profesorii vor ca elevii să facă lucrurile următoare?
     p.small-text Baza: Toți copiii care folosesc internetul
     ul
