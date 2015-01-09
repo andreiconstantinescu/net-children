@@ -25,6 +25,7 @@ mixin footnote(number)
   small ]
   
 mixin hchart(options)
+  - var maxStep = options.maxSteps || 100
   .hchart
     each bar in options.bars
       .row
@@ -35,20 +36,19 @@ mixin hchart(options)
             .hchart-row
               .progress
                 - for (var i = 0; i < bar.data.length; i+=2) {
-                  .progress-bar(role="progressbar", data-transitiongoal="#{bar.data[i]}", style="background: #{bar.data[i+1]}")= bar.data[i]
+                  .progress-bar(role="progressbar", data-transitiongoal="#{((bar.data[i]* 100) / maxStep)}", style="background: #{bar.data[i+1]}")= bar.data[i]
                 - }
           else
             
             .hchart-row
               - for (var i = 0; i < bar.data.length; i+=2) {
                 .progress(style="margin-bottom: 0.1em")
-                  .progress-bar(role="progressbar", data-transitiongoal="#{bar.data[i]}", style="background: #{bar.data[i+1]}")= bar.data[i]
+                  .progress-bar(role="progressbar", data-transitiongoal="#{((bar.data[i]* 100) / maxStep)}", style="background: #{bar.data[i+1]}")= bar.data[i]
               - }
     .row: .col-sm-9.col-sm-offset-3
       if (options.step)
         .hchart-step(style="position:relative; height: 3em")
           - var steps = options.step
-          - var maxStep = options.maxSteps || 100
           - for (var i = 0; i <= maxStep; i+=steps) {
             .step(style="position: absolute; left: #{((i * 100) / maxStep)}%; text-align: center"): .small
               div(style="text-align: center") |
@@ -67,18 +67,20 @@ mixin vchart(options)
     .row
       each bar, index in options.bars
         .col-sm-4
-          if (index % 3 == 0)
-            .hidden-xs(style="height: #{height}; width: 2em; position: absolute; top: 0; display: inline-block")
-              - var steps = options.step || 20
-              - for (var i = 100/steps; i >= 0; i--) {
-                .step(style="width: 100%; position: absolute; bottom: #{i *(steps- 2)}%; border-bottom: 1px solid black;") #{i * steps}
-              - }
+          if (options.step)
+            if (index % 3 == 0)
+              .hidden-xs(style="height: #{height}; width: 2em; position: absolute; top: 0; display: inline-block")
+                - var steps = options.step || 20
+                - for (var i = 100/steps; i >= 0; i--) {
+                  .step(style="width: 100%; position: absolute; bottom: #{i *(steps- 2)}%; border-bottom: 1px solid black;") #{i * steps}
+                - }
           .vchart-section(style="height: #{height}; display: inline-block;margin-left: 2em;margin-bottom: 2em;")
-            .vchart-step(style="height: 100%; width: 2em; position: relative; margin-left: 1em")
-              - var steps = options.step
-              - for (var i = 100/steps; i >= 0; i--) {
-                .step(style="width: 100%; position: absolute; bottom: #{i *(steps-2)}%; border-bottom: 1px solid black;") #{i * steps} 
-              - }
+            if (options.step)
+              .vchart-step(style="height: 100%; width: 2em; position: relative; margin-left: 1em")
+                - var steps = options.step
+                - for (var i = 100/steps; i >= 0; i--) {
+                  .step(style="width: 100%; position: absolute; bottom: #{i *(steps-2)}%; border-bottom: 1px solid black;") #{i * steps} 
+                - }
             .vchart-chart(style="height: 100%; margin: 0 0.5em; display: inline-block; padding-top: 1em")
               - for (var i = 0; i < bar.data.length; i+=2) {
                 .progress.vertical.bottom(style="margin: 0 0.1em; width: #{width}")
@@ -86,3 +88,10 @@ mixin vchart(options)
                 - }
           .text-center.small= bar.name
           hr.visible-xs
+    if (options.legend)
+      .row: .col-sm-9.col-sm-offset-3
+        hr
+        .vchart-legend: .text-center
+          each item in options.legend
+            .legend(style="width: 10px; height: 10px; background: #{item.color}; display: inline-block")
+            span(style="margin-left: 0.2em; margin-right: 1em")= item.name
