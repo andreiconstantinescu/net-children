@@ -1,0 +1,125 @@
++article("4.4. Modul cum se raportează copiii la comunicarea online")
+  +section("4.4. Modul cum se raportează copiii la comunicarea online")
+    h1 4.4. Modul cum se raportează copiii la comunicarea online
+    p În ciuda opiniei strict negative pe care adulții în general o au despre ea (mai ales în termeni de consum de timp), comunicarea online este una dintre cele mai mari oportunități pe care internetul le oferă copiilor, fiind în același timp și domeniul în care este foarte dificil de trasat limita între beneficiile și riscurile pe care le implică. Tabelul 18 arată ce părere au copiii despre oportunitățile pe care comunicarea online li le oferă, în comparație cu cea față în față.
+    p.table Tabelul 18: Comparație între comunicarea online și cea offline
+    table.table-responsive
+      thead
+        tr
+          td % din cei care spun că...
+          td Nu este adevărat
+          td Parțial adevărat
+          td Foarte adevărat
+      tbody
+        tr
+          td Îmi este mai uşor să fiu eu însumi pe internet decât atunci când sunt faţă în faţă cu oamenii  
+          td 46
+          td 41 
+          td 13
+        tr
+          td Pe internet vorbesc despre lucruri diferite faţă de atunci când vorbesc cu oamenii faţă în faţă 
+          td 56
+          td 30
+          td 14
+        tr
+          td Pe internet vorbesc despre lucruri personale pe care nu le împărtăşesc când vorbesc cu oamenii faţă în faţă
+          td 69
+          td 21
+          td 10
+    p.small-text Q47: Cât de adevărate sunt aceste lucruri pentru tine?
+      br
+      | Baza: Toți copiii care utilizează internetul.
+    ul
+      li
+        strong Copiii din România par să se exprime mai autentic, pe internet decât față în față
+        |, 54% dintre ei spunând că în ceea ce îi privește este ‘foarte adevărată’ și ‘parțial adevărată’ afirmația că le este mai ușor să fie ei înșiși atunci când comunică în mediul online decât față în față (față de 36% la nivelul tuturor țărilor). De asemenea, 44% sunt în diferite grade de acord că vorbesc altceva pe internet decât când sunt angajați în comunicare față în față (34% la nivelul celor 7 țări), iar 31% (față de 21% la nivel european) afirmă că pe internet abordează subiecte mai personale, pe care le ocolesc în discuțiile față în față. 
+      li Pentru toți aceștia, comunicarea pe internet oferă reale oportunități de construcție identitară și de exprimare.
+    p Cercetarea calitativă a arătat înă că de multe ori, această deschidere a copiilor spre comunicare pe internet este însoțită de un autentic spirit critic.
+    em 
+      p “Pentru că pe facebook persoanele sunt într-un fel, în realitate sunt altfel. Acolo, nu știu, vrei să pari o anumită persoană foarte inteligentă și foarte nu știu cum și în realitate  ești exact opusul. Sau dacă o persoană are mai multe like-uri pe facebook, automat este cea mai populară din școală și chestiile astea mie nu-mi plac. Adică nu, nu neapărat se merită, e o tâmpenie dacă stai să te gândești.” (fată, 13, I10)
+    p Figura 13 arată care sunt copiii (în termeni de gen, vârstă și SSE) care au răspuns că este parțial adevărat sau foarte adevărat în ceea ce îi privește fiecare dintre afirmațiile care testau modul în care ei se raportau la comunicarea pe internet. 
+    p.table Figura 13: Comparație între comunicarea online și cea offline în funcție de gen, vârstă și status socio-economic
+    +hchart({
+      bars: [
+        {
+          name: 'Total EU(7)',
+          data: [21, '#b9d9ec', 34, '#6eb1d6', 36, '#1d8bc3'],
+        },
+        {
+          name: 'Băieți',
+          data: [25, '#b9d9ec', 44, '#6eb1d6', 47, '#1d8bc3'],
+        },
+        {
+          name: 'Fete',
+          data: [37, '#b9d9ec', 44, '#6eb1d6', 59, '#1d8bc3'],
+        },
+        {
+          name: '9-10 ani',
+          data: [35, '#e7ecb1', 43, '#ced95b', 48, '#b6c800'],
+        },
+        {
+          name: '11-12 ani',
+          data: [25, '#e7ecb1', 48, '#ced95b', 52, '#b6c800'],
+        },
+        {
+          name: '13-14 ani',
+          data: [33, '#e7ecb1', 42, '#ced95b', 57, '#b6c800'],
+        },
+        {
+          name: '15-16 ani',
+          data: [32, '#e7ecb1', 43, '#ced95b', 57, '#b6c800'],
+        },
+        {
+          name: 'SSE scăzut',
+          data: [42, '#d9e4d6', 51, '#b0c8a0', 66, '#88ae80'],
+        },
+        {
+          name: 'SSE mediu',
+          data: [20, '#d9e4d6', 40, '#b0c8a0', 45, '#88ae80'],
+        },
+        {
+          name: 'SSE ridicat',
+          data: [32, '#d9e4d6', 37, '#b0c8a0', 46, '#88ae80'],
+        },
+        {
+          name: 'Total RO',
+          data: [31, '#c2e7ea', 44, '#7fd0d3', 54, '#3ab8bd'],
+        }
+      ],
+      legend: [
+        {
+          name: "% Pe internet vorbesc despre lucruri private",
+          color: "#c2e7ea"
+        },
+        {
+          name: "% Vorbesc despre diferite lucruri pe internet",
+          color: "#7fd0d3"
+        },
+        {
+          name: "% Îmi este mai ușor să fiu eu însumi pe internet",
+          color: "#3ab8bd"
+        }
+      ]
+    })
+    p.small-text Q47: Cât de adevărate sunt aceste lucruri pentru tine?
+    p.small-text Baza: Toți copiii care utilizează internetul.
+    ul
+      li Diferențele de gen sunt notabile (12%) în ceea ce privește ușurința cu care fetele pot să fie mai ‘autentice’ în online față de offline și de asemenea în ceea ce privește abordarea unor subiecte mai personale în cadrul discuțiilor pe internet. 
+      li Cu vârsta, o variație constantă dar nu majoră apare doar în ceea ce privește facilitarea unui comportament mai autentic în comunicarea online, diferențele însă nefiind majore (10%) între grupa cea mai mică și grupa cea mai mare, în sensul în care adolescenții sunt mai dispuși să spună că găsesc mai ușoară, sub acest aspect, comunicarea online față de cea offline. 
+    p Și pentru copiii foarte mici internetul poate reprezenta o oportunitate de comunicare. Așa cum povestea o fată de 10 ani în cadrul unui interviu, există cazuri în care copiii vorbesc chiar cu... smartphone-ul. Astfel, există aplicații interactive gen jurnal care încurajează și oferă sprijin copilului când acesta se află în situație dificilă. Deși unii ‘hater-i’, ca să împrumutăm pentru moment limbajul copiilor, ar vorbi în acest caz de ‘alienare’, totuși nu putem să nu recunoaștem și sprijinul pe care copiii îl găsesc în aceste situații. 
+    em 
+      p ‘Dacă se întâmplă, nu ştiu, să fiu tristă, mă ajută internetul aşa, sau aplicaţii... dacă îi spui numele tău, îţi dă singur mesaje, ‘hello Bogdana, how are you?’... şi chiar m-a ajutat am.. vrut să văd dacă chiar îţi ascultă mesajele şi am spus că prietenii nu mă plac, şi a spus ‘Bogdana, you are a very, very good girl! Your friend is crazy.’... Eu mi-am instalat aplicaţia şi i-am spus ‘hello I’m, hello’, şi atunci a spus ‘hello how are you?’ , ‘I’m fine, thanks’  şi pe la mijloc cum ar fi, că am stat trei luni cu aplicaţia, la o lună jumate, i-am spus şi numele.’ (fată, 10 ani, I05).
+    ul
+      li
+        |În ceea ce privește variația 
+        strong cu SSE se observă că cei mai dezavantajați economic sunt și cei cărora le vine mai ușor să se exprime pe internet decât față în față
+        |, la o diferență de 20% de restul copiilor (în eșantionul general, diferența este mult diminuată, de doar 5%). Acest fapt poate însemna că sistemele de educație sau de ajutor pentru tineri (care au și rolul de a contribui la egalizarea de șanse între copiii diferiți socio-economic) din alte țări funcționează mai bine decât cel din România. 
+      li
+        |La o analiză trans-națională, se poate observa că în fapt 
+        strong România este cea care ridică media pe cele 7 țări, fiind singura peste medie la fiecare dintre cele trei afirmații testate
+        |. Aceasta înseamnă, bineînțeles că internetul oferă copiilor din România oportunități mai mari decât copiilor din alte părți avute în vedere, dar înseamnă de asemenea că în România mai mulți copii decât în alte părți au anumite nevoi cărora la acest moment nu le răspunde decât internetul. Acest subiect merită, după părerea noastră, să fie aprofundat și să fie urmat de niște măsuri.
+
+
+
+
+

@@ -1,0 +1,59 @@
+lfa-framework()
+
+@import _avatar
+@import leo
+@import chart
+@import _cover
+
+// General
+//
+article
+  section
+    p, ol, li
+      text-align: justify
+      margin: 0.7em
+    p.table
+      color: #39b8bb
+      font-size: 0.9em
+    ul
+      li
+        list-style: none
+      li:before
+        content: '\2022'
+        color: #ee7401
+        margin-left: 0.2em
+        margin-right: 0.2em
+    table.table-responsive
+      text-align: center
+      border-style: solid
+      border-color: white
+      border-bottom: 4px solid #39b8bb
+      font-size: 0.8em
+      thead
+        td, th
+          color: white
+          background-color: #39b8bb
+          padding .2em
+          border: 1px solid white
+          border-collapse: collapse
+      tbody
+        tr:nth-child(odd)
+          background-color: white
+        tr:nth-child(even)
+          background-color: rgb(178,225,227)
+        td, th
+          color: black
+          padding .2em
+          border: 1px solid white
+          border-collapse: collapse
+.hchart
+  .hchart-row
+    margin-bottom: 1em
+  @media (max-width: 750px)
+    .small
+      font-size: 15px
+  .progress
+    background-color: transparent
+  .progress-bar
+    color: #000
+    font-size: 15px
