@@ -62,35 +62,36 @@ mixin hchart(options)
 
 mixin vchart(options)
   - var height = options.height || '200px';
-  - var width = options.width || '40px'
-  .vchart(style="position: relative")
+  - var width = options.width || '40px';
+  - var maxStep = options.maxSteps || 100;
+  .vchart(style="position: relative; margin: 2em 0")
     .row
       each bar, index in options.bars
-        .col-sm-4
+        .col-sm-4(style="margin: 2em 0")
           if (options.step)
             if (index % 3 == 0)
               .hidden-xs(style="height: #{height}; width: 2em; position: absolute; top: 0; display: inline-block")
-                - var steps = options.step || 20
-                - for (var i = 100/steps; i >= 0; i--) {
-                  .step(style="width: 100%; position: absolute; bottom: #{i *(steps- 2)}%; border-bottom: 1px solid black;") #{i * steps}
+                - var steps = options.step
+                - for (var i = 0; i <= maxStep; i+=steps) {
+                  .step(style="width: 100%; position: absolute; bottom: #{((i * 100) / maxStep)}%; border-bottom: 1px solid black;") 
+                    div #{i} 
                 - }
           .vchart-section(style="height: #{height}; display: inline-block;margin-left: 2em;margin-bottom: 2em;")
             if (options.step)
               .vchart-step(style="height: 100%; width: 2em; position: relative; margin-left: 1em")
                 - var steps = options.step
-                - for (var i = 100/steps; i >= 0; i--) {
-                  .step(style="width: 100%; position: absolute; bottom: #{i *(steps-2)}%; border-bottom: 1px solid black;") #{i * steps} 
+                - for (var i = 0; i <= maxStep; i+=steps) {
+                  .step(style="width: 100%; position: absolute; bottom: #{((i * 100) / maxStep)}%; border-bottom: 1px solid black;") #{i} 
                 - }
-            .vchart-chart(style="height: 100%; margin: 0 0.5em; display: inline-block; padding-top: 1em")
+            .vchart-chart(style="height: 100%; margin: 0 0.5em; display: inline-block;")
               - for (var i = 0; i < bar.data.length; i+=2) {
                 .progress.vertical.bottom(style="margin: 0 0.1em; width: #{width}")
-                  .progress-bar(role="progressbar", data-transitiongoal="#{bar.data[i]}", style="background: #{bar.data[i+1]}")= bar.data[i]
-                - }
+                  .progress-bar(role="progressbar", data-transitiongoal="#{((bar.data[i]* 100) / maxStep)}", style="background: #{bar.data[i+1]}")= bar.data[i]
+              - }
           .text-center.small= bar.name
           hr.visible-xs
     if (options.legend)
       .row: .col-sm-9.col-sm-offset-3
-        hr
         .vchart-legend: .text-center
           each item in options.legend
             .legend(style="width: 10px; height: 10px; background: #{item.color}; display: inline-block")
