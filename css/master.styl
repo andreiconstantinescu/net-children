@@ -9,12 +9,16 @@ lfa-framework()
 //
 article
   section
-    p, ol, li
+    p, ul, li
       text-align: justify
-      margin: 0.7em
+      padding: 0 !important
     p.table
       color: #39b8bb
       font-size: 0.9em
+    em 
+      p 
+        margin: 0.5em
+        font-size: 0.7em
     ul
       li
         list-style: none
@@ -23,6 +27,7 @@ article
         color: #ee7401
         margin-left: 0.2em
         margin-right: 0.2em
+        font-size: 1.5em
     table.table-responsive
       text-align: center
       border-style: solid
@@ -36,6 +41,7 @@ article
           padding .2em
           border: 1px solid white
           border-collapse: collapse
+          text-align: center
       tbody
         tr:nth-child(odd)
           background-color: white
@@ -57,3 +63,7 @@ article
   .progress-bar
     font-size: 15px
     color: #000
+.vchart
+  .progress-bar
+    font-size: 15px
+    color: black
