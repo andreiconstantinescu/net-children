@@ -45,8 +45,8 @@ mixin hchart(options)
                 .progress(style="margin-bottom: 0.1em")
                   .progress-bar(role="progressbar", data-transitiongoal="#{((bar.data[i]* 100) / maxStep)}", style="background: #{bar.data[i+1]}")= bar.data[i]
               - }
-    .row: .col-sm-9.col-sm-offset-3
-      if (options.step)
+    if (options.step)
+      .row: .col-sm-9.col-sm-offset-3
         .hchart-step(style="position:relative; height: 3em")
           - var steps = options.step
           - for (var i = 0; i <= maxStep; i+=steps) {
@@ -54,11 +54,15 @@ mixin hchart(options)
               div(style="text-align: center") |
               div #{i}
           - }
-      if (options.legend)
-        .hchart-legend: .text-center
+    if (options.legend)
+      hr
+      .row: .col-sm-9.col-sm-offset-3
+        .hchart-legend
           each item in options.legend
-            .legend(style="width: 10px; height: 10px; background: #{item.color}; display: inline-block")
-            span(style="margin-left: 0.2em; margin-right: 1em")= item.name
+            div
+              .legend(style="width: 10px; height: 10px; background: #{item.color}; display: inline-block")
+              span(style="margin-left: 0.2em; margin-right: 1em")= item.name
+      hr
 
 mixin vchart(options)
   - var height = options.height || '200px';
@@ -91,8 +95,11 @@ mixin vchart(options)
           .text-center.small= bar.name
           hr.visible-xs
     if (options.legend)
+      hr
       .row: .col-sm-9.col-sm-offset-3
         .vchart-legend: .text-center
           each item in options.legend
-            .legend(style="width: 10px; height: 10px; background: #{item.color}; display: inline-block")
-            span(style="margin-left: 0.2em; margin-right: 1em")= item.name
+            div
+              .legend(style="width: 10px; height: 10px; background: #{item.color}; display: inline-block")
+              span(style="margin-left: 0.2em; margin-right: 1em")= item.name
+      hr
