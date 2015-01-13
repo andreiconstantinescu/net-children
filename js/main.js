@@ -27,33 +27,21 @@ define(['jquery', './chart', './viewportSelectors'], function ($) {
     }).popover({html: true});
   });
 });
-  WebFontConfig = {
-    google: { families: [ 'Source+Sans+Pro::latin,latin-ext', 'Exo:400,700:latin,latin-ext' ] }
-  };
-  (function() {
-    var wf = document.createElement('script');
-    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
-      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-    wf.type = 'text/javascript';
-    wf.async = 'true';
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(wf, s);
-  })();
 
-  window.bibliography = {
-    livingstone2009: {
-      author: "Livingstone, S.",
-      ref: "Livingstone: 2009",
-      title: "Children and the Internet: Great expectations, challenging realities.",
-      year: "2009",
-      location: "Cambridge",
-      publisher: "Polity",
-    },
-    ito2009: {
-      author: "Ito, M et al.",
-      ref: "Ito: 2009",
-      title: "Hanging out, messing around, and geeking out: Kids living and learning with new media.",
-      location: "Cambridge, MA",
-      publisher: "MIT Press"
-    },
-  };
+window.bibliography = {
+  livingstone2009: {
+    author: "Livingstone, S.",
+    ref: "Livingstone: 2009",
+    title: "Children and the Internet: Great expectations, challenging realities.",
+    year: "2009",
+    location: "Cambridge",
+    publisher: "Polity",
+  },
+  ito2009: {
+    author: "Ito, M et al.",
+    ref: "Ito: 2009",
+    title: "Hanging out, messing around, and geeking out: Kids living and learning with new media.",
+    location: "Cambridge, MA",
+    publisher: "MIT Press"
+  },
+};

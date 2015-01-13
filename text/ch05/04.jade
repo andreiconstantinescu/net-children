@@ -2,59 +2,63 @@
   +section("5.4. Numărul mediu de abilități deținute")
     h1 5.4. Numărul mediu de abilități deținute
     p În continuare vrem să arătăm cum variază numărul mediu de abilități de folosire a internetului și a dispozitivelor mobile, în funcție de vârstă, gen și status socio-economic, luând în considerare toate abilitățile testate. 
-    p.table Figura 17: Numărul mediu de abilități de utilizare a internetului (din 12 testate)
-    +hchart({
-      bars: [
-        {
-          name: 'Total EU (7)',
-          data: [5.9, '#ee7401']
-        },
-        {
-          name: 'Băieți',
-          data: [5.9, 'rgb(34,149,202)']
-        },
-        {
-          name: 'Fete',
-          data: [5.1, 'rgb(34,149,202)']
-        },
-        {
-          name: '9-10 ani',
-          data: [2.2, 'rgb(190,207,0)']
-        },
-        {
-          name: '11-12 ani',
-          data: [5.1, 'rgb(190,207,0)']
-        },
-        {
-          name: '13-14 ani',
-          data: [6.1, 'rgb(190,207,0)']
-        },
-        {
-          name: '15-16 ani',
-          data: [7.8,"rgb(190,207,0)"]
-        },
-        {
-          name: 'SSE scăzut',
-          data: [4.9,"rgb(147,183,139)"]
-        },
-        {
-          name: 'SSE mediu',
-          data: [6.2,"rgb(147,183,139)"]
-        },
-        {
-          name: 'SSE ridicat',
-          data: [5.6,"rgb(147,183,139)"]
-        },
-        {
-          name: 'Total RO',
-          data: [5.5,"rgb(67,192,197)"]
-        }
-      ],
-      step: 2,
-      maxSteps: 12
-    })
-    p.small-text Q26 a-d, Q27 a-h: Pe care dintre următoarele lucruri ştii să le faci? (Numărul mediu de abilități din 12 posibile.)
-    p.small-text Bază: Toți copiii care utilizează internetul.
+    .panel.panel-default
+      .panel-heading
+        p.table Figura 17: Numărul mediu de abilități de utilizare a internetului (din 12 testate)
+      .panel-body
+        +hchart({
+          bars: [
+            {
+              name: 'Total EU (7)',
+              data: [5.9, '#ee7401']
+            },
+            {
+              name: 'Băieți',
+              data: [5.9, 'rgb(34,149,202)']
+            },
+            {
+              name: 'Fete',
+              data: [5.1, 'rgb(34,149,202)']
+            },
+            {
+              name: '9-10 ani',
+              data: [2.2, 'rgb(190,207,0)']
+            },
+            {
+              name: '11-12 ani',
+              data: [5.1, 'rgb(190,207,0)']
+            },
+            {
+              name: '13-14 ani',
+              data: [6.1, 'rgb(190,207,0)']
+            },
+            {
+              name: '15-16 ani',
+              data: [7.8,"rgb(190,207,0)"]
+            },
+            {
+              name: 'SSE scăzut',
+              data: [4.9,"rgb(147,183,139)"]
+            },
+            {
+              name: 'SSE mediu',
+              data: [6.2,"rgb(147,183,139)"]
+            },
+            {
+              name: 'SSE ridicat',
+              data: [5.6,"rgb(147,183,139)"]
+            },
+            {
+              name: 'Total RO',
+              data: [5.5,"rgb(67,192,197)"]
+            }
+          ],
+          step: 2,
+          maxSteps: 12
+        })
+      .panel-footer
+        p.small-text Q26 a-d, Q27 a-h: Pe care dintre următoarele lucruri ştii să le faci? (Numărul mediu de abilități din 12 posibile.)
+        p.small-text Bază: Toți copiii care utilizează internetul.
     p Astfel, așa cum se poate vedea din Figura 17, în medie, copiii din România au 5,5 abilități din 12 testate, un scor ceva mai scăzut decât cel european (5,9). Ca model general de variație, se urmează modelul regăsit și la nivelul tuturor țărilor, cu:
     ul
       li
@@ -72,56 +76,60 @@
       li Se menține și la acest indicator variația cu vârsta, deși diferențele nu mai sunt atât de mari ca în cazul folosirii internetului (mai puțin decât dublu numărul mediu de abilități între grupa celor foarte mici și grupa adolescenților de 15-16 ani, față de o diferență de aproape 4 ori mai mare în cazul folosirii internetului). 
       li În schimb, cresc disparitățile în funcție de gen, băieții afirmând cu aproape 2 abilități în plus față de fete.
       li În funcție de SSE asistăm la același tip de variație, cu clasa de mijloc asumând cele mai multe competențe, 7,2 (față de 6,2 câte declară copiii cu SSE scăzut). La nivelul eșantionului general, de 7 țări, SSE nu mai determină variații importante în ceea ce privește abilitățile de folosire a dispozitivelor mobile. 
-    p.table Figura 18: Numărul mediu de abilități de utilizare a smartphone-urilor și a tabletelor (din 11 testate)
-    +hchart({
-      bars: [
-        {
-          name: 'Total EU (7)',
-          data: [7.5, '#ee7401']
-        },
-        {
-          name: 'Băieți',
-          data: [7.7, 'rgb(34,149,202)']
-        },
-        {
-          name: 'Fete',
-          data: [5.8, 'rgb(34,149,202)']
-        },
-        {
-          name: '9-10 ani',
-          data: [4.8, 'rgb(190,207,0)']
-        },
-        {
-          name: '11-12 ani',
-          data: [5.1, 'rgb(190,207,0)']
-        },
-        {
-          name: '13-14 ani',
-          data: [7.1, 'rgb(190,207,0)']
-        },
-        {
-          name: '15-16 ani',
-          data: [8.4,"rgb(190,207,0)"]
-        },
-        {
-          name: 'SSE scăzut',
-          data: [6.2,"rgb(147,183,139)"]
-        },
-        {
-          name: 'SSE mediu',
-          data: [7.2,"rgb(147,183,139)"]
-        },
-        {
-          name: 'SSE ridicat',
-          data: [6.9,"rgb(147,183,139)"]
-        },
-        {
-          name: 'Total RO',
-          data: [6.7,"rgb(67,192,197)"]
-        }
-      ],
-      step: 2,
-      maxSteps: 10
-    })
-    p.small-text Q26 a-d, Q27 a-h: Pe care dintre următoarele lucruri ştii să le faci? (Numărul mediu de abilități din 11 posibile.)
-    p.small-text Bază: Toți copiii care dețin sau au spre folosință un smartphone sau o tabletă.
+    .panel.panel-default
+      .panel-heading
+        p.table Figura 18: Numărul mediu de abilități de utilizare a smartphone-urilor și a tabletelor (din 11 testate)
+      .panel-body
+        +hchart({
+          bars: [
+            {
+              name: 'Total EU (7)',
+              data: [7.5, '#ee7401']
+            },
+            {
+              name: 'Băieți',
+              data: [7.7, 'rgb(34,149,202)']
+            },
+            {
+              name: 'Fete',
+              data: [5.8, 'rgb(34,149,202)']
+            },
+            {
+              name: '9-10 ani',
+              data: [4.8, 'rgb(190,207,0)']
+            },
+            {
+              name: '11-12 ani',
+              data: [5.1, 'rgb(190,207,0)']
+            },
+            {
+              name: '13-14 ani',
+              data: [7.1, 'rgb(190,207,0)']
+            },
+            {
+              name: '15-16 ani',
+              data: [8.4,"rgb(190,207,0)"]
+            },
+            {
+              name: 'SSE scăzut',
+              data: [6.2,"rgb(147,183,139)"]
+            },
+            {
+              name: 'SSE mediu',
+              data: [7.2,"rgb(147,183,139)"]
+            },
+            {
+              name: 'SSE ridicat',
+              data: [6.9,"rgb(147,183,139)"]
+            },
+            {
+              name: 'Total RO',
+              data: [6.7,"rgb(67,192,197)"]
+            }
+          ],
+          step: 2,
+          maxSteps: 10
+        })
+      .panel-footer
+        p.small-text Q26 a-d, Q27 a-h: Pe care dintre următoarele lucruri ştii să le faci? (Numărul mediu de abilități din 11 posibile.)
+        p.small-text Bază: Toți copiii care dețin sau au spre folosință un smartphone sau o tabletă.

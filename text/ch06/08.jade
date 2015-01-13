@@ -27,130 +27,138 @@
       |Copiii au fost întrebați astfel: ‘
       em Dacă ţi s-ar întâmpla să te deranjeze sau să te supere ceva când eşti online, oricare ar fi obiectul de pe care accesezi internetul, cât de probabil ar fi să vorbeşti cu următoarele persoane?
       |’
-    p.table Tabelul 44: Cât de probabil este ca, în urma unei experiențe online deranjante, copilul să vorbească cu o anumită persoană
-    table.table-responsive
-      thead
-        tr
-          td %...
-          td Foarte probabil 
-          td Destul de probabil 
-          td Puţin probabil
-          td Foarte improbabil
-          td Nu se aplică
-      tbody
-        tr
-          td Tatăl meu
-          td 19
-          td 18
-          td 25
-          td 19
-          td 19
-        tr
-          td Mama mea
-          td 36
-          td 22
-          td 20
-          td 10
-          td 12
-        tr
-          td Fratele sau sora mea
-          td 25
-          td 13
-          td 18
-          td 13
-          td 31
-        tr
-          td Alte rude
-          td 10
-          td 7
-          td 28
-          td 33
-          td 22
-        tr
-          td Prieteni
-          td 24
-          td 26
-          td 26
-          td 12
-          td 12
-        tr
-          td Profesorii
-          td 6
-          td 7
-          td 25
-          td 35
-          td 27
-        tr
-          td Cineva care se ocupă cu ajutorarea copiilor (asistent social, linii telefonice pentru copii, poliţie)
-          td 4
-          td 5
-          td 20
-          td 39
-          td 32
-        tr
-          td Un alt adult în care am încredere
-          td 8
-          td 16
-          td 22
-          td 29
-          td 25
-    p.small-text Q48: Dacă ţi s-ar întâmpla să te deranjeze sau să te supere ceva când eşti online, oricare ar fi obiectul de pe care accesezi internetul, cât de probabil ar fi să vorbeşti cu următoarele persoane?
-    p.small-text Baza: Toți copiii care folosesc internetul.
+    .panel.panel-default
+      .panel-heading
+        p.table Tabelul 44: Cât de probabil este ca, în urma unei experiențe online deranjante, copilul să vorbească cu o anumită persoană
+      .panel-body
+        table.table-responsive
+          thead
+            tr
+              td %...
+              td Foarte probabil 
+              td Destul de probabil 
+              td Puţin probabil
+              td Foarte improbabil
+              td Nu se aplică
+          tbody
+            tr
+              td Tatăl meu
+              td 19
+              td 18
+              td 25
+              td 19
+              td 19
+            tr
+              td Mama mea
+              td 36
+              td 22
+              td 20
+              td 10
+              td 12
+            tr
+              td Fratele sau sora mea
+              td 25
+              td 13
+              td 18
+              td 13
+              td 31
+            tr
+              td Alte rude
+              td 10
+              td 7
+              td 28
+              td 33
+              td 22
+            tr
+              td Prieteni
+              td 24
+              td 26
+              td 26
+              td 12
+              td 12
+            tr
+              td Profesorii
+              td 6
+              td 7
+              td 25
+              td 35
+              td 27
+            tr
+              td Cineva care se ocupă cu ajutorarea copiilor (asistent social, linii telefonice pentru copii, poliţie)
+              td 4
+              td 5
+              td 20
+              td 39
+              td 32
+            tr
+              td Un alt adult în care am încredere
+              td 8
+              td 16
+              td 22
+              td 29
+              td 25
+      .panel-footer
+        p.small-text Q48: Dacă ţi s-ar întâmpla să te deranjeze sau să te supere ceva când eşti online, oricare ar fi obiectul de pe care accesezi internetul, cât de probabil ar fi să vorbeşti cu următoarele persoane?
+        p.small-text Baza: Toți copiii care folosesc internetul.
     p
       |Așa cum o arată tabelul Tabelul 44, într-o astfel de situație, 
       strong cei mai mulți dintre copii ar căuta sprijin la mame 
       |(58% spunând că este ‘foarte’ sau ‘destul’ de probabil să facă acest lucru, față de 71% la nivelul tuturor țărilor), 50% spre prieteni, 38% spre frați sau surori și 37% spre tată. Doar 13% dintre copiii din România ar vorbi într-o astfel de situație problematică cu un profesor (18%) și doar 9% cu personal specializat în ajutorarea copiilor (20%).
-    p.table Figura 27: Copiii (%) care afirmă că este foarte probabil să vorbească cu cel puțin o persoană în urma unei experiente online negative (în funcție de gen, vârstă și status socio-economic)
-    +hchart({
-      bars: [
-        {
-          name: 'Total EU(7)',
-          data: [67, '#f38800'],
-        },
-        {
-          name: 'Băieți',
-          data: [54, '#1d8bc3'],
-        },
-        {
-          name: 'Fete',
-          data: [71, '#1d8bc3'],
-        },
-        {
-          name: '9-10 ani',
-          data: [74, '#b6c800'],
-        },
-        {
-          name: '11-12 ani',
-          data: [71, '#b6c800'],
-        },
-        {
-          name: '13-14 ani',
-          data: [49, '#b6c800'],
-        },
-        {
-          name: '15-16 ani',
-          data: [61, '#b6c800'],
-        },
-        {
-          name: 'SSE scăzut',
-          data: [65, '#88ae80'],
-        },
-        {
-          name: 'SSE mediu',
-          data: [58, '#88ae80'],
-        },
-        {
-          name: 'SSE ridicat',
-          data: [67, '#88ae80'],
-        },
-        {
-          name: 'Total RO',
-          data: [63, '#3ab8bd'],
-        }
-      ]
-    })
-    p.small-text Q48: Dacă ţi s-ar întâmpla să te deranjeze sau să te supere ceva când eşti online, oricare ar fi obiectul de pe care accesezi internetul, cât de probabil ar fi să vorbeşti cu următoarele persoane? (% reprezintă pe cei care au spus că este foarte probabil să vorbească cu cel puțin o persoană în Tabelul 44.)
-    p.small-text Baza: Toți copiii care folosesc internetul. 
+    .panel.panel-default
+      .panel-heading
+        p.table Figura 27: Copiii (%) care afirmă că este foarte probabil să vorbească cu cel puțin o persoană în urma unei experiente online negative (în funcție de gen, vârstă și status socio-economic)
+      .panel-body
+        +hchart({
+          bars: [
+            {
+              name: 'Total EU(7)',
+              data: [67, '#f38800'],
+            },
+            {
+              name: 'Băieți',
+              data: [54, '#1d8bc3'],
+            },
+            {
+              name: 'Fete',
+              data: [71, '#1d8bc3'],
+            },
+            {
+              name: '9-10 ani',
+              data: [74, '#b6c800'],
+            },
+            {
+              name: '11-12 ani',
+              data: [71, '#b6c800'],
+            },
+            {
+              name: '13-14 ani',
+              data: [49, '#b6c800'],
+            },
+            {
+              name: '15-16 ani',
+              data: [61, '#b6c800'],
+            },
+            {
+              name: 'SSE scăzut',
+              data: [65, '#88ae80'],
+            },
+            {
+              name: 'SSE mediu',
+              data: [58, '#88ae80'],
+            },
+            {
+              name: 'SSE ridicat',
+              data: [67, '#88ae80'],
+            },
+            {
+              name: 'Total RO',
+              data: [63, '#3ab8bd'],
+            }
+          ]
+        })
+      .panel-footer
+        p.small-text Q48: Dacă ţi s-ar întâmpla să te deranjeze sau să te supere ceva când eşti online, oricare ar fi obiectul de pe care accesezi internetul, cât de probabil ar fi să vorbeşti cu următoarele persoane? (% reprezintă pe cei care au spus că este foarte probabil să vorbească cu cel puțin o persoană în Tabelul 44.)
+        p.small-text Baza: Toți copiii care folosesc internetul. 
     p Așa cum o arată Figura 27, copiii din România adoptă în mai mică proporție această strategie, 63% spunând că ar vorbi cu cineva în astfel de cazuri.
     ul
       li

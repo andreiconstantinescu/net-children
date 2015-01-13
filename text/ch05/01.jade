@@ -2,42 +2,46 @@
   +section("5.1. Încrederea în abilitățile digitale deținute")
     h1 5.1. Încrederea în abilitățile digitale deținute
     p Așa cum arată Tabelul 19, pentru a măsura încrederea în abilitățile deținute,  copiii au fost rugați să spună în ce măsură li se potrivește un set de afirmații.
-    p.table Tabelul 19: Autoevaluarea abilităților digitale
-    table.table-responsive
-      thead
-        tr
-          td % copiilor care spun că...
-          td Deloc adevărat
-          td Oarecum adevărat
-          td Foarte adevărat
-      tbody
-        tr
-          td Ştiu mai multe despre internet decât părinţii mei
-          td 15
-          td 36
-          td 49
-        tr
-          td Ştiu multe lucruri despre folosirea internetului
-          td 14
-          td 54
-          td 32
-        tr
-          td Ştiu cum să folosesc butoanele “raportează abuzul” 
-          td 40
-          td 27
-          td 33
-        tr
-          td Ştiu mai multe despre cum se folosesc smartphone-urile decât părinţii mei
-          td 8
-          td 27
-          td 65
-        tr
-          td Ştiu multe lucruri despre cum se folosesc smartphone-urile
-          td 6
-          td 36
-          td 58
-    p.small-text Q25: Cât de adevărate sunt următoarele afirmații în ceea ce te privește?
-    p.small-text Baza: Toți copiii care utilizează internetul
+    .panel.panel-default
+      .panel-heading
+        p.table Tabelul 19: Autoevaluarea abilităților digitale
+      .panel-body
+        table.table-responsive
+          thead
+            tr
+              td % copiilor care spun că...
+              td Deloc adevărat
+              td Oarecum adevărat
+              td Foarte adevărat
+          tbody
+            tr
+              td Ştiu mai multe despre internet decât părinţii mei
+              td 15
+              td 36
+              td 49
+            tr
+              td Ştiu multe lucruri despre folosirea internetului
+              td 14
+              td 54
+              td 32
+            tr
+              td Ştiu cum să folosesc butoanele “raportează abuzul” 
+              td 40
+              td 27
+              td 33
+            tr
+              td Ştiu mai multe despre cum se folosesc smartphone-urile decât părinţii mei
+              td 8
+              td 27
+              td 65
+            tr
+              td Ştiu multe lucruri despre cum se folosesc smartphone-urile
+              td 6
+              td 36
+              td 58
+      .panel-footer
+        p.small-text Q25: Cât de adevărate sunt următoarele afirmații în ceea ce te privește?
+        p.small-text Baza: Toți copiii care utilizează internetul
     ul
       li
         |Prin raportare la părinți, 
@@ -55,164 +59,172 @@
         strong cel mai mare procent, de 40% spunând că afirmația nu este ‘deloc adevărată’ 
         |pentru ei.
     p Figura 14 și Figura 15 arată cum variază, în funcție de gen, vârstă și status socio-economic, aprecierea propriilor competențe raportate la competențele părinților, în ceea ce privește folosirea internetului și a smartphone-ului:
-    p.table Figura 14: "Știu mai multe lucruri legate de internet decât părinții mei" (variația pe gen, vârstă și status socio-economic)
-    +hchart({
-      legend: [
-        {
-          name: "% Deloc adevărat",
-          color: "rgb(34,149,202)"
-        },
-        {
-          name: "% Oarecum adevărat",
-          color: "rgb(121,186,220)"
-        },
-        {
-          name: "% Foarte adevărat",
-          color: "rgb(193,222,239)"
-        }
-      ],
-      bars: [
-        {
-          name: 'Total EU',
-          data: [30, 'rgb(34,149,202)',32,"rgb(121,186,220)",38, "rgb(193,222,239)"],
-          stacked: true
-        },
-        {
-          name: 'Băieți',
-          data: [12, 'rgb(34,149,202)',34,"rgb(121,186,220)",54, "rgb(193,222,239)"],
-          stacked: true
-        },
-        {
-          name: 'Fete',
-          data: [17, 'rgb(34,149,202)',38,"rgb(121,186,220)",45, "rgb(193,222,239)"],
-          stacked: true
-        },
-        {
-          name: '9-10 ani',
-          data: [44, 'rgb(190,207,0)',36,"rgb(213,223,102)",20,"rgb(234,239,185)"],
-          stacked: true
-        },
-        {
-          name: '11-12 ani',
-          data: [11, 'rgb(190,207,0)',49,"rgb(213,223,102)",40,"rgb(234,239,185)"],
-          stacked: true
-        },
-        {
-          name: '13-14 ani',
-          data: [3, 'rgb(190,207,0)',36,"rgb(213,223,102)",61,"rgb(234,239,185)"],
-          stacked: true
-        },
-        {
-          name: '15-16 ani',
-          data: [6,"rgb(190,207,0)",24,"rgb(213,223,102)",70,"rgb(234,239,185)"],
-          stacked: true
-        },
-        {
-          name: 'SSE scăzut',
-          data: [16,"rgb(147,183,139)",40,"rgb(185,207,170)",44,"rgb(222,232,220)"],
-          stacked: true
-        },
-        {
-          name: 'SSE mediu',
-          data: [14,"rgb(147,183,139)",30,"rgb(185,207,170)",56,"rgb(222,232,220)"],
-          stacked: true
-        },
-        {
-          name: 'SSE ridicat',
-          data: [17,"rgb(147,183,139)",42,"rgb(185,207,170)",41,"rgb(222,232,220)"],
-          stacked: true
-        },
-        {
-          name: 'Total RO',
-          data: [15,"rgb(67,192,197)",36,"rgb(138,214,217)",49,"rgb(201,235,237)"],
-          stacked: true
-        }
-      ],
-      step: 20
-    })
-    p.small-text Q25: Cât de adevărate sunt următoarele afirmații în ceea ce te privește?
-    p.small-text Baza: Toți copiii care utilizează internetul.
+    .panel.panel-default
+      .panel-heading
+        p.table Figura 14: "Știu mai multe lucruri legate de internet decât părinții mei" (variația pe gen, vârstă și status socio-economic)
+      .panel-body
+        +hchart({
+          legend: [
+            {
+              name: "% Deloc adevărat",
+              color: "rgb(34,149,202)"
+            },
+            {
+              name: "% Oarecum adevărat",
+              color: "rgb(121,186,220)"
+            },
+            {
+              name: "% Foarte adevărat",
+              color: "rgb(193,222,239)"
+            }
+          ],
+          bars: [
+            {
+              name: 'Total EU',
+              data: [30, 'rgb(34,149,202)',32,"rgb(121,186,220)",38, "rgb(193,222,239)"],
+              stacked: true
+            },
+            {
+              name: 'Băieți',
+              data: [12, 'rgb(34,149,202)',34,"rgb(121,186,220)",54, "rgb(193,222,239)"],
+              stacked: true
+            },
+            {
+              name: 'Fete',
+              data: [17, 'rgb(34,149,202)',38,"rgb(121,186,220)",45, "rgb(193,222,239)"],
+              stacked: true
+            },
+            {
+              name: '9-10 ani',
+              data: [44, 'rgb(190,207,0)',36,"rgb(213,223,102)",20,"rgb(234,239,185)"],
+              stacked: true
+            },
+            {
+              name: '11-12 ani',
+              data: [11, 'rgb(190,207,0)',49,"rgb(213,223,102)",40,"rgb(234,239,185)"],
+              stacked: true
+            },
+            {
+              name: '13-14 ani',
+              data: [3, 'rgb(190,207,0)',36,"rgb(213,223,102)",61,"rgb(234,239,185)"],
+              stacked: true
+            },
+            {
+              name: '15-16 ani',
+              data: [6,"rgb(190,207,0)",24,"rgb(213,223,102)",70,"rgb(234,239,185)"],
+              stacked: true
+            },
+            {
+              name: 'SSE scăzut',
+              data: [16,"rgb(147,183,139)",40,"rgb(185,207,170)",44,"rgb(222,232,220)"],
+              stacked: true
+            },
+            {
+              name: 'SSE mediu',
+              data: [14,"rgb(147,183,139)",30,"rgb(185,207,170)",56,"rgb(222,232,220)"],
+              stacked: true
+            },
+            {
+              name: 'SSE ridicat',
+              data: [17,"rgb(147,183,139)",42,"rgb(185,207,170)",41,"rgb(222,232,220)"],
+              stacked: true
+            },
+            {
+              name: 'Total RO',
+              data: [15,"rgb(67,192,197)",36,"rgb(138,214,217)",49,"rgb(201,235,237)"],
+              stacked: true
+            }
+          ],
+          step: 20
+        })
+      .panel-footer
+        p.small-text Q25: Cât de adevărate sunt următoarele afirmații în ceea ce te privește?
+        p.small-text Baza: Toți copiii care utilizează internetul.
     ul
       li În ceea ce privește variabila gen, diferențele nu sunt mari, totuși fetele sunt mai înclinate să aibă o mai mare încredere în cunoștințele digitale ale părinților, fiind proporțional mai multe decât băieții cele care resping afirmația și mai puține cele care o susțin puternic. 
       li Încrederea în abilitățile proprii în defavoarea celor ale părinților variază cu vârsta, așa cum ne putem aștepta, linear și puternic, asocierea fiind una pozitivă (crește vârsta, crește încrederea în abilitățile proprii).
       li Cei mai mulți copii care afirmă cu tărie că știu mai multe despre folosirea internetului decât părinții lor se găsesc în segmentul de mijloc, în ceea ce privește SSE. Totuși procentul celor care resping afirmația este relativ constant în cele trei clase.
-    p.table Figura 15: "Știu mai multe despre utilizarea smartphone-ului decât părinții mei" (variația pe gen, vârstă și status socio-economic)
-    +hchart({
-      bars: [
-        {
-          name: 'Total EU',
-          data: [21, 'rgb(34,149,202)',21,"rgb(121,186,220)",58, "rgb(193,222,239)"],
-          stacked: true
-        },
-        {
-          name: 'Băieți',
-          data: [6, 'rgb(34,149,202)',35,"rgb(121,186,220)",59, "rgb(193,222,239)"],
-          stacked: true
-        },
-        {
-          name: 'Fete',
-          data: [11, 'rgb(34,149,202)',19,"rgb(121,186,220)",70, "rgb(193,222,239)"],
-          stacked: true
-        },
-        {
-          name: '9-10 ani',
-          data: [24, 'rgb(190,207,0)',29,"rgb(213,223,102)",47,"rgb(234,239,185)"],
-          stacked: true
-        },
-        {
-          name: '11-12 ani',
-          data: [0, 'rgb(190,207,0)',33,"rgb(213,223,102)",67,"rgb(234,239,185)"],
-          stacked: true
-        },
-        {
-          name: '13-14 ani',
-          data: [0, 'rgb(190,207,0)',28,"rgb(213,223,102)",72,"rgb(234,239,185)"],
-          stacked: true
-        },
-        {
-          name: '15-16 ani',
-          data: [14,"rgb(190,207,0)",22,"rgb(213,223,102)",63,"rgb(234,239,185)"],
-          stacked: true
-        },
-        {
-          name: 'SSE scăzut',
-          data: [14,"rgb(147,183,139)",22,"rgb(185,207,170)",63,"rgb(222,232,220)"],
-          stacked: true
-        },
-        {
-          name: 'SSE mediu',
-          data: [2,"rgb(147,183,139)",32,"rgb(185,207,170)",66,"rgb(222,232,220)"],
-          stacked: true
-        },
-        {
-          name: 'SSE ridicat',
-          data: [9,"rgb(147,183,139)",24,"rgb(185,207,170)",67,"rgb(222,232,220)"],
-          stacked: true
-        },
-        {
-          name: 'Total RO',
-          data: [8,"rgb(67,192,197)",27,"rgb(138,214,217)",65,"rgb(201,235,237)"],
-          stacked: true
-        }
-      ],
-      legend: [
-        {
-          name: "% Deloc adevărat",
-          color: "rgb(34,149,202)"
-        },
-        {
-          name: "% Oarecum adevărat",
-          color: "rgb(121,186,220)"
-        },
-        {
-          name: "% Foarte adevărat",
-          color: "rgb(193,222,239)"
-        }
-      ],
-      step: 20
-    })
-    p.small-text Q25: Cât de adevărate sunt următoarele afirmații în ceea ce te privește?
-    p.small-text Baza: Toți copiii care utilizează internetul.
+    .panel.panel-default
+      .panel-heading
+        p.table Figura 15: "Știu mai multe despre utilizarea smartphone-ului decât părinții mei" (variația pe gen, vârstă și status socio-economic)
+      .panel-body
+        +hchart({
+          bars: [
+            {
+              name: 'Total EU',
+              data: [21, 'rgb(34,149,202)',21,"rgb(121,186,220)",58, "rgb(193,222,239)"],
+              stacked: true
+            },
+            {
+              name: 'Băieți',
+              data: [6, 'rgb(34,149,202)',35,"rgb(121,186,220)",59, "rgb(193,222,239)"],
+              stacked: true
+            },
+            {
+              name: 'Fete',
+              data: [11, 'rgb(34,149,202)',19,"rgb(121,186,220)",70, "rgb(193,222,239)"],
+              stacked: true
+            },
+            {
+              name: '9-10 ani',
+              data: [24, 'rgb(190,207,0)',29,"rgb(213,223,102)",47,"rgb(234,239,185)"],
+              stacked: true
+            },
+            {
+              name: '11-12 ani',
+              data: [0, 'rgb(190,207,0)',33,"rgb(213,223,102)",67,"rgb(234,239,185)"],
+              stacked: true
+            },
+            {
+              name: '13-14 ani',
+              data: [0, 'rgb(190,207,0)',28,"rgb(213,223,102)",72,"rgb(234,239,185)"],
+              stacked: true
+            },
+            {
+              name: '15-16 ani',
+              data: [14,"rgb(190,207,0)",22,"rgb(213,223,102)",64,"rgb(234,239,185)"],
+              stacked: true
+            },
+            {
+              name: 'SSE scăzut',
+              data: [14,"rgb(147,183,139)",22,"rgb(185,207,170)",64,"rgb(222,232,220)"],
+              stacked: true
+            },
+            {
+              name: 'SSE mediu',
+              data: [2,"rgb(147,183,139)",32,"rgb(185,207,170)",66,"rgb(222,232,220)"],
+              stacked: true
+            },
+            {
+              name: 'SSE ridicat',
+              data: [9,"rgb(147,183,139)",24,"rgb(185,207,170)",67,"rgb(222,232,220)"],
+              stacked: true
+            },
+            {
+              name: 'Total RO',
+              data: [8,"rgb(67,192,197)",27,"rgb(138,214,217)",65,"rgb(201,235,237)"],
+              stacked: true
+            }
+          ],
+          legend: [
+            {
+              name: "% Deloc adevărat",
+              color: "rgb(34,149,202)"
+            },
+            {
+              name: "% Oarecum adevărat",
+              color: "rgb(121,186,220)"
+            },
+            {
+              name: "% Foarte adevărat",
+              color: "rgb(193,222,239)"
+            }
+          ],
+          step: 20
+        })
+      .panel-footer
+        p.small-text Q25: Cât de adevărate sunt următoarele afirmații în ceea ce te privește?
+        p.small-text Baza: Toți copiii care utilizează internetul.
     p Întrebați în mod specific despre cunoștințele pe care le au în ceea ce privește folosirea smartphone-ului, tot în relație cu cunoștințele părinților, observăm o variație dferită cu factorul gen, o mai puțin clară variație cu vârsta (deși diferențele sunt mari, nu avem o variație lineară) și, cu SSE regăsim oarecum același tip de variație ca la indicatorul anterior (Figura 14), cu grupul de mijloc mai încrezătoare în propriile competențe raportat la cele ale părinților.
     ul
       li Astfel fetele sunt cu 10% mai multe decât băieții înclinate să considere această afirmație ‘foarte adevărată’, fiind de asemenea cu 5% mai multe decât băieții cele care resping afirmația. Cei mai încrezători în abilitățile proprii raportat la cele ale părinților sunt cei din grupa 13-14 ani, iar cei mai puțin încrezători sunt cei mici (9-10 ani).
@@ -220,83 +232,87 @@
       | Informația este una dintre cele mai clamate oportunități ale internetului pentru copii. Totuși, cercetările anterioare (
       em e.g. 
       |ancheta EU Kids Online) a arătat că nu toți copiii apreciază în aceeași măsură conținuturile găsite pe internet, observându-se în mod clar că în țările de limbă engleză copiii sunt mai tentați să considere că există lucruri bune pe internet pentru ei; de unde concluzia ar fi că bariera lingvistică limitează oportunitățile internetului pentru unii dintre copii și că este de dorit furnizarea de conținuturi informaționale în limbile naționale.
-    p.table Figura 16: "Sunt o mulțime de lucruri pe internet care sunt bune pentru copiii de vârsta mea" (Variația pe gen, vârstă și status socio-economic)
-    +hchart({
-      legend: [
-        {
-          name: "% Deloc adevărat",
-          color: "rgb(34,149,202)"
-        },
-        {
-          name: "% Oarecum adevărat",
-          color: "rgb(121,186,220)"
-        },
-        {
-          name: "% Foarte adevărat",
-          color: "rgb(193,222,239)"
-        }
-      ],
-      bars: [
-        {
-          name: 'Total EU (7)',
-          data: [11, 'rgb(34,149,202)',48,"rgb(121,186,220)",41, "rgb(193,222,239)"],
-          stacked: true
-        },
-        {
-          name: 'Băieți',
-          data: [6, 'rgb(34,149,202)',53,"rgb(121,186,220)",41, "rgb(193,222,239)"],
-          stacked: true
-        },
-        {
-          name: 'Fete',
-          data: [10, 'rgb(34,149,202)',52,"rgb(121,186,220)",38, "rgb(193,222,239)"],
-          stacked: true
-        },
-        {
-          name: '9-10 ani',
-          data: [20, 'rgb(190,207,0)',58,"rgb(213,223,102)",22,"rgb(234,239,185)"],
-          stacked: true
-        },
-        {
-          name: '11-12 ani',
-          data: [4, 'rgb(190,207,0)',53,"rgb(213,223,102)",43,"rgb(234,239,185)"],
-          stacked: true
-        },
-        {
-          name: '13-14 ani',
-          data: [5, 'rgb(190,207,0)',51,"rgb(213,223,102)",44,"rgb(234,239,185)"],
-          stacked: true
-        },
-        {
-          name: '15-16 ani',
-          data: [7,"rgb(190,207,0)",47,"rgb(213,223,102)",46,"rgb(234,239,185)"],
-          stacked: true
-        },
-        {
-          name: 'SSE scăzut',
-          data: [13,"rgb(147,183,139)",47,"rgb(185,207,170)",40,"rgb(222,232,220)"],
-          stacked: true
-        },
-        {
-          name: 'SSE mediu',
-          data: [5,"rgb(147,183,139)",55,"rgb(185,207,170)",40,"rgb(222,232,220)"],
-          stacked: true
-        },
-        {
-          name: 'SSE ridicat',
-          data: [5,"rgb(147,183,139)",62,"rgb(185,207,170)",33,"rgb(222,232,220)"],
-          stacked: true
-        },
-        {
-          name: 'Total RO',
-          data: [8,"rgb(67,192,197)",52,"rgb(138,214,217)",40,"rgb(201,235,237)"],
-          stacked: true
-        }
-      ],
-      step: 20
-    })
-    p.small-text Q25: Cât de adevărate sunt următoarele afirmații în ceea ce te privește?
-    p.small-text Baza: Toți copiii care utilizează internetul.
+    .panel.panel-default
+      .panel-heading
+        p.table Figura 16: "Sunt o mulțime de lucruri pe internet care sunt bune pentru copiii de vârsta mea" (Variația pe gen, vârstă și status socio-economic)
+      .panel-body
+        +hchart({
+          legend: [
+            {
+              name: "% Deloc adevărat",
+              color: "rgb(34,149,202)"
+            },
+            {
+              name: "% Oarecum adevărat",
+              color: "rgb(121,186,220)"
+            },
+            {
+              name: "% Foarte adevărat",
+              color: "rgb(193,222,239)"
+            }
+          ],
+          bars: [
+            {
+              name: 'Total EU (7)',
+              data: [11, 'rgb(34,149,202)',48,"rgb(121,186,220)",41, "rgb(193,222,239)"],
+              stacked: true
+            },
+            {
+              name: 'Băieți',
+              data: [6, 'rgb(34,149,202)',53,"rgb(121,186,220)",41, "rgb(193,222,239)"],
+              stacked: true
+            },
+            {
+              name: 'Fete',
+              data: [10, 'rgb(34,149,202)',52,"rgb(121,186,220)",38, "rgb(193,222,239)"],
+              stacked: true
+            },
+            {
+              name: '9-10 ani',
+              data: [20, 'rgb(190,207,0)',58,"rgb(213,223,102)",22,"rgb(234,239,185)"],
+              stacked: true
+            },
+            {
+              name: '11-12 ani',
+              data: [4, 'rgb(190,207,0)',53,"rgb(213,223,102)",43,"rgb(234,239,185)"],
+              stacked: true
+            },
+            {
+              name: '13-14 ani',
+              data: [5, 'rgb(190,207,0)',51,"rgb(213,223,102)",44,"rgb(234,239,185)"],
+              stacked: true
+            },
+            {
+              name: '15-16 ani',
+              data: [7,"rgb(190,207,0)",47,"rgb(213,223,102)",46,"rgb(234,239,185)"],
+              stacked: true
+            },
+            {
+              name: 'SSE scăzut',
+              data: [13,"rgb(147,183,139)",47,"rgb(185,207,170)",40,"rgb(222,232,220)"],
+              stacked: true
+            },
+            {
+              name: 'SSE mediu',
+              data: [5,"rgb(147,183,139)",55,"rgb(185,207,170)",40,"rgb(222,232,220)"],
+              stacked: true
+            },
+            {
+              name: 'SSE ridicat',
+              data: [5,"rgb(147,183,139)",62,"rgb(185,207,170)",33,"rgb(222,232,220)"],
+              stacked: true
+            },
+            {
+              name: 'Total RO',
+              data: [8,"rgb(67,192,197)",52,"rgb(138,214,217)",40,"rgb(201,235,237)"],
+              stacked: true
+            }
+          ],
+          step: 20
+        })
+      .panel-footer
+        p.small-text Q25: Cât de adevărate sunt următoarele afirmații în ceea ce te privește?
+        p.small-text Baza: Toți copiii care utilizează internetul.
     ul
       li Copiii din România se află aproape de media generală în a aprecia lucrurile pozitive care se găsesc pentru ei pe internet, fiind chiar puțin mai optimiști (procentul de respingere al afirmației este de doar 8%, față de 11% la nivelul celor 7 țări).
       li

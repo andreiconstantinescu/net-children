@@ -5,12 +5,15 @@ lfa-framework()
 @import leo
 @import chart
 @import _cover
+@import _fonts
+@import url('http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,300italic|Exo:400,700&subset=latin,latin-ext')
 // General
 //
 body
   background-color: #f0f0f0
   padding: 0
-  font-family: "Source Sans Pro"
+  font-family: "Source Sans Pro", sans-serif
+  font-weight: 400
 article
   section
     background-color: #fff
@@ -26,20 +29,15 @@ article
     p
       text-align: justify
       line-height: 1.3 em
-      padding: 0 !important
       margin-top: .7em
       margin-bottom: .7em
-    p.table
-      color: #39b8bb
-      font-size: 0.9em
     em
       p
         margin: 0.5em
         font-size: 0.7em
     ul
       li
-        padding-left: 1em !important
-        text-indent: -1em
+        text-indent: -.5em
         list-style: none
       li:before
         content: '\2022'
@@ -48,10 +46,6 @@ article
         font-size: 1.5em
     table.table-responsive
       text-align: center
-      font-family: "Source Sans Pro", sans
-      border-style: solid
-      border-color: white
-      border-bottom: 4px solid #39b8bb
       font-size: 0.8em
       line-height: 1.2em
       thead
@@ -63,28 +57,48 @@ article
           border: 1px solid white
           border-collapse: collapse
           text-align: center
-          font-family: "Source Sans Pro", sans-serif
       tbody
         tr:nth-child(odd)
           background-color: white
         tr:nth-child(even)
           background-color: rgb(178,225,227)
+        tr td:not(:first-child)
+          width: 5em
         td, th
           color: black
           padding .5em
           border: 1px solid white
           border-collapse: collapse
+.panel
+  border: 1px solid #f0f0f0
+  border-radius: 5px
+  p.table, p.blue
+    font-family: "Exo", "Calibri", sans-serif
+  .panel-body
+    padding 0
+  .panel-footer
+    border-top: 4px solid #39b8bb
+  .panel-heading
+    border-bottom: 1px solid #f0f0f0
+    p
+      margin: 0
+      font-size: .8em
 .hchart
+  margin 1em
+  margin-bottom 0
   font-family: "Source Sans Pro", sans-serif
-  .hchart-row
-    margin-bottom: 1em
   @media (max-width: 750px)
     .small
       font-size: 15px
+  .hchart-row
+    margin-bottom: 1em
+  .hchart-legend
+    margin-bottom: 1em
   .progress-bar
     font-size: 15px
     color: #000
 .vchart
+  margin: .5em
   font-family: "Source Sans Pro", sans-serif
   .progress-bar
     font-size: 15px

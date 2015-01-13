@@ -2,33 +2,37 @@
   +section("4.4. Modul cum se raportează copiii la comunicarea online")
     h1 4.4. Modul cum se raportează copiii la comunicarea online
     p În ciuda opiniei strict negative pe care adulții în general o au despre ea (mai ales în termeni de consum de timp), comunicarea online este una dintre cele mai mari oportunități pe care internetul le oferă copiilor, fiind în același timp și domeniul în care este foarte dificil de trasat limita între beneficiile și riscurile pe care le implică. Tabelul 18 arată ce părere au copiii despre oportunitățile pe care comunicarea online li le oferă, în comparație cu cea față în față.
-    p.table Tabelul 18: Comparație între comunicarea online și cea offline
-    table.table-responsive
-      thead
-        tr
-          td % din cei care spun că...
-          td Nu este adevărat
-          td Parțial adevărat
-          td Foarte adevărat
-      tbody
-        tr
-          td Îmi este mai uşor să fiu eu însumi pe internet decât atunci când sunt faţă în faţă cu oamenii  
-          td 46
-          td 41 
-          td 13
-        tr
-          td Pe internet vorbesc despre lucruri diferite faţă de atunci când vorbesc cu oamenii faţă în faţă 
-          td 56
-          td 30
-          td 14
-        tr
-          td Pe internet vorbesc despre lucruri personale pe care nu le împărtăşesc când vorbesc cu oamenii faţă în faţă
-          td 69
-          td 21
-          td 10
-    p.small-text Q47: Cât de adevărate sunt aceste lucruri pentru tine?
-      br
-      | Baza: Toți copiii care utilizează internetul.
+    .panel.panel-default
+      .panel-heading
+        p.table Tabelul 18: Comparație între comunicarea online și cea offline
+      .panel-body
+        table.table-responsive
+          thead
+            tr
+              td % din cei care spun că...
+              td Nu este adevărat
+              td Parțial adevărat
+              td Foarte adevărat
+          tbody
+            tr
+              td Îmi este mai uşor să fiu eu însumi pe internet decât atunci când sunt faţă în faţă cu oamenii  
+              td 46
+              td 41 
+              td 13
+            tr
+              td Pe internet vorbesc despre lucruri diferite faţă de atunci când vorbesc cu oamenii faţă în faţă 
+              td 56
+              td 30
+              td 14
+            tr
+              td Pe internet vorbesc despre lucruri personale pe care nu le împărtăşesc când vorbesc cu oamenii faţă în faţă
+              td 69
+              td 21
+              td 10
+      .panel-footer
+        p.small-text Q47: Cât de adevărate sunt aceste lucruri pentru tine?
+          br
+          | Baza: Toți copiii care utilizează internetul.
     ul
       li
         strong Copiii din România par să se exprime mai autentic, pe internet decât față în față
@@ -37,72 +41,76 @@
     p Cercetarea calitativă a arătat înă că de multe ori, această deschidere a copiilor spre comunicare pe internet este însoțită de un autentic spirit critic.
     em 
       p “Pentru că pe facebook persoanele sunt într-un fel, în realitate sunt altfel. Acolo, nu știu, vrei să pari o anumită persoană foarte inteligentă și foarte nu știu cum și în realitate  ești exact opusul. Sau dacă o persoană are mai multe like-uri pe facebook, automat este cea mai populară din școală și chestiile astea mie nu-mi plac. Adică nu, nu neapărat se merită, e o tâmpenie dacă stai să te gândești.” (fată, 13, I10)
-    p Figura 13 arată care sunt copiii (în termeni de gen, vârstă și SSE) care au răspuns că este parțial adevărat sau foarte adevărat în ceea ce îi privește fiecare dintre afirmațiile care testau modul în care ei se raportau la comunicarea pe internet. 
-    p.table Figura 13: Comparație între comunicarea online și cea offline în funcție de gen, vârstă și status socio-economic
-    +hchart({
-      bars: [
-        {
-          name: 'Total EU(7)',
-          data: [21, '#b9d9ec', 34, '#6eb1d6', 36, '#1d8bc3'],
-        },
-        {
-          name: 'Băieți',
-          data: [25, '#b9d9ec', 44, '#6eb1d6', 47, '#1d8bc3'],
-        },
-        {
-          name: 'Fete',
-          data: [37, '#b9d9ec', 44, '#6eb1d6', 59, '#1d8bc3'],
-        },
-        {
-          name: '9-10 ani',
-          data: [35, '#e7ecb1', 43, '#ced95b', 48, '#b6c800'],
-        },
-        {
-          name: '11-12 ani',
-          data: [25, '#e7ecb1', 48, '#ced95b', 52, '#b6c800'],
-        },
-        {
-          name: '13-14 ani',
-          data: [33, '#e7ecb1', 42, '#ced95b', 57, '#b6c800'],
-        },
-        {
-          name: '15-16 ani',
-          data: [32, '#e7ecb1', 43, '#ced95b', 57, '#b6c800'],
-        },
-        {
-          name: 'SSE scăzut',
-          data: [42, '#d9e4d6', 51, '#b0c8a0', 66, '#88ae80'],
-        },
-        {
-          name: 'SSE mediu',
-          data: [20, '#d9e4d6', 40, '#b0c8a0', 45, '#88ae80'],
-        },
-        {
-          name: 'SSE ridicat',
-          data: [32, '#d9e4d6', 37, '#b0c8a0', 46, '#88ae80'],
-        },
-        {
-          name: 'Total RO',
-          data: [31, '#c2e7ea', 44, '#7fd0d3', 54, '#3ab8bd'],
-        }
-      ],
-      legend: [
-        {
-          name: "% Pe internet vorbesc despre lucruri private",
-          color: "#c2e7ea"
-        },
-        {
-          name: "% Vorbesc despre diferite lucruri pe internet",
-          color: "#7fd0d3"
-        },
-        {
-          name: "% Îmi este mai ușor să fiu eu însumi pe internet",
-          color: "#3ab8bd"
-        }
-      ]
-    })
-    p.small-text Q47: Cât de adevărate sunt aceste lucruri pentru tine?
-    p.small-text Baza: Toți copiii care utilizează internetul.
+    p Figura 13 arată care sunt copiii (în termeni de gen, vârstă și SSE) care au răspuns că este parțial adevărat sau foarte adevărat în ceea ce îi privește fiecare dintre afirmațiile care testau modul în care ei se raportau la comunicarea pe internet.
+    .panel.panel-default
+      .panel-heading
+        p.table Figura 13: Comparație între comunicarea online și cea offline în funcție de gen, vârstă și status socio-economic
+      .panel-body
+        +hchart({
+          bars: [
+            {
+              name: 'Total EU(7)',
+              data: [21, '#b9d9ec', 34, '#6eb1d6', 36, '#1d8bc3'],
+            },
+            {
+              name: 'Băieți',
+              data: [25, '#b9d9ec', 44, '#6eb1d6', 47, '#1d8bc3'],
+            },
+            {
+              name: 'Fete',
+              data: [37, '#b9d9ec', 44, '#6eb1d6', 59, '#1d8bc3'],
+            },
+            {
+              name: '9-10 ani',
+              data: [35, '#e7ecb1', 43, '#ced95b', 48, '#b6c800'],
+            },
+            {
+              name: '11-12 ani',
+              data: [25, '#e7ecb1', 48, '#ced95b', 52, '#b6c800'],
+            },
+            {
+              name: '13-14 ani',
+              data: [33, '#e7ecb1', 42, '#ced95b', 57, '#b6c800'],
+            },
+            {
+              name: '15-16 ani',
+              data: [32, '#e7ecb1', 43, '#ced95b', 57, '#b6c800'],
+            },
+            {
+              name: 'SSE scăzut',
+              data: [42, '#d9e4d6', 51, '#b0c8a0', 66, '#88ae80'],
+            },
+            {
+              name: 'SSE mediu',
+              data: [20, '#d9e4d6', 40, '#b0c8a0', 45, '#88ae80'],
+            },
+            {
+              name: 'SSE ridicat',
+              data: [32, '#d9e4d6', 37, '#b0c8a0', 46, '#88ae80'],
+            },
+            {
+              name: 'Total RO',
+              data: [31, '#c2e7ea', 44, '#7fd0d3', 54, '#3ab8bd'],
+            }
+          ],
+          legend: [
+            {
+              name: "% Pe internet vorbesc despre lucruri private",
+              color: "#c2e7ea"
+            },
+            {
+              name: "% Vorbesc despre diferite lucruri pe internet",
+              color: "#7fd0d3"
+            },
+            {
+              name: "% Îmi este mai ușor să fiu eu însumi pe internet",
+              color: "#3ab8bd"
+            }
+          ]
+        })
+      .panel-footer
+        p.small-text Q47: Cât de adevărate sunt aceste lucruri pentru tine?
+        p.small-text Baza: Toți copiii care utilizează internetul.
     ul
       li Diferențele de gen sunt notabile (12%) în ceea ce privește ușurința cu care fetele pot să fie mai ‘autentice’ în online față de offline și de asemenea în ceea ce privește abordarea unor subiecte mai personale în cadrul discuțiilor pe internet. 
       li Cu vârsta, o variație constantă dar nu majoră apare doar în ceea ce privește facilitarea unui comportament mai autentic în comunicarea online, diferențele însă nefiind majore (10%) între grupa cea mai mică și grupa cea mai mare, în sensul în care adolescenții sunt mai dispuși să spună că găsesc mai ușoară, sub acest aspect, comunicarea online față de cea offline. 
