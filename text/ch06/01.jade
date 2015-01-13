@@ -3,58 +3,62 @@
     h1 6.1. Percepția globală asupra riscurilor și consecințelor dăunătoare
     p Înainte de a fi întrebați despre riscurile specifice, o întrebare generală despre experiențele negative avute pe internet a fost adresată copiilor. Figura 19 arată cum variază aceste experiențe în eșantionul românesc, în funcție de vârstă, gen și SSE. 
     p Astfel, 27% dintre copiii din România au avut o experiență neplăcută pe internet în ultimele 12 luni, cu 10% mai mult decât la nivelul eșantionului general cuprinzând toate țările (7). Mai expuși la situații negative online decât copiii din România sunt cei din Danemarca, 39% declarând că au avut o astfel de experiență în ultimul an. La polul opus se află Italia, cu 6%, Belgia cu 9% și Portugalia cu 10%.  
-    p.table Figura 19: Copiii care au experimentat lucruri neplăcute pe internet (%), în funcție de gen, vârstă și status socio-economic
-    +hchart({
-      bars: [
-        {
-          name: 'Total EU(7)',
-          data: [17, '#f38800'],
-        },
-        {
-          name: 'Băieți',
-          data: [20, '#1d8bc3'],
-        },
-        {
-          name: 'Fete',
-          data: [33, '#1d8bc3'],
-        },
-        {
-          name: '9-10 ani',
-          data: [19, '#b6c800'],
-        },
-        {
-          name: '11-12 ani',
-          data: [24, '#b6c800'],
-        },
-        {
-          name: '13-14 ani',
-          data: [25, '#b6c800'],
-        },
-        {
-          name: '15-16 ani',
-          data: [38, '#b6c800'],
-        },
-        {
-          name: 'SSE scăzut',
-          data: [28, '#88ae80'],
-        },
-        {
-          name: 'SSE mediu',
-          data: [27, '#88ae80'],
-        },
-        {
-          name: 'SSE ridicat',
-          data: [27, '#88ae80'],
-        },
-        {
-          name: 'Total RO',
-          data: [27, '#3ab8bd'],
-        }
-      ],
-      step:20
-    })
-    p.small-text Q30: În ULTIMELE 12 LUNI ai văzut sau ai experimentat pe internet lucruri care te-au deranjat în vreun fel? Adică te-au făcut să te simţi neplăcut, supărat sau ai simţit că era mai bine să nu le fi văzut?
-    p.small-text Baza: Toți copiii care utilizează internetul.
+    .panel.panel-default
+      .panel-heading
+        p.table Figura 19: Copiii care au experimentat lucruri neplăcute pe internet (%), în funcție de gen, vârstă și status socio-economic
+      .panel-body
+        +hchart({
+          bars: [
+            {
+              name: 'Total EU(7)',
+              data: [17, '#f38800'],
+            },
+            {
+              name: 'Băieți',
+              data: [20, '#1d8bc3'],
+            },
+            {
+              name: 'Fete',
+              data: [33, '#1d8bc3'],
+            },
+            {
+              name: '9-10 ani',
+              data: [19, '#b6c800'],
+            },
+            {
+              name: '11-12 ani',
+              data: [24, '#b6c800'],
+            },
+            {
+              name: '13-14 ani',
+              data: [25, '#b6c800'],
+            },
+            {
+              name: '15-16 ani',
+              data: [38, '#b6c800'],
+            },
+            {
+              name: 'SSE scăzut',
+              data: [28, '#88ae80'],
+            },
+            {
+              name: 'SSE mediu',
+              data: [27, '#88ae80'],
+            },
+            {
+              name: 'SSE ridicat',
+              data: [27, '#88ae80'],
+            },
+            {
+              name: 'Total RO',
+              data: [27, '#3ab8bd'],
+            }
+          ],
+          step:20
+        })
+      .panel-footer
+        p.small-text Q30: În ULTIMELE 12 LUNI ai văzut sau ai experimentat pe internet lucruri care te-au deranjat în vreun fel? Adică te-au făcut să te simţi neplăcut, supărat sau ai simţit că era mai bine să nu le fi văzut?
+        p.small-text Baza: Toți copiii care utilizează internetul.
     ul
       li
         |În România 
@@ -70,60 +74,64 @@
         strong a crescut, de la 21% la 27%
         |.
     p Figura 20 (preluată din Mascheroni & Olaffson, 2014) arată cum variază, în fiecare dintre țările din proiect, experiențele online negative avute în ultimul an, în grupele utilizatorilor de smartphone, utilizatorilor de tabletă și celor care nu utilizează niciun dispozitiv mobil:
-    p.table Figura 20: Distribuția copiilor care au experimentat lucruri neplăcute pe internet, în funcție de faptul de a fi sau nu utilizatori de dispozitive mobile
-    +hchart({
-      bars: [
-        {
-          name: 'Belgia',
-          data: [15, '#fbd8b1', 14, '#f7ad57', 7, '#f38800'],
-        },
-        {
-          name: 'Danemarca',
-          data: [40, '#fbd8b1', 41, '#f7ad57', 37, '#f38800'],
-        },
-        {
-          name: 'Irlanda',
-          data: [25, '#fbd8b1', 23, '#f7ad57', 18, '#f38800'],
-        },
-        {
-          name: 'Italia',
-          data: [9, '#fbd8b1', 12, '#f7ad57', 2, '#f38800'],
-        },
-        {
-          name: 'Portugalia',
-          data: [12, '#fbd8b1', 9, '#f7ad57', 9, '#f38800'],
-        },
-        {
-          name: 'România',
-          data: [43, '#fbd8b1', 52, '#f7ad57', 23, '#f38800'],
-        },
-        {
-          name: 'Marea Britanie',
-          data: [22, '#fbd8b1', 28, '#f7ad57', 2, '#f38800'],
-        },
-        {
-          name: 'Total EU',
-          data: [24, '#c2e7ea', 25, '#7fd0d3', 12, '#3ab8bd'],
-        }
-      ],
-      legend: [
-        {
-          name: "% Dintre utilizatorii de smartphone",
-          color: "#c2e7ea"
-        },
-        {
-          name: "% Dintre utilizatorii de tablete",
-          color: "#7fd0d3"
-        },
-        {
-          name: "% Nu utilizează niciun dispozitiv mobil",
-          color: "#3ab8bd"
-        }
-      ],
-      step: 20
-    })
-    p.small-text Q30: În ULTIMELE 12 LUNI ai văzut sau ai experimentat pe internet lucruri care te-au deranjat în vreun fel? Adică te-au făcut să te simţi neplăcut, supărat sau ai simţit că era mai bine să nu le fi văzut?
-    p.small-text Baza: Toți copiii care utilizează internetul.
+    .panel.panel-default
+      .panel-heading
+        p.table Figura 20: Distribuția copiilor care au experimentat lucruri neplăcute pe internet, în funcție de faptul de a fi sau nu utilizatori de dispozitive mobile
+      .panel-body
+        +hchart({
+          bars: [
+            {
+              name: 'Belgia',
+              data: [15, '#fbd8b1', 14, '#f7ad57', 7, '#f38800'],
+            },
+            {
+              name: 'Danemarca',
+              data: [40, '#fbd8b1', 41, '#f7ad57', 37, '#f38800'],
+            },
+            {
+              name: 'Irlanda',
+              data: [25, '#fbd8b1', 23, '#f7ad57', 18, '#f38800'],
+            },
+            {
+              name: 'Italia',
+              data: [9, '#fbd8b1', 12, '#f7ad57', 2, '#f38800'],
+            },
+            {
+              name: 'Portugalia',
+              data: [12, '#fbd8b1', 9, '#f7ad57', 9, '#f38800'],
+            },
+            {
+              name: 'România',
+              data: [43, '#fbd8b1', 52, '#f7ad57', 23, '#f38800'],
+            },
+            {
+              name: 'Marea Britanie',
+              data: [22, '#fbd8b1', 28, '#f7ad57', 2, '#f38800'],
+            },
+            {
+              name: 'Total EU',
+              data: [24, '#c2e7ea', 25, '#7fd0d3', 12, '#3ab8bd'],
+            }
+          ],
+          legend: [
+            {
+              name: "% Dintre utilizatorii de smartphone",
+              color: "#c2e7ea"
+            },
+            {
+              name: "% Dintre utilizatorii de tablete",
+              color: "#7fd0d3"
+            },
+            {
+              name: "% Nu utilizează niciun dispozitiv mobil",
+              color: "#3ab8bd"
+            }
+          ],
+          step: 20
+        })
+      .panel-footer
+        p.small-text Q30: În ULTIMELE 12 LUNI ai văzut sau ai experimentat pe internet lucruri care te-au deranjat în vreun fel? Adică te-au făcut să te simţi neplăcut, supărat sau ai simţit că era mai bine să nu le fi văzut?
+        p.small-text Baza: Toți copiii care utilizează internetul.
     ul
       li Se observă că, în România, utilizatorii de tabletă raportează astfel de experiențe online  negative în mult mai mare măsură  (52%) decât ne-utilizatorii de dispozitive mobile (23%) sau decât utilizatorii de smartphone (43%). Același tip de variație îl regăsim în Marea Britanie, Italia și, în mică măsură, în Damenarca, în timp ce în Belgia și Irlanda utilizatorii de smartphone sunt cei mai expuși experiențelor online neplăcute. 
     p

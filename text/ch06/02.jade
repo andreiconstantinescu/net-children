@@ -50,87 +50,91 @@
       |(din eșantionul total pentru România, nu doar din cei care au fost victime) 
       strong fiind ‘foarte supărați’ de experiență, 22% fiind ‘puțin supărați’ și 8% nefiind deloc deranjați de experiență
       |:
-    p.table Figura 21: Copiii care au fost victime ale unui act de bullying, online sau offline, în ultimele 12 luni
-    +hchart({
-      bars: [
-        {
-          name: 'Total EU(7)',
-          data: [5, '#3ab8bd', 12, '#7fd0d3', 6, '#c2e7ea', 77, '#e8e8e8'],
-          stacked: true
-        },
-        {
-          name: 'Băieți',
-          data: [10, '#1d8bc3', 23, '#6eb1d6', 9, '#b9d9ec', 58, '#e8e8e8'],
-          stacked: true
-        },
-        {
-          name: 'Fete',
-          data: [12, '#1d8bc3', 21, '#6eb1d6', 7, '#b9d9ec', 59, '#e8e8e8'],
-          stacked: true
-        },
-        {
-          name: '9-10 ani',
-          data: [14, '#b6c800', 17, '#ced95b', 6, '#e7ecb1', 63, '#e8e8e8'],
-          stacked: true
-        },
-        {
-          name: '11-12 ani',
-          data: [8, '#b6c800', 25, '#ced95b', 3, '#e7ecb1', 64, '#e8e8e8'],
-          stacked: true
-        },
-        {
-          name: '13-14 ani',
-          data: [12, '#b6c800', 24, '#ced95b', 9, '#e7ecb1', 55, '#e8e8e8'],
-          stacked: true
-        },
-        {
-          name: '15-16 ani',
-          data: [12, '#b6c800', 21, '#ced95b', 13, '#e7ecb1', 54, '#e8e8e8'],
-          stacked: true
-        },
-        {
-          name: 'SSE scăzut',
-          data: [12, '#88ae80', 21, '#b0c8a0', 6, '#d9e4d6', 61, '#e8e8e8'],
-          stacked: true
-        },
-        {
-          name: 'SSE mediu',
-          data: [8, '#88ae80', 21, '#b0c8a0', 11, '#d9e4d6', 60, '#e8e8e8'],
-          stacked: true
-        },
-        {
-          name: 'SSE ridicat',
-          data: [9, '#88ae80', 32, '#b0c8a0', 8, '#d9e4d6', 51, '#e8e8e8'],
-          stacked: true
-        },
-        {
-          name: 'Total RO',
-          data: [11, '#3ab8bd', 22, '#7fd0d3', 8, '#c2e7ea', 59, '#e8e8e8'],
-          stacked: true
-        }
-      ],
-      legend: [
-        {
-          name: "% Da, am fost foarte supărat",
-          color: "#3ab8bd"
-        },
-        {
-          name: "% Da, am fost puțin supărat",
-          color: "#7fd0d3"
-        },
-        {
-          name: "% Da, dar nu am fost supărat deloc",
-          color: "#c2e7ea"
-        },
-        {
-          name: "% Nu, nu mi s-a întâmplat",
-          color: "#e8e8e8"
-        }
-      ],
-      step: 20 
-    })
-    p.small-text Q32: În ULTIMELE 12 LUNI, s-a purtat cineva cu tine în acest fel?  Iar dacă s-a întâmplat, cât de supărat ai fost pentru ce s-a întâmplat?
-    p.small-text Baza: Toți copiii care utilizează internetul.
+    .panel.panel-default
+      .panel-heading
+        p.table Figura 21: Copiii care au fost victime ale unui act de bullying, online sau offline, în ultimele 12 luni
+      .panel-body
+        +hchart({
+          bars: [
+            {
+              name: 'Total EU(7)',
+              data: [5, '#3ab8bd', 12, '#7fd0d3', 6, '#c2e7ea', 77, '#e8e8e8'],
+              stacked: true
+            },
+            {
+              name: 'Băieți',
+              data: [10, '#1d8bc3', 23, '#6eb1d6', 9, '#b9d9ec', 58, '#e8e8e8'],
+              stacked: true
+            },
+            {
+              name: 'Fete',
+              data: [12, '#1d8bc3', 21, '#6eb1d6', 7, '#b9d9ec', 59, '#e8e8e8'],
+              stacked: true
+            },
+            {
+              name: '9-10 ani',
+              data: [14, '#b6c800', 17, '#ced95b', 6, '#e7ecb1', 63, '#e8e8e8'],
+              stacked: true
+            },
+            {
+              name: '11-12 ani',
+              data: [8, '#b6c800', 25, '#ced95b', 3, '#e7ecb1', 64, '#e8e8e8'],
+              stacked: true
+            },
+            {
+              name: '13-14 ani',
+              data: [12, '#b6c800', 24, '#ced95b', 9, '#e7ecb1', 55, '#e8e8e8'],
+              stacked: true
+            },
+            {
+              name: '15-16 ani',
+              data: [12, '#b6c800', 21, '#ced95b', 13, '#e7ecb1', 54, '#e8e8e8'],
+              stacked: true
+            },
+            {
+              name: 'SSE scăzut',
+              data: [12, '#88ae80', 21, '#b0c8a0', 6, '#d9e4d6', 61, '#e8e8e8'],
+              stacked: true
+            },
+            {
+              name: 'SSE mediu',
+              data: [8, '#88ae80', 21, '#b0c8a0', 11, '#d9e4d6', 60, '#e8e8e8'],
+              stacked: true
+            },
+            {
+              name: 'SSE ridicat',
+              data: [9, '#88ae80', 32, '#b0c8a0', 8, '#d9e4d6', 51, '#e8e8e8'],
+              stacked: true
+            },
+            {
+              name: 'Total RO',
+              data: [11, '#3ab8bd', 22, '#7fd0d3', 8, '#c2e7ea', 59, '#e8e8e8'],
+              stacked: true
+            }
+          ],
+          legend: [
+            {
+              name: "% Da, am fost foarte supărat",
+              color: "#3ab8bd"
+            },
+            {
+              name: "% Da, am fost puțin supărat",
+              color: "#7fd0d3"
+            },
+            {
+              name: "% Da, dar nu am fost supărat deloc",
+              color: "#c2e7ea"
+            },
+            {
+              name: "% Nu, nu mi s-a întâmplat",
+              color: "#e8e8e8"
+            }
+          ],
+          step: 20 
+        })
+      .panel-footer
+        p.small-text Q32: În ULTIMELE 12 LUNI, s-a purtat cineva cu tine în acest fel?  Iar dacă s-a întâmplat, cât de supărat ai fost pentru ce s-a întâmplat?
+        p.small-text Baza: Toți copiii care utilizează internetul.
     ul
       li Spre deosebire de eșantionul general, în România factorul gen nu influențează probabilitatea de a fi victime ale acestui tip de agresiune, fetele fiind totuși ușor mai înclinate decât băieții în a afirma că această experiență a fost ‘foarte supărătoare’ pentru ele.
       li Variația în funcție de vârstă, în ceea ce privește probabilitatea de a fi victimă a unui act de bullying, ne arată că putem vorbi de două grupuri distincte: cel al pre-adolescenților (9-12 ani) – în care în jur de 36% dintre copii au avut această experiență în ultimul an – și grupul adolescenților (13-16 ani), unde întâlnim în jur de 45% victime. 
@@ -138,102 +142,106 @@
     ul
       li Deși SSE este asociat pozitiv cu probabilitatea de a fi expuși, cei cu SSE superior declarând cu 10% mai mult decât ceilalți că au avut o astfel de experiență, totuși respectivii copii reușesc să treacă repede peste supărarea provocată de experiență.
     p Tabelul 32 arată pentru fiecare grupă de vârstă, care sunt modurile concrete prin care agresiunea a avut loc.
-    p.table Tabelul 32: Modurile în care copiii au fost supuși în ultimele 12 luni agresiunii de tip bullying, în funcție de vârstă
-    table.table-responsive
-      thead
-        tr
-          td(rowspan="2") %
-          td(colspan="4") Vârsta
-          td(rowspan="2") Total RO
-          td(rowspan="2") Total EU (7)
-        tr
-          td 9-10
-          td 11-12
-          td 13-14
-          td 15-16
-      tbody
-        tr
-          td Personal, faţă în faţă 
-          td 25
-          td 18
-          td 17
-          td 19
-          td 20
-          td 10
-        tr
-          td Prin convorbiri la telefonul mobil
-          td 7
-          td 2
-          td 4
-          td 8
-          td 5
-          td 2
-        tr
-          td Prin mesaje trimise pe telefonul meu (SMS sau MMS)
-          td 1
-          td 4
-          td 7
-          td 12
-          td 6
-          td 3
-        tr
-          td Printr-o  reţea de socializare (ex. Facebook, Twitter)
-          td 3
-          td 10
-          td 12
-          td 7
-          td 8
-          td 7
-        tr
-          td Pe o platforma de sharing media (Youtube, Instagram)
-          td 0
-          td 0
-          td 0
-          td 2
-          td 1
-          td 1
-        tr
-          td Prin mesaje instantanee (Yahoo Mess, WhatsApp, Skype )
-          td 3
-          td 0
-          td 1
-          td 5
-          td 2
-          td 2
-        tr
-          td Într-o  cameră de chat (chat cu o persoană necunoscută)
-          td 0
-          td 1
-          td 0
-          td 0
-          td 0
-          td 1
-        tr
-          td Prin e-mail
-          td 0
-          td 0
-          td 0
-          td 0
-          td 0
-          td 0
-        tr
-          td Pe un site de jocuri
-          td 2
-          td 6
-          td 4
-          td 4
-          td 4
-          td 2
-        tr
-          td În orice mod dacă s-a întâmplat prin internet sau telefon mobil (cyberbullying) 
-          td 15
-          td 18
-          td 23
-          td 19
-          td 19
-          td 12
-    p.small-text Q33: Dacă cineva s-a purtat cu tine în acest fel, unde s-a întâmplat? (Răspuns multiplu).
-    p.small-text Baza: Toți copiii care utilizează internetul.
+    .panel.panel-default
+      .panel-heading
+        p.table Tabelul 32: Modurile în care copiii au fost supuși în ultimele 12 luni agresiunii de tip bullying, în funcție de vârstă
+      .panel-body
+        table.table-responsive
+          thead
+            tr
+              td(rowspan="2") %
+              td(colspan="4") Vârsta
+              td(rowspan="2") Total RO
+              td(rowspan="2") Total EU (7)
+            tr
+              td 9-10
+              td 11-12
+              td 13-14
+              td 15-16
+          tbody
+            tr
+              td Personal, faţă în faţă 
+              td 25
+              td 18
+              td 17
+              td 19
+              td 20
+              td 10
+            tr
+              td Prin convorbiri la telefonul mobil
+              td 7
+              td 2
+              td 4
+              td 8
+              td 5
+              td 2
+            tr
+              td Prin mesaje trimise pe telefonul meu (SMS sau MMS)
+              td 1
+              td 4
+              td 7
+              td 12
+              td 6
+              td 3
+            tr
+              td Printr-o  reţea de socializare (ex. Facebook, Twitter)
+              td 3
+              td 10
+              td 12
+              td 7
+              td 8
+              td 7
+            tr
+              td Pe o platforma de sharing media (Youtube, Instagram)
+              td 0
+              td 0
+              td 0
+              td 2
+              td 1
+              td 1
+            tr
+              td Prin mesaje instantanee (Yahoo Mess, WhatsApp, Skype )
+              td 3
+              td 0
+              td 1
+              td 5
+              td 2
+              td 2
+            tr
+              td Într-o  cameră de chat (chat cu o persoană necunoscută)
+              td 0
+              td 1
+              td 0
+              td 0
+              td 0
+              td 1
+            tr
+              td Prin e-mail
+              td 0
+              td 0
+              td 0
+              td 0
+              td 0
+              td 0
+            tr
+              td Pe un site de jocuri
+              td 2
+              td 6
+              td 4
+              td 4
+              td 4
+              td 2
+            tr
+              td În orice mod dacă s-a întâmplat prin internet sau telefon mobil (cyberbullying) 
+              td 15
+              td 18
+              td 23
+              td 19
+              td 19
+              td 12
+      .panel-footer
+        p.small-text Q33: Dacă cineva s-a purtat cu tine în acest fel, unde s-a întâmplat? (Răspuns multiplu).
+        p.small-text Baza: Toți copiii care utilizează internetul.
     ul
       li
         strong Agresiunea față în față rămâne cea mai frecventă 
@@ -246,26 +254,30 @@
         em e.g. 
         |agresiunea pe platformele de socializare), fie că nu mai este performat acel comportament, fie că utilizatorul a devenit mai competent și știe să preîntâmpine astfel de situații.
     p Tabelul 33 arată modul în care copiii sunt victime ale agresiunii în funcție de faptul de a utiliza sau nu un dispozitiv mobil:
-    p.table Tabelul 33: Ocurența bullying-ului și a cyberbullying-ului (în ultimele 12 luni) printre utilizatorii de dispozitive mobile
-    table.table-responsive
-      thead
-        td %
-        td Utilizatori de smartphone 
-        td Utilizatori de tablete
-        td Nu utilizează niciun dispozitiv mobil
-      tbody
-        tr
-          td A fost victima unui act de cyberbullying
-          td 27
-          td 26
-          td 17
-        tr
-          td A fost victima unui act de bullying față în față
-          td 16
-          td 18
-          td 21
-    p.small-text Q33: Daca cineva s-a purtat cu tine în acest fel, unde s-a întâmplat? (Răspuns multiplu).
-    p.small-text Baza: Toți copiii care utilizează internetul.
+    .panel.panel-default
+      .panel-heading
+        p.table Tabelul 33: Ocurența bullying-ului și a cyberbullying-ului (în ultimele 12 luni) printre utilizatorii de dispozitive mobile
+      .panel-body
+        table.table-responsive
+          thead
+            td %
+            td Utilizatori de smartphone 
+            td Utilizatori de tablete
+            td Nu utilizează niciun dispozitiv mobil
+          tbody
+            tr
+              td A fost victima unui act de cyberbullying
+              td 27
+              td 26
+              td 17
+            tr
+              td A fost victima unui act de bullying față în față
+              td 16
+              td 18
+              td 21
+      .panel-footer
+        p.small-text Q33: Daca cineva s-a purtat cu tine în acest fel, unde s-a întâmplat? (Răspuns multiplu).
+        p.small-text Baza: Toți copiii care utilizează internetul.
     ul 
       li
         |Atât în cazul 
@@ -276,102 +288,106 @@
         strong este mai puțin probabil să fi fost victime ale bullying-ului față în față decât ne-utilizatorii
         |.  
     p Tabelul 34 arată procentul celor care declară că au agresat pe cineva pe internet sau în afara acestuia:
-    p.table Tabelul 34: Moduri în care copiii au fost agresori în ultimele 12 luni, într-o situație de tip bullying,  în funcție de vârstă
-    table.table-responsive
-      thead
-        tr
-          td(rowspan="2") %
-          td(colspan="4") Vârsta
-          td(rowspan="2") Total RO
-          td(rowspan="2") Total EU (7)
-        tr
-          td 9-10
-          td 11-12
-          td 13-14
-          td 15-16
-      tbody
-        tr
-          td Personal, faţă în faţă 
-          td 10
-          td 22
-          td 7
-          td 20
-          td 15
-          td 8
-        tr
-          td Prin convorbiri la telefonul mobil
-          td 11
-          td 4
-          td 7
-          td 11
-          td 8
-          td 2
-        tr
-          td Prin mesaje trimise pe telefonul meu (SMS sau MMS)
-          td 1
-          td 5
-          td 1
-          td 11
-          td 5
-          td 3
-        tr
-          td Printr-o  reţea de socializare (ex. Facebook, Twitter)
-          td 3
-          td 12
-          td 4
-          td 5
-          td 6
-          td 3
-        tr
-          td Pe o platforma de sharing media (Youtube, Instagram)
-          td 0
-          td 0
-          td 0
-          td 1
-          td 0
-          td 1
-        tr
-          td Prin mesaje instantanee (Yahoo Mess, WhatsApp, Skype )
-          td 2
-          td 2
-          td 5
-          td 2
-          td 3
-          td 1
-        tr
-          td Într-o  cameră de chat (chat cu o persoană necunoscută)
-          td 0
-          td 2
-          td 6
-          td 0
-          td 2
-          td 1
-        tr
-          td Prin e-mail
-          td 0
-          td 2
-          td 1
-          td 3
-          td 2
-          td 0
-        tr
-          td Pe un site de jocuri
-          td 6
-          td 1
-          td 7
-          td 4
-          td 5
-          td 2
-        tr
-          td În orice mod dacă s-a întâmplat prin internet sau telefon mobil (cyberbullying) 
-          td 21
-          td 16
-          td 13
-          td 25
-          td 19
-          td 8
-    p.small-text Q34: În ULTIMELE 12 LUNI, te-ai purtat cu cineva în acest fel? Dacă da, cum ai făcut-o? (Răspuns multiplu).
-    p.small-text Baza: Toți copiii care utilizează internetul.
+    .panel.panel-default
+      .panel-heading
+        p.table Tabelul 34: Moduri în care copiii au fost agresori în ultimele 12 luni, într-o situație de tip bullying,  în funcție de vârstă
+      .panel-body
+        table.table-responsive
+          thead
+            tr
+              td(rowspan="2") %
+              td(colspan="4") Vârsta
+              td(rowspan="2") Total RO
+              td(rowspan="2") Total EU (7)
+            tr
+              td 9-10
+              td 11-12
+              td 13-14
+              td 15-16
+          tbody
+            tr
+              td Personal, faţă în faţă 
+              td 10
+              td 22
+              td 7
+              td 20
+              td 15
+              td 8
+            tr
+              td Prin convorbiri la telefonul mobil
+              td 11
+              td 4
+              td 7
+              td 11
+              td 8
+              td 2
+            tr
+              td Prin mesaje trimise pe telefonul meu (SMS sau MMS)
+              td 1
+              td 5
+              td 1
+              td 11
+              td 5
+              td 3
+            tr
+              td Printr-o  reţea de socializare (ex. Facebook, Twitter)
+              td 3
+              td 12
+              td 4
+              td 5
+              td 6
+              td 3
+            tr
+              td Pe o platforma de sharing media (Youtube, Instagram)
+              td 0
+              td 0
+              td 0
+              td 1
+              td 0
+              td 1
+            tr
+              td Prin mesaje instantanee (Yahoo Mess, WhatsApp, Skype )
+              td 2
+              td 2
+              td 5
+              td 2
+              td 3
+              td 1
+            tr
+              td Într-o  cameră de chat (chat cu o persoană necunoscută)
+              td 0
+              td 2
+              td 6
+              td 0
+              td 2
+              td 1
+            tr
+              td Prin e-mail
+              td 0
+              td 2
+              td 1
+              td 3
+              td 2
+              td 0
+            tr
+              td Pe un site de jocuri
+              td 6
+              td 1
+              td 7
+              td 4
+              td 5
+              td 2
+            tr
+              td În orice mod dacă s-a întâmplat prin internet sau telefon mobil (cyberbullying) 
+              td 21
+              td 16
+              td 13
+              td 25
+              td 19
+              td 8
+      .panel-footer
+        p.small-text Q34: În ULTIMELE 12 LUNI, te-ai purtat cu cineva în acest fel? Dacă da, cum ai făcut-o? (Răspuns multiplu).
+        p.small-text Baza: Toți copiii care utilizează internetul.
     ul
       li
         strong Agresiunea față în față rămâne cea mai frecventă 
@@ -380,26 +396,30 @@
         |.
       li Dacă copiii declară că sunt agresați (atunci când este folosită o tehnologie) cel mai mult pe o platformă de socializare, urmat de mesaje de tip SMS și convorbiri telefonice, când sunt agresori folosesc mai degrabă convorbirile telefonice (populare în grupele de vârstă extreme), urmate de platformele de socializare, unde cei mai agresivi sunt cei de 11-12 ani (care nu ar trebui să fie acolo) și de SMS-uri, preferate de adolescenții de 15-16 ani.
     p Ca și în cazul situației de victimă, și în cazul agresorilor, ne interesează, așa cum arată Tabelul 35 cum variază aceasta cu folosirea sau nu a internetului de pe dispozitive mobile.
-    p.table Tabelul 35: Ocurența (în ultimele 12 luni) a comportamentelor agresive de tip bullying și cyberbullying printre utilizatorii de dispozitive mobile
-    table.table-responsive
-      thead
-        td %
-        td Utilizatori de smartphone 
-        td Utilizatori de tablete
-        td Nu utilizează niciun dispozitiv mobil
-      tbody
-        tr
-          td A fost agresor într-un act de cyberbullying
-          td 19
-          td 22
-          td 20
-        tr
-          td A fost agresor într-un act de bullying față în față
-          td 11
-          td 14
-          td 17
-    p.small-text Q34: În ULTIMELE 12 LUNI, te-ai purtat cu cineva în acest fel? Dacă da, cum ai făcut-o? (Răspuns multiplu).
-    p.small-text Baza: Toți copiii care utilizează internetul.
+    .panel.panel-default
+      .panel-heading
+        p.table Tabelul 35: Ocurența (în ultimele 12 luni) a comportamentelor agresive de tip bullying și cyberbullying printre utilizatorii de dispozitive mobile
+      .panel-body
+        table.table-responsive
+          thead
+            td %
+            td Utilizatori de smartphone 
+            td Utilizatori de tablete
+            td Nu utilizează niciun dispozitiv mobil
+          tbody
+            tr
+              td A fost agresor într-un act de cyberbullying
+              td 19
+              td 22
+              td 20
+            tr
+              td A fost agresor într-un act de bullying față în față
+              td 11
+              td 14
+              td 17
+      .panel-footer
+        p.small-text Q34: În ULTIMELE 12 LUNI, te-ai purtat cu cineva în acest fel? Dacă da, cum ai făcut-o? (Răspuns multiplu).
+        p.small-text Baza: Toți copiii care utilizează internetul.
     ul
       li
         |Variațiile nu sunt de această dată la fel de clare ca în cazul victimelor, dar se poate observa că atât în situațiile de agresivitate față în față, cât și în cele care implică mijlocirea tehnologică, 

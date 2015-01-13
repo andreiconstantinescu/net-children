@@ -9,165 +9,173 @@
     ul 
       li Dacă, la nivelul tuturor țărilor participante la proiect procentul părinților care declară că utilizează internetul este de 84, la nivelul României acest procent coboară la 57. Utilizarea internetului de către adulți rămâne, în România, o activitate strâns legată de statusul socio-economic, o diferență mare fiind înregistrată între cei cu SSE scăzut și cei cu SSE mediu (26%).
       li Și în ceea ce privește  deținerea unui dispozitiv mobil pentru accesarea internetului, părinții din România sunt în urma părinților din celelalte țări participante, cu 18% față de 53% dintre ei declarând că au un smartphone sau o tabletă cu care accesează internetul. SSE rămâne o variabilă importantă dar de această data ruptura se produce între nivelul mediu și cel ridicat, cu o trecere de la 14% la 45%. Aceste date nu sunt surprinzătoare, ținând cont de faptul că aceste dispositive sunt încă relative noi pentru populația din România, adoptarea lor fiind normal să înceapă cu populația cu o situație materială mai bună, urmând să se democratizeze accesul odată cu scăderea prețurilor.
-    p.blue Figura 4: Utilizarea internetului și deținerea unui dispozitiv mobil de către părinți
-    +hchart({
-      bars: [
-        {
-          name: 'SSE ridicat',
-          data: [45, '#6eb1d6', 79, '#1d8bc3']
-        },
-        {
-          name: 'SSE mediu',
-          data: [14, '#6eb1d6', 67, '#1d8bc3']
-        },
-        {
-          name: 'SSE scăzut',
-          data: [12, '#6eb1d6', 41, '#1d8bc3']
-        },
-        {
-          name: 'Belgium',
-          data: [55, '#f7af5b', 89, '#f38800']
-        },
-        {
-          name: 'Denmark',
-          data: [77, '#f7af5b', 99, '#f38800']
-        },
-        {
-          name: 'Ireland',
-          data: [71, '#f7af5b', 91, '#f38800']
-        },
-        {
-          name: 'Italy',
-          data: [48, '#f7af5b', 89, '#f38800']
-        },
-        {
-          name: 'Portugal',
-          data: [30, '#f7af5b', 68, '#f38800']
-        },
-        {
-          name: 'Romania',
-          data: [18, '#f7af5b', 57, '#f38800']
-        },
-        {
-          name: 'UK',
-          data: [75, '#f7af5b', 96, '#f38800']
-        },
-        {
-          name: 'Total EU',
-          data: [53, '#7fd0d3', 84, '#3ab8bd']
-        }
-      ],
-      legend: [
-        {
-          name: "% Dețin un smartphone sau o tabletă",
-          color: "#7fd0d3"
-        },
-        {
-        name: "% Utilizeză internetul",
-        color: "#3ab8bd"
-        }
-      ]
-    })
-    p.text-small P2: Dumneavoastra utilizati internetul?
-      br
-      | P3: Dumneavoastra detineti un smartphone sau o tableta PC pe care o folositi sa va conectati la internet?
-      br
-      | Baza: Parintii copiilor care utilizeaza internetul. Segmentarea pe Mame si Tati s-a realizat pentru parintii din Romania.
+    .panel.panel-default
+      .panel-heading
+        p.blue Figura 4: Utilizarea internetului și deținerea unui dispozitiv mobil de către părinți
+      .panel-body
+        +hchart({
+          bars: [
+            {
+              name: 'SSE ridicat',
+              data: [45, '#6eb1d6', 79, '#1d8bc3']
+            },
+            {
+              name: 'SSE mediu',
+              data: [14, '#6eb1d6', 67, '#1d8bc3']
+            },
+            {
+              name: 'SSE scăzut',
+              data: [12, '#6eb1d6', 41, '#1d8bc3']
+            },
+            {
+              name: 'Belgium',
+              data: [55, '#f7af5b', 89, '#f38800']
+            },
+            {
+              name: 'Denmark',
+              data: [77, '#f7af5b', 99, '#f38800']
+            },
+            {
+              name: 'Ireland',
+              data: [71, '#f7af5b', 91, '#f38800']
+            },
+            {
+              name: 'Italy',
+              data: [48, '#f7af5b', 89, '#f38800']
+            },
+            {
+              name: 'Portugal',
+              data: [30, '#f7af5b', 68, '#f38800']
+            },
+            {
+              name: 'Romania',
+              data: [18, '#f7af5b', 57, '#f38800']
+            },
+            {
+              name: 'UK',
+              data: [75, '#f7af5b', 96, '#f38800']
+            },
+            {
+              name: 'Total EU',
+              data: [53, '#7fd0d3', 84, '#3ab8bd']
+            }
+          ],
+          legend: [
+            {
+              name: "% Dețin un smartphone sau o tabletă",
+              color: "#7fd0d3"
+            },
+            {
+            name: "% Utilizeză internetul",
+            color: "#3ab8bd"
+            }
+          ]
+        })
+      .panel-footer
+        p.text-small P2: Dumneavoastra utilizati internetul?
+          br
+          | P3: Dumneavoastra detineti un smartphone sau o tableta PC pe care o folositi sa va conectati la internet?
+          br
+          | Baza: Parintii copiilor care utilizeaza internetul. Segmentarea pe Mame si Tati s-a realizat pentru parintii din Romania.
     p Tabelul 9 arată procentul copiilor (la nivelul tuturor țărilor participante la proiecte și la nivelul Romaniei) care dețin sau au în folosință un anumit dispozitiv electronic în funcție de 1. Utilizarea internetului de către părinți și 2. Deținerea de către părinte a unui dispozitiv mobil (de tipul smartphone sau tabletă).
     ul 
       li Calculatorul de birou este încă un dispozitiv larg răspândit printre copiii din România, indiferent de faptul că părintele este sau nu utilizator de internet. Dacă însă părintele este utilizator de dispozitive mobile de tip tabletă sau smartphone, este mai probabil să existe o trecere de la calculatorul de birou la laptop sau chiar tabletă și în cazul copiilor.
       li În România, faptul că părintele deține un dispozitiv mobil inflențează mai mult decât faptul de a fi utilizator de internet alegerea unei tehnologii mai noi pentru copil (laptop, smartphone sau tabletă). Explicația acestui fapt ar putea să se găsească la nivelul inegalităților economice care restrâng accesul la aceste noi tehnologii ‘costisitoare’ pentru un segment semnificativ din populația României.
-    p.blue Tabelul 9: Detinerea de către copil a unui dispozitiv în functie de utilizarea de către părinte a internetului si detinerea de catre parinte a unui dispozitiv mobil
-    table.table-responsive
-      thead
-        tr 
-          th(rowspan="2" colspan="2") % copiilor care detin sau au spre folosinta...
-          th(colspan="2") Este părintele un utilizator de internet?
-          th(colspan="2") Deține părintele un dispozitiv mobil?
-        tr 
-          th Da
-          th Nu 
-          th Da 
-          th Nu
-      tbody 
-        tr 
-          td Un computer de birou (PC)
-          td EU 
-          td 17 
-          td 31 
-          td 21
-          td 35
-        tr 
-          td 
-          td RO 
-          td 78
-          td 72 
-          td 51
-          td 81
-        tr 
-          td Un laptop 
-          td EU 
-          td 48 
-          td 37
-          td 44
-          td 36 
-        tr 
-          td 
-          td RO 
-          td 37 
-          td 27 
-          td 52
-          td 29 
-        tr 
-          td Un telefon mobil care nu e smartphone
-          td EU 
-          td 28 
-          td 38 
-          td 31
-          td 44
-        tr 
-          td 
-          td RO 
-          td 49
-          td 47 
-          td 44
-          td 49
-        tr 
-          td Un telefon mobil care nu e smartphone
-          td EU 
-          td 58
-          td 33
-          td 49
-          td 29 
-        tr 
-          td 
-          td RO
-          td 29
-          td 23
-          td 43
-          td 23
+    .panel.panel-default
+      .panel-heading
+        p.blue Tabelul 9: Detinerea de către copil a unui dispozitiv în functie de utilizarea de către părinte a internetului si detinerea de catre parinte a unui dispozitiv mobil
+      .panel-body
+        table.table-responsive
+          thead
+            tr 
+              th(rowspan="2" colspan="2") % copiilor care detin sau au spre folosinta...
+              th(colspan="2") Este părintele un utilizator de internet?
+              th(colspan="2") Deține părintele un dispozitiv mobil?
+            tr 
+              th Da
+              th Nu 
+              th Da 
+              th Nu
+          tbody 
+            tr 
+              td Un computer de birou (PC)
+              td EU 
+              td 17 
+              td 31 
+              td 21
+              td 35
+            tr 
+              td 
+              td RO 
+              td 78
+              td 72 
+              td 51
+              td 81
+            tr 
+              td Un laptop 
+              td EU 
+              td 48 
+              td 37
+              td 44
+              td 36 
+            tr 
+              td 
+              td RO 
+              td 37 
+              td 27 
+              td 52
+              td 29 
+            tr 
+              td Un telefon mobil care nu e smartphone
+              td EU 
+              td 28 
+              td 38 
+              td 31
+              td 44
+            tr 
+              td 
+              td RO 
+              td 49
+              td 47 
+              td 44
+              td 49
+            tr 
+              td Un telefon mobil care nu e smartphone
+              td EU 
+              td 58
+              td 33
+              td 49
+              td 29 
+            tr 
+              td 
+              td RO
+              td 29
+              td 23
+              td 43
+              td 23
 
-        tr 
-          td O tabletă
-          td EU
-          td 27
-          td 13
-          td 22
-          td 13
-        tr 
-          td 
-          td RO
-          td 12
-          td 6
-          td 23
-          td 7
-    p.text-small Q3 a-h: Pe care dintre următoarele obiecte le ai tu personal sau le foloseşti tu? (Prin utilizare privata intelegem un dispozitiv pe care doar tu poti sa il folosesti.)
-      br
-      | P2: Dumneavoastra utilizati internetul?
-      br
-      | P3: Dumneavoastra detineti un smartphone sau o tableta PC pe care o folositi sa va conectati la internet?
-      br
-      | Baza: Toți copiii care utilizeaza internetul din Romania si parintii lor.
+            tr 
+              td O tabletă
+              td EU
+              td 27
+              td 13
+              td 22
+              td 13
+            tr 
+              td 
+              td RO
+              td 12
+              td 6
+              td 23
+              td 7
+      .panel-footer
+        p.text-small Q3 a-h: Pe care dintre următoarele obiecte le ai tu personal sau le foloseşti tu? (Prin utilizare privata intelegem un dispozitiv pe care doar tu poti sa il folosesti.)
+          br
+          | P2: Dumneavoastra utilizati internetul?
+          br
+          | P3: Dumneavoastra detineti un smartphone sau o tableta PC pe care o folositi sa va conectati la internet?
+          br
+          | Baza: Toți copiii care utilizeaza internetul din Romania si parintii lor.
     p Așa cum au arătat și interviurile cu părinții, dincolo de motivele economice, utilizarea de către părinte a respectivei tehnologii reprezintă un puternic factor care favorizează sau din contră stopează decizia părintelui de a achiziționa tehnologia pentru copil.
     em
       p “Da, sunt de acord, dar... Noi, de exemplu, nu suntem dependenţi de chestia asta. E şi o altă chestie, după mine mai important sau, cel puţin în cazul nostru... Hai să nu generalizez... Foarte important e anturajul, pentru că dacă el e tăiat, adică eu, de exemplu, nu folosesc Whatsapp decât cu el.  Nu, e chestie de comunicarea pe care o au ei în grupul lor. Dacă el, al meu de exemplu, n-ar avea-o, adică el afară din casă nu foloseşte Whatsapp că n-are internet, da, deci nu poa’ să… Whatsapp îl foloseşte numai unde are internet gratis, ori în liceu, sau acasă, sau nu ştiu unde... aşa, deci, pe stradă nu foloseşte chestia asta că n-are cum, n-are internet.” (tată, băiat 14-16)

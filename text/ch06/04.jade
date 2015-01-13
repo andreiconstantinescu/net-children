@@ -13,58 +13,62 @@
       |., 2012). 
     p În continuare analizăm cine sunt copiii care intră în contact online cu persoane necunoscute anterior și cine sunt cei care prelungesc acest tip de contact într-o întâlnire în lumea reală și care sunt urmările acestei întâlniri.
     p Figura 23 arată că 41% dintre copiii din România intră în contact pe internet cu persoane pe care nu le-au cunoscut anterior, procent semnificativ mai mare decât cel de la nivelul tuturor țărilor (26%). Copiii din Danemarca sunt singurii care raportează în proporție mai mare decât cei din România astfel de contacte (49%).
-    p.table Figura 23: Copiii (%) care au intrat în contact pe internet cu persoane pe care nu le cunoșteau față în față
-    +hchart({
-      bars: [
-        {
-          name: 'Total EU(7)',
-          data: [26, '#f38800'],
-        },
-        {
-          name: 'Băieți',
-          data: [38, '#1d8bc3'],
-        },
-        {
-          name: 'Fete',
-          data: [44, '#1d8bc3'],
-        },
-        {
-          name: '9-10 ani',
-          data: [23, '#b6c800'],
-        },
-        {
-          name: '11-12 ani',
-          data: [34, '#b6c800'],
-        },
-        {
-          name: '13-14 ani',
-          data: [49, '#b6c800'],
-        },
-        {
-          name: '15-16 ani',
-          data: [53, '#b6c800'],
-        },
-        {
-          name: 'SSE scăzut',
-          data: [43, '#88ae80'],
-        },
-        {
-          name: 'SSE mediu',
-          data: [40, '#88ae80'],
-        },
-        {
-          name: 'SSE ridicat',
-          data: [41, '#88ae80'],
-        },
-        {
-          name: 'Total RO',
-          data: [41, '#3ab8bd'],
-        }
-      ],
-      step:20
-    })
-    p.small-text Q37: În ULTIMELE 12 LUNI, ai intrat în contact sau ai vorbit pe internet (de pe oricare dintre obiectele de pe care poti intra pe internet) cu cineva cu care nu te întâlnisei înainte faţă în faţă? Aceasta s-ar fi putut întâmpla pe e-mail, chat, reţele sociale, mesagerie instantanee sau site-uri de jocuri.
-    p.small-text Baza: Toți copiii care folosesc internetul.
+    .panel.panel-default
+      .panel-heading
+        p.table Figura 23: Copiii (%) care au intrat în contact pe internet cu persoane pe care nu le cunoșteau față în față
+      .panel-body
+        +hchart({
+          bars: [
+            {
+              name: 'Total EU(7)',
+              data: [26, '#f38800'],
+            },
+            {
+              name: 'Băieți',
+              data: [38, '#1d8bc3'],
+            },
+            {
+              name: 'Fete',
+              data: [44, '#1d8bc3'],
+            },
+            {
+              name: '9-10 ani',
+              data: [23, '#b6c800'],
+            },
+            {
+              name: '11-12 ani',
+              data: [34, '#b6c800'],
+            },
+            {
+              name: '13-14 ani',
+              data: [49, '#b6c800'],
+            },
+            {
+              name: '15-16 ani',
+              data: [53, '#b6c800'],
+            },
+            {
+              name: 'SSE scăzut',
+              data: [43, '#88ae80'],
+            },
+            {
+              name: 'SSE mediu',
+              data: [40, '#88ae80'],
+            },
+            {
+              name: 'SSE ridicat',
+              data: [41, '#88ae80'],
+            },
+            {
+              name: 'Total RO',
+              data: [41, '#3ab8bd'],
+            }
+          ],
+          step:20
+        })
+      .panel-footer
+        p.small-text Q37: În ULTIMELE 12 LUNI, ai intrat în contact sau ai vorbit pe internet (de pe oricare dintre obiectele de pe care poti intra pe internet) cu cineva cu care nu te întâlnisei înainte faţă în faţă? Aceasta s-ar fi putut întâmpla pe e-mail, chat, reţele sociale, mesagerie instantanee sau site-uri de jocuri.
+        p.small-text Baza: Toți copiii care folosesc internetul.
     ul
       li
         |Dacă la nivelul eșantionului general băieții sunt mai dispuși să aibă astfel de contacte online, 
@@ -76,276 +80,292 @@
       em et al
       |., 2009). De asemenea, nu toate contactele de acest tip se prelungesc în întâlniri față în față și, cu atât mai puțin, nu toate întâlnirile din viața reală cu persoane cunoscute anterior doar pe internet au consecințe negative. 
     p Figura 24 arată câți copii au mers la astfel de întâlniri în viața reală și pe câți acest lucru i-a deranjat. 27% dintre copiii din România prelungesc în viața reală aceste cunoștințe făcute pe internet, față de 12% la nivelul tuturor țărilor.
-    p.table Figura 24: Copiii (%) care au mers la o întâlnire față în față cu cineva cunoscut anterior doar pe internet și urmările acestei întâlniri (în funcție de gen, vârstă și SSE)
-    +hchart({
-      bars: [
-        {
-          name: 'Total EU(7)',
-          data: [1, '#3ab8bd', 2, '#7fd0d3', 9, '#c2e7ea', 88, '#e8e8e8'],
-          stacked: true
-        },
-        {
-          name: 'Băieți',
-          data: [1, '#1d8bc3', 5, '#6eb1d6', 21, '#b9d9ec', 73, '#e8e8e8'],
-          stacked: true
-        },
-        {
-          name: 'Fete',
-          data: [3, '#1d8bc3', 11, '#6eb1d6', 12, '#b9d9ec', 73, '#e8e8e8'],
-          stacked: true
-        },
-        {
-          name: '9-10 ani',
-          data: [0, '#b6c800', 8, '#ced95b', 12, '#e7ecb1', 80, '#e8e8e8'],
-          stacked: true
-        },
-        {
-          name: '11-12 ani',
-          data: [1, '#b6c800', 11, '#ced95b', 14, '#e7ecb1', 74, '#e8e8e8'],
-          stacked: true
-        },
-        {
-          name: '13-14 ani',
-          data: [1, '#b6c800', 12, '#ced95b', 12, '#e7ecb1', 75, '#e8e8e8'],
-          stacked: true
-        },
-        {
-          name: '15-16 ani',
-          data: [6, '#b6c800', 3, '#ced95b', 28, '#e7ecb1', 63, '#e8e8e8'],
-          stacked: true
-        },
-        {
-          name: 'SSE scăzut',
-          data: [3, '#88ae80', 11, '#b0c8a0', 17, '#d9e4d6', 69, '#e8e8e8'],
-          stacked: true
-        },
-        {
-          name: 'SSE mediu',
-          data: [1, '#88ae80', 6, '#b0c8a0', 18, '#d9e4d6', 74, '#e8e8e8'],
-          stacked: true
-        },
-        {
-          name: 'SSE ridicat',
-          data: [1, '#88ae80', 5, '#b0c8a0', 11, '#d9e4d6', 83, '#e8e8e8'],
-          stacked: true
-        },
-        {
-          name: 'Total RO',
-          data: [2, '#3ab8bd', 8, '#7fd0d3', 17, '#c2e7ea', 73, '#e8e8e8'],
-          stacked: true
-        }
-      ],
-      legend: [
-        {
-          name: "% Da, am fost foarte supărat",
-          color: "#3ab8bd"
-        },
-        {
-          name: "% Da, am fost puțin supărat",
-          color: "#7fd0d3"
-        },
-        {
-          name: "% Da, dar nu am fost supărat deloc",
-          color: "#c2e7ea"
-        },
-        {
-          name: "% Nu, nu mi s-a întâmplat",
-          color: "#e8e8e8"
-        }
-      ],
-      step: 20 
-    })
-    p.small-text Q39: În ULTIMELE 12 LUNI, te-ai  intâlnit faţă în faţă cu cineva cu care ai avut anterior doar contacte pe internet şi dacă da, ai fost supărat pentru ceea ce s-a intâmplat sau ţi-ai fi dorit să nu o fi făcut?
-    p.small-text Baza: Toți copiii care folosesc internetul.
+    .panel.panel-default
+      .panel-heading
+        p.table Figura 24: Copiii (%) care au mers la o întâlnire față în față cu cineva cunoscut anterior doar pe internet și urmările acestei întâlniri (în funcție de gen, vârstă și SSE)
+      .panel-body
+        +hchart({
+          bars: [
+            {
+              name: 'Total EU(7)',
+              data: [1, '#3ab8bd', 2, '#7fd0d3', 9, '#c2e7ea', 88, '#e8e8e8'],
+              stacked: true
+            },
+            {
+              name: 'Băieți',
+              data: [1, '#1d8bc3', 5, '#6eb1d6', 21, '#b9d9ec', 73, '#e8e8e8'],
+              stacked: true
+            },
+            {
+              name: 'Fete',
+              data: [3, '#1d8bc3', 11, '#6eb1d6', 12, '#b9d9ec', 74, '#e8e8e8'],
+              stacked: true
+            },
+            {
+              name: '9-10 ani',
+              data: [0, '#b6c800', 8, '#ced95b', 12, '#e7ecb1', 80, '#e8e8e8'],
+              stacked: true
+            },
+            {
+              name: '11-12 ani',
+              data: [1, '#b6c800', 11, '#ced95b', 14, '#e7ecb1', 74, '#e8e8e8'],
+              stacked: true
+            },
+            {
+              name: '13-14 ani',
+              data: [1, '#b6c800', 12, '#ced95b', 12, '#e7ecb1', 75, '#e8e8e8'],
+              stacked: true
+            },
+            {
+              name: '15-16 ani',
+              data: [6, '#b6c800', 3, '#ced95b', 28, '#e7ecb1', 63, '#e8e8e8'],
+              stacked: true
+            },
+            {
+              name: 'SSE scăzut',
+              data: [3, '#88ae80', 11, '#b0c8a0', 17, '#d9e4d6', 69, '#e8e8e8'],
+              stacked: true
+            },
+            {
+              name: 'SSE mediu',
+              data: [1, '#88ae80', 6, '#b0c8a0', 18, '#d9e4d6', 75, '#e8e8e8'],
+              stacked: true
+            },
+            {
+              name: 'SSE ridicat',
+              data: [1, '#88ae80', 5, '#b0c8a0', 11, '#d9e4d6', 83, '#e8e8e8'],
+              stacked: true
+            },
+            {
+              name: 'Total RO',
+              data: [2, '#3ab8bd', 8, '#7fd0d3', 17, '#c2e7ea', 73, '#e8e8e8'],
+              stacked: true
+            }
+          ],
+          legend: [
+            {
+              name: "% Da, am fost foarte supărat",
+              color: "#3ab8bd"
+            },
+            {
+              name: "% Da, am fost puțin supărat",
+              color: "#7fd0d3"
+            },
+            {
+              name: "% Da, dar nu am fost supărat deloc",
+              color: "#c2e7ea"
+            },
+            {
+              name: "% Nu, nu mi s-a întâmplat",
+              color: "#e8e8e8"
+            }
+          ],
+          step: 20 
+        })
+      .panel-footer
+        p.small-text Q39: În ULTIMELE 12 LUNI, te-ai  intâlnit faţă în faţă cu cineva cu care ai avut anterior doar contacte pe internet şi dacă da, ai fost supărat pentru ceea ce s-a intâmplat sau ţi-ai fi dorit să nu o fi făcut?
+        p.small-text Baza: Toți copiii care folosesc internetul.
     ul
       li Proporția de băieți și de fete care merg să întâlnească în viața reală persoane cunoscute doar pe internet este asemănătoare (27%), dar dar fetele reclamă în mai mare proporție un impact negativ al acestor întâlniri (13% față de 6%)
       li Cu vârsta crește atât probabilitatea copiilor de a se angaja în astfel de întâlniri față în față, la adolescenții de 15-16 ani crescând însă în mod semnificativ procentul celor pentru care aceste întâlniri nu au un impact negativ (28% față de 9% care spun că au fost ‘foarte’ sau ‘puțin’ supărați în urma întâlnirii. Cam jumătate din copiii de 11-14 ani raportează că experiența a avut un impact negativ (ușor) asupra lor, cealaltă jumătate spunând că nu a avut urmări negative.   
       li Atât probabilitatea de a merge la astfel de întâlniri, cât și cea ca urmările asupra copilului să fie unele negative cresc odată cu scăderea SSE.
     p Pentru a înțelege cu adevărat amploarea fenomenului, am întrebat copiii cu câte astfel de persoane au avut întâlniri față în față. Figura 25 ilustrează aceste date arătând că, în România, 1 din 10 copii s-a întâlnit în viața reală cu mai mult de 3 persoane cunoscute anterior doar pe internet și 13% cu 1-2 persoane (față de 4%, respectiv 6% la nivelul tuturor țărilor). Băieții întâlnesc în acest mod mai multe persoane decât fetele, și cei de vârste mari mai multe decât cei de vârste mici. Remarcăm din nou comportamentul de risc al celor din grupul 9-10 ani unde 10% s-au întâlnit în viața reală cu mai mult de 3 persoane cunoscute anterior  doar pe internet. De asemenea SSE influențează acest indicator, cei cu SSE mai scăzut întâlnind în proporție mai mare mai multe persoane decât cei cu SSE mai ridicat.
-    p.table Figura 25: Numărul de persoane cunoscute anterior doar online cu care copiii s-au dus să se întâlnească față în față (în funcție de gen, vârstă și status socio-economic)
-    +hchart({
-      bars: [
-        {
-          name: 'Total EU(7)',
-          data: [90, '#3ab8bd', 6, '#7fd0d3', 4, '#c2e7ea'],
-          stacked: true
-        },
-        {
-          name: 'Băieți',
-          data: [77, '#1d8bc3', 10, '#6eb1d6', 12, '#b9d9ec'],
-          stacked: true
-        },
-        {
-          name: 'Fete',
-          data: [75, '#1d8bc3', 16, '#6eb1d6', 9, '#b9d9ec'],
-          stacked: true
-        },
-        {
-          name: '9-10 ani',
-          data: [84, '#b6c800', 6, '#ced95b', 10, '#e7ecb1'],
-          stacked: true
-        },
-        {
-          name: '11-12 ani',
-          data: [80, '#b6c800', 15, '#ced95b', 5, '#e7ecb1'],
-          stacked: true
-        },
-        {
-          name: '13-14 ani',
-          data: [77, '#b6c800', 9, '#ced95b', 14, '#e7ecb1'],
-          stacked: true
-        },
-        {
-          name: '15-16 ani',
-          data: [65, '#b6c800', 21, '#ced95b', 14, '#e7ecb1'],
-          stacked: true
-        },
-        {
-          name: 'SSE scăzut',
-          data: [71, '#88ae80', 15, '#b0c8a0', 14, '#d9e4d6'],
-          stacked: true
-        },
-        {
-          name: 'SSE mediu',
-          data: [78, '#88ae80', 12, '#b0c8a0', 10, '#d9e4d6'],
-          stacked: true
-        },
-        {
-          name: 'SSE ridicat',
-          data: [86, '#88ae80', 11, '#b0c8a0', 3, '#d9e4d6'],
-          stacked: true
-        },
-        {
-          name: 'Total RO',
-          data: [77, '#3ab8bd', 13, '#7fd0d3', 10, '#c2e7ea'],
-          stacked: true
-        }
-      ],
-      legend: [
-        {
-          name: "% Niciunul",
-          color: "#3ab8bd"
-        },
-        {
-          name: "% 1-2",
-          color: "#7fd0d3"
-        },
-        {
-          name: "% >3",
-          color: "#c2e7ea"
-        }
-      ],
-      step: 20 
-    })
-    p.small-text Q40: În ULTIMELE 12 LUNI, cu câte persoane pe care le-ai contactat anterior doar pe internet te-ai întâlnit faţă în faţă?
-    p.small-text Baza: Toți copiii care folosesc internetul.
+    .panel.panel-default
+      .panel-heading
+        p.table Figura 25: Numărul de persoane cunoscute anterior doar online cu care copiii s-au dus să se întâlnească față în față (în funcție de gen, vârstă și status socio-economic)
+      .panel-body
+        +hchart({
+          bars: [
+            {
+              name: 'Total EU(7)',
+              data: [90, '#3ab8bd', 6, '#7fd0d3', 4, '#c2e7ea'],
+              stacked: true
+            },
+            {
+              name: 'Băieți',
+              data: [78, '#1d8bc3', 10, '#6eb1d6', 12, '#b9d9ec'],
+              stacked: true
+            },
+            {
+              name: 'Fete',
+              data: [75, '#1d8bc3', 16, '#6eb1d6', 9, '#b9d9ec'],
+              stacked: true
+            },
+            {
+              name: '9-10 ani',
+              data: [84, '#b6c800', 6, '#ced95b', 10, '#e7ecb1'],
+              stacked: true
+            },
+            {
+              name: '11-12 ani',
+              data: [80, '#b6c800', 15, '#ced95b', 5, '#e7ecb1'],
+              stacked: true
+            },
+            {
+              name: '13-14 ani',
+              data: [77, '#b6c800', 9, '#ced95b', 14, '#e7ecb1'],
+              stacked: true
+            },
+            {
+              name: '15-16 ani',
+              data: [65, '#b6c800', 21, '#ced95b', 14, '#e7ecb1'],
+              stacked: true
+            },
+            {
+              name: 'SSE scăzut',
+              data: [71, '#88ae80', 15, '#b0c8a0', 14, '#d9e4d6'],
+              stacked: true
+            },
+            {
+              name: 'SSE mediu',
+              data: [78, '#88ae80', 12, '#b0c8a0', 10, '#d9e4d6'],
+              stacked: true
+            },
+            {
+              name: 'SSE ridicat',
+              data: [86, '#88ae80', 11, '#b0c8a0', 3, '#d9e4d6'],
+              stacked: true
+            },
+            {
+              name: 'Total RO',
+              data: [77, '#3ab8bd', 13, '#7fd0d3', 10, '#c2e7ea'],
+              stacked: true
+            }
+          ],
+          legend: [
+            {
+              name: "% Niciunul",
+              color: "#3ab8bd"
+            },
+            {
+              name: "% 1-2",
+              color: "#7fd0d3"
+            },
+            {
+              name: "% >3",
+              color: "#c2e7ea"
+            }
+          ],
+          step: 20 
+        })
+      .panel-footer
+        p.small-text Q40: În ULTIMELE 12 LUNI, cu câte persoane pe care le-ai contactat anterior doar pe internet te-ai întâlnit faţă în faţă?
+        p.small-text Baza: Toți copiii care folosesc internetul.
     p În Tabelul 38 este arătat modul în care copiii au contactat pentru prima dată pe cineva necunoscut anterior și cu care ulterior s-au întâlnit în viața reală. Astfel se poate observa că modul predilect de a intra în contact cu aceste persoane este pe platformele de socializare, în România procentul fiind dublu față de cel al întregului eșantion al proiectului (12% față de 6%). Urmează telefonul mobil, pe care 7% dintre copiii din România îl folosesc pentru a da sau primi apeluri de la persoane necunoscute și 6% pentru a da sau primi SMS-uri în aceleași condiții. Remarcăm procentul foarte mare (14%) al copiilor de 11-12 ani care intră în contact cu persoane necunoscute pe platformele de socializare. 
-    p.table Tabelul 38: Moduri în care copiii au contactat pentru prima dată pe cineva necunoscut, cu care ulterior s-au întâlnit fată în fată, în functie de vârstă
-    table.table-responsive
-      thead
-        tr
-          td(rowspan="2") %
-          td(colspan="4") Vârsta
-          td(rowspan="2") Total RO
-          td(rowspan="2") Total EU (7)
-        tr
-          td 9-10
-          td 11-12
-          td 13-14
-          td 15-16
-      tbody
-        tr
-          td Prin convorbiri la telefonul mobil
-          td 4
-          td 3
-          td 2
-          td 17
-          td 7
-          td 3
-        tr
-          td Prin mesaje trimise pe telefonul meu (SMS sau MMS)
-          td 7
-          td 5
-          td 4
-          td 9
-          td 6
-          td 3
-        tr
-          td Printr-o  reţea de socializare (ex. Facebook, Twitter)
-          td 1
-          td 14
-          td 10
-          td 21
-          td 12
-          td 6
-        tr
-          td Pe o platforma de sharing media (Youtube, Instagram)
-          td 0
-          td 1
-          td 0
-          td 0
-          td 0
-          td 0
-        tr
-          td Prin mesaje instantanee (Yahoo Mess, WhatsApp, Skype )
-          td 1
-          td 3
-          td 1
-          td 6
-          td 3
-          td 1
-        tr
-          td Într-o  cameră de chat (chat cu o persoană necunoscută)
-          td 0
-          td 1
-          td 0
-          td 0
-          td 0
-          td 1
-        tr
-          td Prin e-mail
-          td 5
-          td 2
-          td 0
-          td 3
-          td 3
-          td 0
-        tr
-          td Pe un site de jocuri
-          td 0
-          td 5
-          td 7
-          td 6
-          td 4
-          td 1
-    p.small-text Q41: Dacă te-ai întâlnit faţă în faţă cu cineva cunoscut anterior doar pe internet (niciodată faţă în faţă), în ce mod ai intrat în contact cu aceste persoane pentru prima dată? (Răspuns multiplu).
-    p.small-text Baza: Toți copiii care folosesc internetul.
+    .panel.panel-default
+      .panel-heading
+        p.table Tabelul 38: Moduri în care copiii au contactat pentru prima dată pe cineva necunoscut, cu care ulterior s-au întâlnit fată în fată, în functie de vârstă
+      .panel-body
+        table.table-responsive
+          thead
+            tr
+              td(rowspan="2") %
+              td(colspan="4") Vârsta
+              td(rowspan="2") Total RO
+              td(rowspan="2") Total EU (7)
+            tr
+              td 9-10
+              td 11-12
+              td 13-14
+              td 15-16
+          tbody
+            tr
+              td Prin convorbiri la telefonul mobil
+              td 4
+              td 3
+              td 2
+              td 17
+              td 7
+              td 3
+            tr
+              td Prin mesaje trimise pe telefonul meu (SMS sau MMS)
+              td 7
+              td 5
+              td 4
+              td 9
+              td 6
+              td 3
+            tr
+              td Printr-o  reţea de socializare (ex. Facebook, Twitter)
+              td 1
+              td 14
+              td 10
+              td 21
+              td 12
+              td 6
+            tr
+              td Pe o platforma de sharing media (Youtube, Instagram)
+              td 0
+              td 1
+              td 0
+              td 0
+              td 0
+              td 0
+            tr
+              td Prin mesaje instantanee (Yahoo Mess, WhatsApp, Skype )
+              td 1
+              td 3
+              td 1
+              td 6
+              td 3
+              td 1
+            tr
+              td Într-o  cameră de chat (chat cu o persoană necunoscută)
+              td 0
+              td 1
+              td 0
+              td 0
+              td 0
+              td 1
+            tr
+              td Prin e-mail
+              td 5
+              td 2
+              td 0
+              td 3
+              td 3
+              td 0
+            tr
+              td Pe un site de jocuri
+              td 0
+              td 5
+              td 7
+              td 6
+              td 4
+              td 1
+      .panel-footer
+        p.small-text Q41: Dacă te-ai întâlnit faţă în faţă cu cineva cunoscut anterior doar pe internet (niciodată faţă în faţă), în ce mod ai intrat în contact cu aceste persoane pentru prima dată? (Răspuns multiplu).
+        p.small-text Baza: Toți copiii care folosesc internetul.
     p Tabelul 39 arată că avem de-a face cu un procent mai mare printre utilizatorii de internet mobil (față de cei care folosesc doar internetul fix) al celor care intră în contact cu necunoscuții pe platformele de socializare. În același timp, printre utilizatorii de tablete mult mai mulți decât în celelalte grupe folosesc funcțiile telefonului (apel și mesagerie) pentru a iniția sau a răspunde la astfel de contacte.
-    p.table Tabelul 39: Moduri în care copiii au contactat pentru prima dată pe cineva necunoscut, cu care ulterior s-au întâlnit față în față, în funcție de faptul de a utiliza sau nu dispozitive mobile
-    table.table-responsive
-      thead
-        td %
-        td Utilizatori de smartphone 
-        td Utilizatori de tablete
-        td Nu utilizează niciun dispozitiv mobil
-      tbody
-        tr
-          td Prin convorbiri la telefonul mobil
-          td 7
-          td 14
-          td 7
-        tr
-          td Prin mesaje trimise pe telefonul meu (SMS  sau MMS)
-          td 5
-          td 14
-          td 7
-        tr
-          td Printr-o  reţea de socializare (ex. Facebook, Twitter)
-          td 18
-          td 14
-          td 12
-    p.small-text Q41: Dacă te-ai întâlnit faţă în faţă cu cineva cunoscut anterior doar pe internet (niciodată faţă în faţă), în ce mod ai intrat în contact cu aceste persoane pentru prima dată? (Răspuns multiplu).
-    p.small-text Baza: Toți copiii care folosesc internetul.
+    .panel.panel-default
+      .panel-heading
+        p.table Tabelul 39: Moduri în care copiii au contactat pentru prima dată pe cineva necunoscut, cu care ulterior s-au întâlnit față în față, în funcție de faptul de a utiliza sau nu dispozitive mobile
+      .panel-body
+        table.table-responsive
+          thead
+            td %
+            td Utilizatori de smartphone 
+            td Utilizatori de tablete
+            td Nu utilizează niciun dispozitiv mobil
+          tbody
+            tr
+              td Prin convorbiri la telefonul mobil
+              td 7
+              td 14
+              td 7
+            tr
+              td Prin mesaje trimise pe telefonul meu (SMS  sau MMS)
+              td 5
+              td 14
+              td 7
+            tr
+              td Printr-o  reţea de socializare (ex. Facebook, Twitter)
+              td 18
+              td 14
+              td 12
+      .panel-footer
+        p.small-text Q41: Dacă te-ai întâlnit faţă în faţă cu cineva cunoscut anterior doar pe internet (niciodată faţă în faţă), în ce mod ai intrat în contact cu aceste persoane pentru prima dată? (Răspuns multiplu).
+        p.small-text Baza: Toți copiii care folosesc internetul.
 
 
 
