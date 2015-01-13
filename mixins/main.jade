@@ -42,8 +42,6 @@ mixin hchart(options)
             div
               .legend(style="width: 10px; height: 10px; background: #{item.color}; display: inline-block")
               span(style="margin-left: 0.2em; margin-right: 1em")= item.name
-      hr
-
 mixin vchart(options)
   - var height = options.height || '200px';
   - var width = options.width || '40px';

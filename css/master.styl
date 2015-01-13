@@ -3,12 +3,15 @@ lfa-framework()
 @import leo
 @import chart
 @import _cover
+@import _fonts
+@import url('http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,300italic|Exo:400,700&subset=latin,latin-ext')
 // General
 //
 body
   background-color: #f0f0f0
   padding: 0
-  font-family: "Source Sans Pro"
+  font-family: "Source Sans Pro", sans-serif
+  font-weight: 400
 article
   section
     background-color: #fff
@@ -32,7 +35,6 @@ article
         font-size: 0.7em
     ul
       li
-        // padding-left: .5em !important
         text-indent: -.5em
         list-style: none
       li:before
@@ -42,7 +44,6 @@ article
         font-size: 1.5em
     table.table-responsive
       text-align: center
-      font-family: "Source Sans Pro", sans-serif
       font-size: 0.8em
       line-height: 1.2em
       thead
@@ -54,7 +55,6 @@ article
           border: 1px solid white
           border-collapse: collapse
           text-align: center
-          font-family: "Source Sans Pro", sans-serif
       tbody
         tr:nth-child(odd)
           background-color: white
@@ -71,7 +71,7 @@ article
   border: 1px solid #f0f0f0
   border-radius: 5px
   p.table, p.blue
-    font-family: "Exo", sans-serif
+    font-family: "Exo", "Calibri", sans-serif
   .panel-body
     padding 0
   .panel-footer
@@ -85,11 +85,13 @@ article
   margin 1em
   margin-bottom 0
   font-family: "Source Sans Pro", sans-serif
-  .hchart-row
-    margin-bottom: 1em
   @media (max-width: 750px)
     .small
       font-size: 15px
+  .hchart-row
+    margin-bottom: 1em
+  .hchart-legend
+    margin-bottom: 1em
   .progress-bar
     font-size: 15px
     color: #000
