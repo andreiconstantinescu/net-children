@@ -6,3 +6,30 @@ mixin footnote(number)
     block
   small ]
   
+mixin bibliography(options)
+  - var options = options || window.bibliography;
+  .biblioraphy
+    each item in options
+      blockquote(style="margin-bottom: 1em")
+        .author-info
+          strong.author= item.author 
+        .book-info
+          span.book= item.name
+          if (item.pages)
+            span.pages ,#{' '}
+              = item.pages
+        .location-info
+          span.location= item.location
+          span :#{' '}
+            =  item.publisher
+          if (item.extra)
+            span ,#{' '}
+              = item.extra
+          if (item.year)
+            span.year ,#{' '}
+              = item.year
+
+mixin textTooltip(options)
+  span
+    a(tabindex="0", data-trigger="hover click", class="textTooltip", id="#{options}", data-container="body", type="button", data-placement="auto")
+  
