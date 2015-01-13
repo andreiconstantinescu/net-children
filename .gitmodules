@@ -7,3 +7,9 @@
 [submodule "lfa-addon-classroom"]
 	path = lfa-addon-classroom
 	url = https://github.com/learnfwd/lfa-addon-classroom
+[submodule "lfa-content-widgets"]
+	path = lfa-content-widgets
+	url = git@github.com:learnfwd/lfa-content-widgets.git
+[submodule "addons/lfa-content-widgets"]
+	path = addons/lfa-content-widgets
+	url = git@github.com:learnfwd/lfa-content-widgets.git
