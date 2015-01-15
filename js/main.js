@@ -175,6 +175,13 @@ window.bibliography = {
     location: "Cambridge, MA",
     publisher: "MIT Press"
   },
+  ling2012: {
+    author: "Ling, R. (2012).",
+    ref: "Ling, 2012",
+    title: "Taken for grantedness. The embedding of mobile communication into society. ",
+    location: "Cambridge, MA",
+    publisher: "MIT Press"
+  },
   matsuda2005: {
     author: "Matsuda, M. (2005).",
     ref: "Matsuda, 2005",
@@ -302,7 +309,36 @@ window.bibliography = {
   },
   vandoninckhaenensroe2013: {
     author: "Vandoninck, S., d’Haenens, L., & Roe, K. (2013). ",
-    ref: "Vandoninck et al., 2013",
+    ref: "Smahel & Wright, 2014",
     title: "Online risks: Coping strategies of less resilient children and teenagers across Europe. Journal of Children and Media, 7(1), 60-78."
+  },
+  kardefeltwinther2014: {
+    author: "Kardefelt-Winther, D. (2014). ",
+    ref: "Kardefelt-Winther, 2014",
+    title: "A conceptual and methodological critique of internet addiction research: Towards a model of compensatory internet use. Computers in Human Behavior, 31, 351-354."
+  },
+  katzaakhus2002: {
+    author: "Katz, J.E. & Aakhus, M. (2002).",
+    ref: "Katz & Aakhus, 2002",
+    title: "Perpetual contact: Mobile communication, private talk, public performance.",
+    location: "Cambridge",
+    publisher: "Cambridge University Press"
+  },
+  hallbaym2012: {
+    author: "Hall, J.A. & Baym, N.K. (2012).",
+    ref: "Hall & Baym, 2012",
+    title: "Calling and texting (too much): Mobile maintenance expectations (over) dependence, entrapment, and friendship satisfaction. New Media & Society, 14(2), 316-331."
+  },
+  vincentfortunati2009: {
+    author: "Vincent, J. & Fortunati, L. (Eds.). (2009).",
+    ref: "Vincent & Fortunati, 2009",
+    title: "Electronic emotion: The mediation of emotion via information and communication technologies. ",
+    location: "Oxford",
+    publisher: "Peter Lang"
+  },
+  licoppe2004: {
+    author: "Licoppe, C. (2004)",
+    ref: "Licoppe, 2004",
+    title: "'Connected' presence: the emergence of a new repertoire for managing social relationships in a changing communication technoscape. Environment and Planning D: Society and Space, 22(1), 135 – 156."
   }
 };
