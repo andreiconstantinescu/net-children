@@ -9,6 +9,7 @@ define(['jquery', './chart', './viewportSelectors'], function ($) {
       }
       elements = elements.not(inViewport);
       inViewport.progressbar();
+
       if (!elements.length) {
         $('#scrollview').off('scroll', onScroll);
       }
@@ -25,8 +26,31 @@ define(['jquery', './chart', './viewportSelectors'], function ($) {
       var content = '<div>'+ bibliography.author + ', <em>' + bibliography.title + '</em>(' + bibliography.location + ': ' + bibliography.publisher + (bibliography.year ? (', ' + bibliography.year) : '') + ') ' + (bibliography.pages ? (bibliography.pages + ', ') : '') + (bibliography.extra ? bibliography.extra : '') + '</div>';
       $el.attr('data-content', content).html(bibliography.ref);
     }).popover({html: true});
+
+    $('.footnote').each(function (idx, el) {
+      var $el = $(el);
+      var content = window.footnotes[$el.data("id")];
+      var template = '<div class="popover" role="tooltip"><div class="arrow"></div><h3 class="popover-title"></h3><div class="popover-content footnote-content"></div></div>';
+      $el.attr('data-content', content).attr("data-template", template).find("a").html("*");
+    }).popover({html: true});
   });
 });
+
+window.footnotes = {
+  1: "Trebuie menționat că nu suntem interesați doar de cei care dețin astfel de dispozitive mobile, ci și de cei care le folosesc fără a le deține personal (e.g. cei care folosesc tablete în comun).",
+  2: "Vezi www.ictcoalition.eu ",
+  3: "Din motive de economie de spațiu nu vom cita de fiecare dată Raportul mai sus menționat, asumând că cititorul va avea în vedere nota de mai sus.",
+  4: "Pentru mai multe amănunte despre cum a avut loc cercetarea calitativă vezi (Haddon, L. and Vincent, J. (eds.) (2014))",
+  5: "Facem această precizare dată fiind rapida dezvoltare a internetului mobil la care asistăm. Astfel spre exemplu, de la culegerea datelor pentru ancheta cantitativă (mai-iunie 2013) la culegerea datelor în ancheta calitativă (decembrie 2013 - februarie 2014), situația se schimbase dramatic datorită cadourilor de sărbători, o învățătoare de grupă pregătitoare afirmând: „Deci dacă eu vă spun că le-am spus (părinților-nAV) să restricționeze și accesul și să înceteze cu astfel de recompense și de Crăciun au primit 3 sferturi tablete…” (învățătoare, București).",
+  6: "Eșantionul a fost construit pentru a fi reprezentativ național la nivelul copiilor, nu și al părinților.",
+  7: "În ciuda dezbaterii care a apărut la un moment dat în spațiul public despre ‘moartea Facebook-ului’, dezbatere care a fost generată de interpretarea eronată de către media a datelor cercetării Global Social Media Impact Study.<a href='http://gsmis.org/' target='_blank'> http://gsmis.org </a>",
+  8: "Din nou, atragem atenția că aceste practici de comunicare sunt într-o dinamică accelerată. Astfel, de la momentul culegerii datelor din cercetarea cantitativă până la sfârșitul perioadei de culegere a datelor în cercetarea calitativă, deja mulți copii foloseau zilnic, în paralel cu Facebook-ul, Watsapp și Snapchat. ",
+  9: "Pentru datele europene, vezi Ólafsson et al., 2013.",
+  10: "În ancheta EU Kids Online copiii au fost întrebați dacă “au văzut sau au primit mesaje sexuale”. În Net Children Go Mobile am exclus cuvântul “văzut” date fiind posibilele confuzii create între sexting-mesaje sexuale si pornografie- a viziona imagini cu caracter sexual.",
+  11: "Textul exact care introducea întrebările respective în proiectul EU Kids Online era următorul: ‘În ultimul an ai văzut o mulțime de imagini sub formă de fotografii sau filmulețe, dintre care unele au fost poate cu caracter sexual – cum ar fi persoane dezbrăcate sau persoane făcând sex’. În Net Children Go Mobile formularea a fost schimbată în ‘persoane dezbrăcate aflate în ipostaze sexuale’ deoarece în urma testării cognitive s-a constat că în unele culturi imagini reprezentând persoane dezbrăcate nu sunt neapărat asociate pornografiei. ",
+  12: "Pentru spargerea conturilor de Facebook, a apărut deja un termen care leagă „rape” (a viola) de Facebook, dând Frape. ",
+  13: "Datorită rotunjirilor, procentul afișat pare să fie mai mare de 100%. Nu este greșeală de calcul, ci doar de afișaj. "
+};
 
 window.bibliography = {
   livingstone2009: {
