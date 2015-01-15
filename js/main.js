@@ -136,14 +136,14 @@ window.bibliography = {
     publisher: "293- 305"
   },
   livingstonebovill2001: {
-    author: "Livingstone, S. & Helsper, E.J. (2007).",
+    author: "Livingstone, S. & Bovill, M. (2001). ",
     ref: "Livingstone & Bovill, 2001",
     title: "Children and their changing media environment: A European comparative study.",
     location: "New Jersey, NJ",
     publisher: "Lawrence Erlbaum Associates, Inc"
   },
   livingstonehelsper2007: {
-    author: "Livingstone, S. & Bovill, M. (2001).",
+    author: "Livingstone, S. & Helsper, E.J. (2007).",
     ref: "Livingstone & Helsper, 2007",
     title: "Gradations in digital inclusion: children, young people and the digital divide. New Media & Society,9, 671-696."
   },
@@ -188,5 +188,27 @@ window.bibliography = {
     title: "Information and communication technologies in everyday life. ",
     location: "Oxford",
     publisher: "Berg"
+  },
+  buckingham2007: {
+    author: "Buckingham, D. (2007).",
+    ref: "Buckingham, 2007",
+    title: "Digital Media Literacies: rethinking media education in the age of the Internet. Research in Comparative and International Education, 2(1), 43-55."
+  },
+  deursendijk2008: {
+    author: "van Deursen, A. & van Dijk, J. (2011).",
+    ref: "van Deursen & van Dijk, 2008",
+    title: "Internet skills and the digital divide. New Media and Society, 13(6), 893-911."
+  },
+  kuiperdehaan2012: {
+    author: "Sonck, N., Kuiper, E., & de Haan, J. (2012).",
+    ref: "Kuiper & de Haan, 2012",
+    title: "Digital skills in the context of media literacy. In S. Livingstone, L. Haddon, & A. Görzig (eds) Children, risk and safety on the internet (pp. 87-98). ",
+    location: "Bristol",
+    publisher: "Policy Press"
+  },
+  sonckdehaan2013: {
+    author: "Sonck, N. & de Haan, J. (2013).",
+    ref: "Sonck & de Haan, 2013",
+    title: "How the internet skills of European 11- to 16-year-olds mediate between online risk and harm. Journal of Children and Media, 7(1), 79-95."
   }
 };
