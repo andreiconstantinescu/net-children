@@ -153,5 +153,40 @@ window.bibliography = {
     title: "Towards a general model of determinants of risks and safety. In S. Livingstone, L. Haddon, & A. Görzig (eds) Children, risk and safety on the internet (pp. 323-339). ",
     location: "Bristol",
     publisher: "Policy Press"
+  },
+  lenhart2010: {
+    author: "Lenhart, A., Ling, R., Campbell, S., & Purcell, K. (2010).",
+    ref: "Lenhart et al., 2010",
+    title: "Teens and mobile phones. ",
+    location: "Washington, DC",
+    publisher: "Pew Research Center"
+  },
+  lingbertel2013: {
+    author: "Ling, R. & Bertel, T. (2013).",
+    ref: "Ling & Bertel, 2013",
+    title: "Mobile communication culture among children and adolescents. In D. Lemish (ed.) The Routledge international handbook of children, adolescents and media (pp. 127-133). ",
+    location: "London",
+    publisher: "Routledge"
+  },
+  ling2008: {
+    author: "Ling, R. (2008).",
+    ref: "Ling, 2008",
+    title: "New tech, new ties. How mobile communication is reshaping social cohesion. ",
+    location: "Cambridge, MA",
+    publisher: "MIT Press"
+  },
+  matsuda2005: {
+    author: "Matsuda, M. (2005).",
+    ref: "Matsuda, 2005",
+    title: "Mobile communication and selective sociality. In M. Ito, D. Okabe, & M. Matsuda (eds) Personal, portable, pedestrian. Mobile phones in Japanese life (pp. 123-142). ",
+    location: "Cambridge, MA",
+    publisher: "MIT Press"
+  },
+  haddon2004: {
+    author: "Haddon, L. (2004).",
+    ref: "Haddon, 2004",
+    title: "Information and communication technologies in everyday life. ",
+    location: "Oxford",
+    publisher: "Berg"
   }
 };
