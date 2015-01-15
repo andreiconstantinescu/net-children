@@ -127,5 +127,19 @@ window.bibliography = {
     title: "European children and their carers’ understanding of use, risks and safety issues relating to convergent mobile media. Report D4.1. ",
     location: "Milano",
     publisher: "Unicatt"
+  },
+  petervalkenburg2006: {
+    author: "Peter J. & Valkenburg P. M. (2006).",
+    ref: "Peter & Valkenburg, 2006",
+    title: "Adolescents’ Internet Use: Testing the ‘disappearing Digital Divide’ Versus the ‘emerging Digital Differentiation’ Approach.",
+    location: "Poetics, 34(4-5)",
+    publisher: "293- 305"
+  },
+  livingstonebovill2001: {
+    author: "Livingstone, S. & Bovill, M. (2001).",
+    ref: "Livingstone & Bovill, 2001",
+    title: "Children and their changing media environment: A European comparative study.",
+    location: "New Jersey, NJ",
+    publisher: "Lawrence Erlbaum Associates, Inc"
   }
 };
