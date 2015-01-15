@@ -210,5 +210,99 @@ window.bibliography = {
     author: "Sonck, N. & de Haan, J. (2013).",
     ref: "Sonck & de Haan, 2013",
     title: "How the internet skills of European 11- to 16-year-olds mediate between online risk and harm. Journal of Children and Media, 7(1), 79-95."
+  },
+  livingstone2012: {
+    author: "Livingstone, S., Hasebrink, U. & Görzig, A. (2012).",
+    ref: "Livingstone et al., 2012",
+    title: "Towards a general model of determinants of risks and safety. In S. Livingstone, L. Haddon, & A. Görzig (eds) Children, risk and safety on the internet (pp. 323-339). ",
+    location: "Bristol",
+    publisher: "Policy Press"
+  },
+  schrockboyd2008: {
+    author: "Schrock, A. & Boyd, D. (2008).",
+    ref: "Schrock & Boyd, 2008",
+    title: "Online threats to youth: Solicitation, harassment, and problematic content: Literature review prepared for the Internet Safety Technical Task Force. Retrieved from cyber.law.harvard.edu"
+  },
+  levy2012: {
+    author: "Levy, N., Cortesi, S., Crowley, E., Beaton, M., Casey, J., & Nolan, C. (2012).",
+    ref: "Levy et al., 2012",
+    title: "Bullying in a networked era: A literature review. Berkman Center Research Publication, 17. Retrieved from Cyber.law.harvard.edu"
+  },
+  boyd2008: {
+    author: "Boyd, d. (2008).",
+    ref: "Boyd, 2008",
+    title: "Why youth (heart) social network sites: the role of networked publics in teenage social life. In D. Buckingham (ed.) Youth, identity and digital media (pp. 119-142).",
+    location: "Cambridge, MA",
+    publisher: "MIT Press"
+  },
+  ybarra2012: {
+    author: "Ybarra, M.L., boyd, d., Korchmaros, J.D., & Oppenheim, J. (2012).",
+    ref: "Ybarra et al., 2012",
+    title: "Defining and measuring cyberbullying within the larger context of bullying victimization. Journal of Adolescent Health, 51(1), 53-58."
+  },
+  kernaghanelwood2013: {
+    author: "Kernaghan, D., & Elwood, J. (2013).",
+    ref: "Kernaghan & Elwood, 2013",
+    title: "All the (cyber) world’s a stage: Framing cyberbullying as a performance. Cyberpsychology: Journal of Psychosocial Research on Cyberspace, 7(1). Retrieved from: Cyberpsychology.eu"
+  },
+  lampertdonoso2012: {
+    author: "Lampert, C. & Donoso, V. (2012).",
+    ref: "Lampert & Donoso, 2012",
+    title: "Bullying. In S. Livingstone, L. Haddon & A. Görzig (eds) Children, risk and safety on the internet (pp, 141-150). ",
+    location: "Bristol",
+    publisher: "Policy Press"
+  },
+  lenhart2009: {
+    author: "Lenhart, A. (2009).",
+    ref: "Lenhart, 2009",
+    title: "Teens and sexting: How and why minor teens are sending sexually suggestive nude or nearly nude images via text messaging. Washington, DC: Pew Research Center. Retrieved from: Pewresearch.org"
+  },
+  kofoedringrose2012: {
+    author: "Kofoed, J. & Ringrose, J. (2012).",
+    ref: "Kofoed & Ringrose, 2012",
+    title: "Travelling and sticky affects: Exploring teens and sexualized cyberbullying through a Butlerian-Deleuzian-Guattarian lens. Discourse: Studies in the Cultural Politics of Education, 33(1), 5-20."
+  },
+  ringrose2012: {
+    author: "Ringrose, J., Gill, R., Livingstone, S., & Harvey, L. (2012). ",
+    ref: "Ringrose et al., 2012",
+    title: " A qualitative study of children, young people and ‘sexting’: A report prepared for the NSPCC. ",
+    location: "London",
+    publisher: "National Society for the Prevention of Cruelty to Children"
+  },
+  barbovschi2012: {
+    author: "Barbovschi, M., Marinescu, V., Velicu, A., & Laszlo, E. (2012). ",
+    ref: "Barbovschi et al., 2012",
+    title: "Meeting new contacts online. In S. Livingstone, L. Haddon, & A. Görzig (eds) Children, risk and safety on the internet (pp. 177-189).",
+    location: "Bristol",
+    publisher: "Policy Press"
+  },
+  barbovschi2014: {
+    author: "Barbovschi, M. (2014).",
+    ref: "Barbovschi, 2014",
+    title: "Dealing with misuse of personal information online – Coping measures of children in the EU Kids Online III project. Communications: The European Journal of Communication Research, 39(3): 305–326."
+  },
+  rovolistsaliki2012: {
+    author: "Rovolis, A. & Tsaliki, L. (2012). ",
+    ref: "Rovolis & Tsaliki, 2012",
+    title: "Pornography. In S. Livingstone, L. Haddon, & A. Görzig (eds) Children, risk and safety on the internet (pp. 165-176).",
+    location: "Bristol",
+    publisher: "Policy Press"
+  },
+  attwoodsmith2011: {
+    author: "Attwood, F., & Smith, C. (2011).",
+    ref: "Attwood & Smith, 2011",
+    title: "Investigating young people's sexual cultures: an introduction. Sex Education, 11(3), 235-242."
+  },
+  buckinghambragg2004: {
+    author: "Buckingham, D., & Bragg, S. (2004). ",
+    ref: "Buckingham & Bragg, 2004",
+    title: "Young people, sex and the media: The facts of life?",
+    location: "Basingstoke",
+    publisher: "Palgrave Macmillan"
+  },
+  vandoninckhaenensroe2013: {
+    author: "Vandoninck, S., d’Haenens, L., & Roe, K. (2013). ",
+    ref: "Vandoninck et al., 2013",
+    title: "Online risks: Coping strategies of less resilient children and teenagers across Europe. Journal of Children and Media, 7(1), 60-78."
   }
 };
