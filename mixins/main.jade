@@ -1,10 +1,8 @@
 include /addons/lfa-content-widgets/mixins/main
 
 mixin footnote(number)
-  small [footnote #{number}:
-  small
-    block
-  small ]
+  span.footnote
+    a(tabindex="0", data-trigger="focus hover", class="footnote item-popover", data-id="#{number}", type="button", data-placement="auto")
 
 mixin bibliography(options)
   - var options = options || window.bibliography;
@@ -31,5 +29,5 @@ mixin bibliography(options)
 
 mixin textTooltip(options)
   span
-    a(tabindex="0", data-trigger="hover click", class="textTooltip", id="#{options}", data-container="body", type="button", data-placement="auto")
+    a(tabindex="0", data-trigger="focus hover", class="textTooltip item-popover", id="#{options}", type="button", data-placement="auto")
   
