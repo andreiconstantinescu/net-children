@@ -136,10 +136,22 @@ window.bibliography = {
     publisher: "293- 305"
   },
   livingstonebovill2001: {
-    author: "Livingstone, S. & Bovill, M. (2001).",
+    author: "Livingstone, S. & Helsper, E.J. (2007).",
     ref: "Livingstone & Bovill, 2001",
     title: "Children and their changing media environment: A European comparative study.",
     location: "New Jersey, NJ",
     publisher: "Lawrence Erlbaum Associates, Inc"
+  },
+  livingstonehelsper2007: {
+    author: "Livingstone, S. & Bovill, M. (2001).",
+    ref: "Livingstone & Helsper, 2007",
+    title: "Gradations in digital inclusion: children, young people and the digital divide. New Media & Society,9, 671-696."
+  },
+  livingstonehasebrinkgorzig2012: {
+    author: "Livingstone, S., Hasebrink, U. & Görzig, A. (2012).",
+    ref: "Livingstone, Hasebrink & Görzig, 2012",
+    title: "Towards a general model of determinants of risks and safety. In S. Livingstone, L. Haddon, & A. Görzig (eds) Children, risk and safety on the internet (pp. 323-339). ",
+    location: "Bristol",
+    publisher: "Policy Press"
   }
 };
