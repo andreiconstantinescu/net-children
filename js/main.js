@@ -364,5 +364,50 @@ window.bibliography = {
     author: "Licoppe, C. (2004)",
     ref: "Licoppe, 2004",
     title: "'Connected' presence: the emergence of a new repertoire for managing social relationships in a changing communication technoscape. Environment and Planning D: Society and Space, 22(1), 135 – 156."
+  },
+  mascheroni2013: {
+    author: "Mascheroni, G., Murru, M.F., Aristodemou, E., & Laouris, Y. (2013).",
+    ref: "Mascheroni et al., 2013",
+    title: "Parents. Mediation, self-regulation and co-regulation. In B. O’Neill, E. Staksrud, & S. McLaughlin (eds) Towards a better internet for children? Policy pillars, players and paradoxes (pp. 211-225). ",
+    location: "Göteborg",
+    publisher: "Nordicom"
+  },
+  neilllaouris2013: {
+    author: "O’Neill, B. & Laouris, Y. (2013).",
+    ref: "O’Neill & Laouris, 2013",
+    title: "Teaching internet safety, promoting digital literacy. The dual role of educations and schools. In B. O’Neill, E. Staksrud, & S. McLaughlin (eds) Towards a better internet for children? Policy pillars, players and paradoxes (pp. 193-209).  ",
+    location: "Göteborg",
+    publisher: "Nordicom"
+  },
+  barbovschimarinescu2013: {
+    author: "Barbovschi, M. & Marinescu, V. (2013).",
+    ref: "Barbovschi & Marinescu, 2013",
+    title: "Youth. Revisiting policy dilemmas in internet safety in the context of children’s rights. In B. O’Neill, E. Staksrud, & S. McLaughlin (eds) Towards a better internet for children? Policy pillars, players and paradoxes (pp. 227-246).  ",
+    location: "Göteborg",
+    publisher: "Nordicom"
+  },
+  clark2012: {
+    author: "Clark, L. S. (2012).",
+    ref: "Clark, 2012",
+    title: "The Parent App: Understanding Families in the Digital Age. ",
+    location: "Oxford",
+    publisher: "Oxford University Press"
+  },
+  livingstonehelsper2008: {
+    author: "Livingstone, S. & Helsper, E. (2008).",
+    ref: "Livingstone & Helsper, 2008",
+    title: "Parental mediation and children’s Internet use. Journal of Broadcasting & Electronic Media, 52(4), 581-599."
+  },
+  mendoza2009: {
+    author: "Mendoza K. (2009).",
+    ref: " Mendoza, 2009",
+    title: "Surveying Parental Mediation: Connections, Challenges, and Questions for Media Literacy. The Journal of Media Literacy, 1(2009): 28-41."
+  },
+  kalmus2012: {
+    author: "Kalmus, V., von Felitzen, C., & Siibak, A. (2012). ",
+    ref: "Kalmus, von Felitzen, & Siibak, 2012",
+    title: "Effectiveness of teachers’ and peers’ mediation in supporting opportunities and reducing risks online. In S. Livingstone, L. Haddon, & A. Görzig (eds) Children, risk and safety on the internet (pp. 245-256).",
+    location: "Bristol",
+    publisher: "Policy Press"
   }
 };
