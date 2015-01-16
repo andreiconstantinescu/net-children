@@ -23,7 +23,7 @@ define(['jquery', './chart', './viewportSelectors'], function ($) {
     $('.textTooltip').each(function (idx, el) {
       var $el = $(el);
       var bibliography = window.bibliography[$el.attr("id")];
-      var content = '<div>'+ bibliography.author + ', <em>' + bibliography.title + '</em>(' + bibliography.location + ': ' + bibliography.publisher + (bibliography.year ? (', ' + bibliography.year) : '') + ') ' + (bibliography.pages ? (bibliography.pages + ', ') : '') + (bibliography.extra ? bibliography.extra : '') + '</div>';
+      var content = '<div>'+ bibliography.author + ', <em>' + (bibliography.title ? bibliography.title  : '') + '</em>(' + (bibliography.location ? (bibliography.location + ': ') : '') + (bibliography.publisher ? bibliography.publisher : '') + (bibliography.year ? (', ' + bibliography.year) : '') + ') ' + (bibliography.pages ? (bibliography.pages + ', ') : '') + (bibliography.extra ? bibliography.extra : '') + '</div>';
       $el.attr('data-content', content).html(bibliography.ref);
     }).popover({html: true});
 
