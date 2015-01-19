@@ -49,7 +49,9 @@ window.footnotes = {
   10: "În ancheta EU Kids Online copiii au fost întrebați dacă “au văzut sau au primit mesaje sexuale”. În Net Children Go Mobile am exclus cuvântul “văzut” date fiind posibilele confuzii create între sexting-mesaje sexuale si pornografie- a viziona imagini cu caracter sexual.",
   11: "Textul exact care introducea întrebările respective în proiectul EU Kids Online era următorul: ‘În ultimul an ai văzut o mulțime de imagini sub formă de fotografii sau filmulețe, dintre care unele au fost poate cu caracter sexual – cum ar fi persoane dezbrăcate sau persoane făcând sex’. În Net Children Go Mobile formularea a fost schimbată în ‘persoane dezbrăcate aflate în ipostaze sexuale’ deoarece în urma testării cognitive s-a constat că în unele culturi imagini reprezentând persoane dezbrăcate nu sunt neapărat asociate pornografiei. ",
   12: "Pentru spargerea conturilor de Facebook, a apărut deja un termen care leagă „rape” (a viola) de Facebook, dând Frape. ",
-  13: "Datorită rotunjirilor, procentul afișat pare să fie mai mare de 100%. Nu este greșeală de calcul, ci doar de afișaj. "
+  13: "Datorită rotunjirilor, procentul afișat pare să fie mai mare de 100%. Nu este greșeală de calcul, ci doar de afișaj. ",
+  14:"Media convergente (e.g. smartphone, tabletă) denumesc acele tehnologii ce reunesc media tradiționale (de tip carte, fotografie, radio) cu media digitale (caracterizate prin interactivitate și caracter social) redefinindu-le pe cele dintâi. Henry Jenkins, în cartea sa din 2006 'Convergence Culture: Where Old and New Media Collide', este cel care folosește pentru prima dată termenul de 'cultură convergentă' pentru a descrie cultura tinerilor unde vechile și noile media se intersectează și se transformă reciproc.",
+  15: "din 11 abilități testate"
 };
 
 window.bibliography = {
