@@ -92,13 +92,16 @@ article
             border-left: 0
           &:last-child
             border-right: 0
+          div:first-child
+            padding: .3em
+            // border-bottom: 1px solid white
       tbody
         tr:nth-child(odd)
           background-color: white
         tr:nth-child(even)
           background-color: rgb(178,225,227)
-        tr td:not(:first-child)
-          width: 6.5em
+        tr td:first-child
+          width: 25%
         tr td:not(:last-child)
           border-right: 1px solid white
         td, th
