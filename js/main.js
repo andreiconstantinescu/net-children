@@ -1,4 +1,6 @@
-define(['jquery', './chart', './viewportSelectors'], function ($) {
+define(['jquery', 
+  '../addons/lfa-backstage/js/main',
+  './chart', './viewportSelectors'], function ($) {
   window.App.book.on('render', function () {
     var elements = $('.progress .progress-bar');
 

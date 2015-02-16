@@ -1,3 +1,6 @@
 [submodule "addons/lfa-content-widgets"]
 	path = addons/lfa-content-widgets
 	url = git@github.com:learnfwd/lfa-content-widgets.git
+[submodule "addons/lfa-backstage"]
+	path = addons/lfa-backstage
+	url = git@github.com:learnfwd/lfa-addon-backstage.git
